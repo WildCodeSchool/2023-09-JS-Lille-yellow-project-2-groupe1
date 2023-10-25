@@ -1,6 +1,7 @@
 import MainHeader from "./MainHeader/MainHeader";
 import "./HomePage.scss";
 import ContainerStoryRules from "./ContainerStoryRules/ContainerStoryRules";
+import theCollector from "../../assets/pictures/theCollector.png";
 
 function HomePage() {
   return (
@@ -8,7 +9,7 @@ function HomePage() {
       <MainHeader />
       <main className="homePageElements">
         <img
-          src="https://img.freepik.com/photos-premium/portrait-steampunk-captivant-capturant-essence-savant-fou-victorien_836303-140.jpg"
+          src={theCollector}
           alt=""
           className="homePageElements__mainCharacter"
         />
