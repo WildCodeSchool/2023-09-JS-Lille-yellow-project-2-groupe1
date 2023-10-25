@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+
+header {
+  display: flex;
+  background-color: $primaryColor3;
+  align-items: center;
+  height: 8vw;
+}
+
+.mainTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  border: 3px;
+  color: $primaryColor2;
+  font-size: 4vw;
+}
+
+.aboutButton {
+  display: flex;
+  justify-content: center;
+  border-radius: 2vw;
+  border-color: $primaryColor;
+  background-color: $primaryColor;
+  height: 3vw;
+  width: 10vw;
+  align-items: center;
+  color: $primaryColor2;
+  font-size: 1rem;
+  margin-right: 5vw;
+}

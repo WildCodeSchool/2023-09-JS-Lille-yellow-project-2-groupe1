@@ -1,0 +1,23 @@
+@import "../../../variables.scss";
+
+.storyRules {
+  padding: 1vw;
+  background-color: $primaryColor2;
+  color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__playButton {
+    display: flex;
+    width: 15vw;
+    font-size: 2vw;
+    justify-content: center;
+    border-radius: 1vw;
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+    height: 5vw;
+    align-items: center;
+    color: $primaryColor2;
+  }
+}

@@ -1,0 +1,10 @@
+.homePageElements {
+  display: flex;
+  justify-content: space-around;
+
+  &__mainCharacter {
+    width: 50vw;
+    height: 50vw;
+    margin-left: 2vw;
+  }
+}
