@@ -9,9 +9,7 @@ function GameMenu() {
         alt="un homme de cromagnon"
       />
       <hr />
-
       <button type="button">Objectifs</button>
-
       <hr />
       <button type="button">Inventaire</button>
     </nav>
