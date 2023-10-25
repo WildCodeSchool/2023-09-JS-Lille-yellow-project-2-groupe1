@@ -6,14 +6,14 @@ function HomePage() {
   return (
     <>
       <MainHeader />
-      <div className="homePageElements">
+      <main className="homePageElements">
         <img
           src="https://img.freepik.com/photos-premium/portrait-steampunk-captivant-capturant-essence-savant-fou-victorien_836303-140.jpg"
           alt=""
-          className="mainCharacter"
+          className="homePageElements__mainCharacter"
         />
         <ContainerStoryRules />
-      </div>
+      </main>
     </>
   );
 }

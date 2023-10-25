@@ -3,9 +3,7 @@ import "./MainHeader.scss";
 function MainHeader() {
   return (
     <header>
-      <div className="mainTitle">
-        <h1>Le collectionneur temporel</h1>
-      </div>
+      <h1 className="mainTitle">Le collectionneur temporel</h1>
       <button type="button" className="aboutButton">
         A propos
       </button>

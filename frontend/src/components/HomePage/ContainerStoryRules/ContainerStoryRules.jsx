@@ -4,13 +4,13 @@ import "./ContainerStoryRules.scss";
 
 function ContainerStoryRules() {
   return (
-    <div className="storyRules">
+    <section className="storyRules">
       <Story />
       <Rules />
-      <button type="button" className="playButton">
+      <button type="button" className="storyRules__playButton">
         Voyager
       </button>
-    </div>
+    </section>
   );
 }
 

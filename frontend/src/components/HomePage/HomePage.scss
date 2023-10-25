@@ -1,11 +1,11 @@
-.mainCharacter {
-  width: 50vw;
-  height: 50vw;
-  border-radius: 1vw;
-  border: 2px solid black;
-}
-
 .homePageElements {
   display: flex;
   justify-content: space-around;
+
+  &__mainCharacter {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 1vw;
+    border: 2px solid black;
+  }
 }
