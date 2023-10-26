@@ -2,7 +2,7 @@
 
 header {
   display: flex;
-  background-color: $primaryColor3;
+  background-color: $thirdColor;
   align-items: center;
   height: 8vw;
 }
@@ -13,7 +13,7 @@ header {
   justify-content: center;
   width: 100vw;
   border: 3px;
-  color: $primaryColor2;
+  color: $primaryColor;
   font-size: 4vw;
 }
 
@@ -21,12 +21,12 @@ header {
   display: flex;
   justify-content: center;
   border-radius: 2vw;
-  border-color: $primaryColor;
-  background-color: $primaryColor;
+  border-color: $secondaryColor;
+  background-color: $secondaryColor;
   height: 3vw;
   width: 10vw;
   align-items: center;
-  color: $primaryColor2;
+  color: $primaryColor;
   font-size: 1rem;
   margin-right: 5vw;
 }

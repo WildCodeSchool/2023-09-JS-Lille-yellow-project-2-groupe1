@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 hr {
   border: solid 2px black;
   width: 100%;
@@ -11,5 +13,5 @@ nav {
   height: 100vh;
   justify-content: space-around;
   align-items: center;
-  background-color: #e7d7bb;
+  background-color: $primaryColor;
 }
