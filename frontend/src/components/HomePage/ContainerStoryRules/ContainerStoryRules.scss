@@ -9,14 +9,12 @@
   align-items: center;
 
   &__playButton {
-    display: flex;
     width: 15vw;
-    font-size: 2vw;
-    justify-content: center;
-    border-radius: 1vw;
+    font-size: 2rem;
     border-color: $secondaryColor;
     background-color: $secondaryColor;
-    height: 5vw;
+    height: 5rem;
+    border-radius: 20px;
     align-items: center;
     color: $primaryColor;
   }
