@@ -1,0 +1,36 @@
+$cd-btn: lightgrey;
+$cd-txt: orange;
+// Définition de la popup
+.message {
+  position: absolute;
+  right: 10rem;
+  background: $cd-btn;
+  color: $cd-txt;
+  font-size: 3rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  transition: transform 1000ms ease-in-out;
+  padding: 3rem 1rem;
+  margin: 70px auto;
+  width: 30%;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 0.15rem solid green;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: absolute;
+  right: 2rem;
+  top: 0.5rem;
+}
