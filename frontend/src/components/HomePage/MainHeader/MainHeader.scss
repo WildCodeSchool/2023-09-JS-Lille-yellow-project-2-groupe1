@@ -4,7 +4,7 @@ header {
   display: flex;
   background-color: $thirdColor;
   align-items: center;
-  height: 8vw;
+  height: 15vh;
 }
 
 .mainTitle {
@@ -12,21 +12,18 @@ header {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  border: 3px;
   color: $primaryColor;
-  font-size: 4vw;
+  font-size: 4rem;
 }
 
 .aboutButton {
-  display: flex;
-  justify-content: center;
-  border-radius: 2vw;
-  border-color: $secondaryColor;
+  border-radius: 10px;
+  border: 3px solid $primaryColor;
   background-color: $secondaryColor;
-  height: 3vw;
+  height: 3rem;
   width: 10vw;
   align-items: center;
   color: $primaryColor;
   font-size: 1rem;
-  margin-right: 5vw;
+  margin-right: 4rem;
 }
