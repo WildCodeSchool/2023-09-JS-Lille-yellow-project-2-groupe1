@@ -43,7 +43,7 @@ function AboutUsPage() {
   return (
     <>
       <MainHeader />
-      <main className="cardContainer" style={{}}>
+      <main className="cardContainer">
         {profils.map((e) => (
           <CardProfil
             key={e.name}
