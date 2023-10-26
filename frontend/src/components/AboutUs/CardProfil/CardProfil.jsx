@@ -14,7 +14,6 @@ function CardProfil({ name, img, github, linkedin }) {
             className="cardProfil__githubLogo"
             src={githubLogo}
             alt={`${name} github logo`}
-            style={{ width: "2rem", marginRight: "1rem" }}
           />
         </a>
 
@@ -23,7 +22,6 @@ function CardProfil({ name, img, github, linkedin }) {
             className="cardProfil__linkedinLogo"
             src={linkedinLogo}
             alt={`${name} linkedin logo`}
-            style={{ width: "2rem" }}
           />
         </a>
       </footer>
