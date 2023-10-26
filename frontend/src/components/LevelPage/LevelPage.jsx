@@ -4,8 +4,8 @@ import "./LevelPage.scss";
 function LevelPage() {
   return (
     <main>
-      <h1> Le Jurassique </h1>
       <GameMenu />
+      <h1> Le Jurassique </h1>
     </main>
   );
 }
