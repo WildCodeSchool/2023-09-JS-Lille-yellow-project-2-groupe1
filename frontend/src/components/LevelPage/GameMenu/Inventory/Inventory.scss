@@ -8,9 +8,11 @@
   width: 50%;
   height: 50%;
   text-align: center;
+  margin: 0 auto;
   padding: 1rem;
   &__closeButton {
-    position: absolute;
-    left: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-200%);
   }
 }
