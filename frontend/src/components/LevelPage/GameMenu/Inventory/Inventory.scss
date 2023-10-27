@@ -12,6 +12,7 @@
   margin: 0 auto;
   padding: 1rem;
   transition: opacity 0.3s;
+
   &__closeButton {
     position: relative;
     left: 50%;
@@ -19,5 +20,6 @@
   }
   &__show {
     opacity: 1;
+    z-index: 1;
   }
 }
