@@ -1,5 +1,6 @@
 @import "../../../../variables.scss";
 .inventoryPopUp {
+  opacity: 0;
   position: absolute;
   left: 30%;
   background-color: $secondaryColor;
@@ -10,9 +11,13 @@
   text-align: center;
   margin: 0 auto;
   padding: 1rem;
+  transition: opacity 0.3s;
   &__closeButton {
     position: relative;
     left: 50%;
     transform: translateX(-200%);
+  }
+  &__show {
+    opacity: 1;
   }
 }

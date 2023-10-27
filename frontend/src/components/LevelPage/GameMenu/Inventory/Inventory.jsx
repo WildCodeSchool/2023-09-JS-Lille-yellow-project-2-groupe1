@@ -2,31 +2,31 @@ import { useState } from "react";
 import "./Inventory.scss";
 
 function Inventory() {
-  const [inventory, setInventory] = useState("");
+  const [showInventory, setShowInventory] = useState(false);
+
+  const handleInventoryToggle = () => {
+    setShowInventory(!showInventory);
+  };
+
   return (
     <>
-      <button
-        type="button"
-        onClick={() =>
-          setInventory(
-            <article className="inventoryPopUp">
-              Ceci est l'inventaire{" "}
-              <button
-                type="button"
-                className="inventoryPopUp__closeButton"
-                onClick={() => {
-                  setInventory("");
-                }}
-              >
-                Close
-              </button>
-            </article>
-          )
-        }
-      >
+      <button type="button" onClick={handleInventoryToggle}>
         Inventory
       </button>
-      {inventory}
+      <article
+        className={`inventoryPopUp ${
+          showInventory ? "inventoryPopUp__show" : ""
+        }`}
+      >
+        Ceci est l'inventaire
+        <button
+          type="button"
+          className="inventoryPopUp__closeButton"
+          onClick={handleInventoryToggle}
+        >
+          Close
+        </button>
+      </article>
     </>
   );
 }
