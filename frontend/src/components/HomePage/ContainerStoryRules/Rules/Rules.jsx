@@ -1,15 +1,15 @@
-import "./Rules.scss";
-
 function Rules() {
   return (
-    <p className="rules">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
-      recusandae asperiores quibusdam laborum quas repellendus eius, nam eaque
-      vitae nobis ducimus aliquam aut placeat, optio nisi possimus obcaecati
-      explicabo similique adipisci dolor! Quod natus soluta, tenetur consectetur
-      deserunt delectus facere harum rerum alias, ipsam amet magni inventore
-      nisi provident. Quas!
-    </p>
+    <section>
+      <h2 className="rulesTitle">Règles du jeu</h2>
+      <p>Cliquez sur "voyager", choisissez l’époque à visiter.</p>
+      <p>
+        Dans l’interface du jeu, vous trouverez une liste d’artefacts à
+        collecter. Dans le niveau choisi, cliquez sur les éléments du décorss
+        pour en apprendre plus sur l’histoire et retrouver le précieux artefacts
+        tant recherché.
+      </p>
+    </section>
   );
 }
 
