@@ -1,18 +1,16 @@
 @import "../../../../variables.scss";
 .inventoryPopUp {
   position: absolute;
-  top: 7rem;
-  left: 13rem;
+  left: 30%;
   background-color: $secondaryColor;
   border: 5px solid $optionalColor;
   color: $primaryColor;
-  width: 50rem;
-  height: 30rem;
-  margin-inline: 20rem;
+  width: 50%;
+  height: 50%;
   text-align: center;
-  padding-top: 1rem;
+  padding: 1rem;
   &__closeButton {
-    position: relative;
-    left: 17rem;
+    position: absolute;
+    left: 90%;
   }
 }
