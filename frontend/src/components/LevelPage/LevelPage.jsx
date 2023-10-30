@@ -1,6 +1,6 @@
 import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
-import JurassiqueTheme from "../../assets/pictures/JurassiqueTheme.png";
+import JurassicTheme from "../../assets/pictures/JurassicTheme.png";
 
 function LevelPage() {
   return (
@@ -8,8 +8,8 @@ function LevelPage() {
       <GameMenu />
       <img
         className="JurassiqueTheme"
-        src={JurassiqueTheme}
-        alt="A lot of dinosaure in landscape"
+        src={JurassicTheme}
+        alt="A lot of dinosaures in landscape"
       />
     </main>
   );
