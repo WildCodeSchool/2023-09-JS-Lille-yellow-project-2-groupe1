@@ -13,5 +13,24 @@ nav {
   height: 100vh;
   justify-content: space-around;
   align-items: center;
-  background-color: $primaryColor;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.JurassiqueCharacter {
+  width: 100%;
+  height: auto;
+}
+
+.Bag {
+  width: 10rem;
+}
+
+.NoteBook {
+  width: 10rem;
+}
+
+.GameMenuButton {
+  border: none;
+  background: none;
 }
