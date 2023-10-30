@@ -9,7 +9,7 @@ function LevelPage() {
       <img
         className="JurassiqueTheme"
         src={JurassicTheme}
-        alt="A lot of dinosaures in landscape"
+        alt="Des dinosaures dans un paysage du Crétacé"
       />
     </main>
   );
