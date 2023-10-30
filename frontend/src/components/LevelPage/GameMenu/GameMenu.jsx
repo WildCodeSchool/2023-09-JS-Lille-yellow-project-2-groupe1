@@ -1,6 +1,6 @@
 import "./GameMenu.scss";
 import React from "react";
-import JurassiqueCharacter from "../../../assets/pictures/AvatarJurassique.png";
+import JurassicCharacter from "../../../assets/pictures/AvatarJurassique.png";
 import Bag from "../../../assets/pictures/Bag.png";
 import NoteBook from "../../../assets/pictures/NoteBook.png";
 
@@ -9,8 +9,8 @@ function GameMenu() {
     <nav>
       <img
         className="JurassiqueCharacter"
-        src={JurassiqueCharacter}
-        alt="un homme de cromagnon"
+        src={JurassicCharacter}
+        alt="Our main character"
       />
       <hr />
       <button type="button" className="GameMenuButton">
