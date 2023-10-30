@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Tyrannosaure Rex",
+    "régime_alimentaire": "Carnivore",
+    "longueur": "12 mètres",
+    "poids": "9 tonnes",
+    "anecdote1": "Le Tyrannosaure Rex est l'un des plus grands prédateurs terrestres de tous les temps.",
+    "anecdote2": "On pense que le Tyrannosaure Rex avait une excellente vision binoculaire.",
+    "anecdote3": "Le T. Rex avait des dents conçues pour déchirer la chair de ses proies.",
+    "description": "Le Tyrannosaure Rex, communément appelé T. Rex, est l'un des dinosaures les plus emblématiques du Crétacé supérieur. Il était un redoutable prédateur carnivore avec de puissantes mâchoires et de courtes pattes avant. Le T. Rex a vécu il y a environ 68 à 66 millions d'années avant notre ère.",
+    "info1": "Le Tyrannosaure Rex avait des bras très courts par rapport à sa taille.",
+    "info2": "Sa morsure était l'une des plus puissantes parmi les dinosaures.",
+    "info3": "Des empreintes de pas de T. Rex ont été découvertes en Amérique du Nord."
+  },
+  {
+    "id": 2,
+    "name": "Tricératops",
+    "régime_alimentaire": "Herbivore",
+    "longueur": "9 mètres",
+    "poids": "12 tonnes",
+    "anecdote1": "Le Tricératops est connu pour ses trois cornes sur le visage.",
+    "anecdote2": "Les cornes du Tricératops étaient utilisées pour la défense contre les prédateurs.",
+    "anecdote3": "Il avait un grand bec pour arracher les feuilles des plantes.",
+    "description": "Le Tricératops était un herbivore massif du Crétacé supérieur. Ses trois cornes faciales étaient utilisées pour la défense contre les prédateurs et dans des rituels sociaux. Il a coexisté avec le Tyrannosaure Rex.",
+    "info1": "Les cornes du Tricératops étaient composées de kératine, comme nos cheveux et nos ongles.",
+    "info2": "On estime que le Tricératops vivait en troupeaux sociaux.",
+    "info3": "Ils ont vécu dans ce qui est aujourd'hui l'Amérique du Nord."
+  },
+  {
+    "id": 3,
+    "name": "Velociraptor",
+    "régime_alimentaire": "Carnivore",
+    "longueur": "2 mètres",
+    "poids": "45 kilogrammes",
+    "anecdote1": "Les Velociraptors étaient des prédateurs rapides et intelligents.",
+    "anecdote2": "Ils chassaient souvent en meute pour attraper des proies plus grandes.",
+    "anecdote3": "Ils avaient des griffes rétractables sur leurs pattes.",
+    "description": "Les Velociraptors étaient de petits dinosaures carnivores du Crétacé supérieur. Ils étaient connus pour leur intelligence, leur rapidité et leur capacité de chasse en meute. Contrairement à leur représentation dans le film Jurassic Park, ils étaient beaucoup plus petits en réalité.",
+    "info1": "Les Velociraptors étaient probablement couverts de plumes pour l'isolation.",
+    "info2": "Ils vivaient en Asie centrale, pas seulement dans le Jurassic Park !",
+    "info3": "Les Velociraptors étaient plus petits que leur représentation dans le film Jurassic Park."
+  },
+  {
+    "id": 4,
+    "name": "Brachiosaure",
+    "régime_alimentaire": "Herbivore",
+    "longueur": "25 mètres",
+    "poids": "50 tonnes",
+    "anecdote1": "Le Brachiosaure avait un cou extrêmement long.",
+    "anecdote2": "Ils étaient parmi les plus grands animaux terrestres de tous les temps.",
+    "anecdote3": "Ils avaient des jambes plus longues à l'avant qu'à l'arrière.",
+    "description": "Le Brachiosaure était l'un des géants du Crétacé supérieur, se nourrissant des feuilles des arbres les plus élevés de l'époque. Sa caractéristique la plus distinctive était son long cou, qui lui permettait d'atteindre la cime des arbres.",
+    "info1": "Le Brachiosaure était un quadrupède, marchant sur ses quatre membres.",
+    "info2": "Ils pouvaient atteindre la cime des arbres grâce à leur long cou.",
+    "info3": "Ils avaient un métabolisme relativement lent pour un dinosaure de leur taille."
+  },
+  {
+    "id": 5,
+    "name": "Stégosaure",
+    "régime_alimentaire": "Herbivore",
+    "longueur": "9 mètres",
+    "poids": "6 tonnes",
+    "anecdote1": "Le Stégosaure était connu pour ses plaques osseuses le long de son dos.",
+    "anecdote2": "Ils avaient également une double rangée de pointes à la fin de leur queue.",
+    "anecdote3": "Ces pointes de queue étaient probablement utilisées pour la défense contre les prédateurs.",
+    "description": "Le Stégosaure était l'un des dinosaures herbivores emblématiques du Crétacé supérieur, avec ses plaques dorsales distinctives. Ces plaques dorsales étaient probablement utilisées pour la régulation thermique et la défense.",
+    "info1": "Le cerveau du Stégosaure était de la taille d'une noix.",
+    "info2": "Ils étaient des herbivores qui se nourrissaient de plantes basses et de fougères.",
+    "info3": "Le Stégosaure vivait il y a environ 150 millions d'années."
+  }
+]

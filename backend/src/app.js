@@ -2,7 +2,22 @@
 
 const express = require("express");
 
+const cors = require("cors");
+
+const data = require("../data.json");
+
 const app = express();
+
+app.use(
+  cors({
+    origin: [process.env.FRONTEND_URL],
+  })
+);
+
+// app.use(express.static("public"));
+app.get("/api/data", (req, res) => {
+  res.status(200).json(data);
+});
 
 // Configure it
 
