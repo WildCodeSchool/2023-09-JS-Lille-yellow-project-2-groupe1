@@ -1,7 +1,7 @@
-import HomePage from "./components/HomePage/HomePage";
+import { Outlet } from "react-router-dom";
 import "./App.scss";
 
 function App() {
-  return <HomePage />;
+  return <Outlet />;
 }
 export default App;
