@@ -10,9 +10,9 @@ function ChooseLevelPage() {
   ];
   return (
     <main className="cardContainer">
-      {universe.map((monde) => (
-        <article key={monde.name} className={`card card${monde.name}`}>
-          <h2 className="titleEra">{monde.name}</h2>
+      {universe.map((world) => (
+        <article key={world.name} className={`card card${world.name}`}>
+          <h2 className="titleEra">{world.name}</h2>
           <button type="button" className="cardContainer__playButton">
             Jouer
           </button>
