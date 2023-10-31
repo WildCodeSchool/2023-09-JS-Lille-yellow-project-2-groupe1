@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./ChooseLevelPage.scss";
 
 function ChooseLevelPage() {
@@ -13,9 +14,11 @@ function ChooseLevelPage() {
       {universe.map((world) => (
         <article key={world.name} className={`card card${world.Id}`}>
           <h2 className="titleEra">{world.name}</h2>
-          <button type="button" className="cardContainer__playButton">
-            Jouer
-          </button>
+          <Link to="/LevelPage">
+            <button type="button" className="cardContainer__playButton">
+              Jouer
+            </button>
+          </Link>
         </article>
       ))}
     </main>
