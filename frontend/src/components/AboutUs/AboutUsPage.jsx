@@ -4,7 +4,6 @@ import Cyril from "../../assets/pictures/Cyril.jpeg";
 import Xavier from "../../assets/pictures/Xavier.jpeg";
 import PA from "../../assets/pictures/Pierre-Adrien.jpeg";
 import Romain from "../../assets/pictures/Romain.jpeg";
-import MainHeader from "../HomePage/MainHeader/MainHeader";
 import "./AboutUsPage.scss";
 
 function AboutUsPage() {
@@ -41,20 +40,17 @@ function AboutUsPage() {
     },
   ];
   return (
-    <>
-      <MainHeader />
-      <main className="cardContainer">
-        {profils.map((e) => (
-          <CardProfil
-            key={e.name}
-            name={e.name}
-            img={e.imgSrc}
-            github={e.github}
-            linkedin={e.linkedin}
-          />
-        ))}
-      </main>
-    </>
+    <main className="cardContainer">
+      {profils.map((e) => (
+        <CardProfil
+          key={e.name}
+          name={e.name}
+          img={e.imgSrc}
+          github={e.github}
+          linkedin={e.linkedin}
+        />
+      ))}
+    </main>
   );
 }
 
