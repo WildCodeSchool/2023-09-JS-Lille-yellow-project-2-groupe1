@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+.cardContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  &__playButton {
+    margin: 3rem;
+    background-color: $primaryColor;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 10% 30% 50% 70%;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: $primaryColor;
+  border-inline: 1px solid $primaryColor;
+  background-size: cover;
+  width: 20vw;
+  &1 {
+    background-image: url(../../assets/pictures/Jurassique.png);
+  }
+  &2 {
+    background-image: url(../../assets/pictures/Romain.png);
+  }
+  &3 {
+    background-image: url(../../assets/pictures/Egypte.png);
+  }
+  &4 {
+    background-image: url(../../assets/pictures/Moyen-Age.png);
+  }
+  &5 {
+    background-image: url(../../assets/pictures/Moderne.png);
+  }
+  & h2 {
+    margin-top: 3rem;
+    text-shadow:
+      -2px -2px 0 $secondaryColor,
+      2px -2px 0 $secondaryColor,
+      -2px 2px 0 $secondaryColor,
+      2px 2px 0 $secondaryColor;
+    color: $primaryColor;
+  }
+}

@@ -1,11 +1,16 @@
 import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
+import JurassicTheme from "../../assets/pictures/JurassicTheme.png";
 
 function LevelPage() {
   return (
     <main>
       <GameMenu />
-      <h1> Le Jurassique </h1>
+      <img
+        className="JurassiqueTheme"
+        src={JurassicTheme}
+        alt="Des dinosaures dans un paysage du Crétacé"
+      />
     </main>
   );
 }
