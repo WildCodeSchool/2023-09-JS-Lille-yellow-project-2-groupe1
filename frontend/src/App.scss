@@ -1,4 +1,5 @@
 @import "./variables.scss";
+
 * {
   font-family: $fontFamily;
 }
@@ -6,4 +7,7 @@
 body {
   margin: 0;
   background-color: $primaryColor;
+}
+button {
+  all: unset;
 }
