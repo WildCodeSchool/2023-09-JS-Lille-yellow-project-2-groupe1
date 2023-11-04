@@ -3,17 +3,17 @@ import button from "../../assets/pictures/playButtonSP.png";
 
 function ChooseLevelPage() {
   const universe = [
-    { name: "CRÉTACÉ" },
-    { name: "ROMAIN" },
-    { name: "EGYPTE" },
-    { name: "MOYEN-AGE" },
-    { name: "MODERNE" },
+    { name: "CRÉTACÉ", Id: 1 },
+    { name: "ROMAIN", Id: 2 },
+    { name: "EGYPTE", Id: 3 },
+    { name: "MOYEN-AGE", Id: 4 },
+    { name: "MODERNE", Id: 5 },
   ];
   return (
     <main className="cardContainer">
-      {universe.map((monde) => (
-        <article key={monde.name} className={`card card${monde.name}`}>
-          <h2 className="titleEra">{monde.name}</h2>
+      {universe.map((world) => (
+        <article key={world.name} className={`card card${world.Id}`}>
+          <h2 className="titleEra">{world.name}</h2>
           <p className="cardContainer__levelDescription">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             voluptates voluptatem porro voluptate similique rerum labore quos in

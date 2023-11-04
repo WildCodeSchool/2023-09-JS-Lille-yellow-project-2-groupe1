@@ -13,5 +13,51 @@ nav {
   height: 100vh;
   justify-content: space-around;
   align-items: center;
-  background-color: $primaryColor;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.JurassiqueCharacter {
+  width: 10vw;
+}
+
+.Bag {
+  width: 10vw;
+}
+
+.NoteBook {
+  width: 10vw;
+}
+
+.GameMenuButton {
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.CloseButton {
+  position: absolute;
+}
+
+@media screen and (min-width: 940px) {
+  .CloseButton {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .JurassiqueCharacter {
+    width: 15vw;
+  }
+
+  .Bag {
+    width: 12vw;
+  }
+
+  .NoteBook {
+    width: 12vw;
+  }
 }

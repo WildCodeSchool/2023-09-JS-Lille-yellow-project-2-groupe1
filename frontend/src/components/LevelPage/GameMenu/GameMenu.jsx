@@ -1,18 +1,37 @@
 import "./GameMenu.scss";
-import React from "react";
+import { useState } from "react";
+import JurassicCharacter from "../../../assets/pictures/AvatarJurassique.png";
+import Bag from "../../../assets/pictures/Bag.png";
+import NoteBook from "../../../assets/pictures/NoteBook.png";
 
 function GameMenu() {
+  const [isNavVisible, setIsNavVisible] = useState(true);
+
+  const toggleNavVisibility = () => {
+    setIsNavVisible(!isNavVisible);
+  };
+
   return (
-    <nav>
-      <img
-        src="./frontend/src/assets/jurassique.png"
-        alt="un homme de cromagnon"
-      />
-      <hr />
-      <button type="button">Objectifs</button>
-      <hr />
-      <button type="button">Inventaire</button>
-    </nav>
+    <>
+      <nav className={isNavVisible ? "visible" : "hidden"}>
+        <img className="JurassiqueCharacter" src={JurassicCharacter} alt="" />
+        <hr />
+        <button type="button" className="GameMenuButton">
+          <img className="Bag" src={Bag} alt="Inventaire" />
+        </button>
+        <hr />
+        <button type="button" className="GameMenuButton">
+          <img className="NoteBook" src={NoteBook} alt="Objectif" />
+        </button>
+      </nav>
+      <button
+        className="CloseButton"
+        type="button"
+        onClick={toggleNavVisibility}
+      >
+        {isNavVisible ? "Fermer" : "Ouvrir"}
+      </button>
+    </>
   );
 }
 
