@@ -1,7 +1,7 @@
+import HomePage from "./components/HomePage/HomePage";
 import "./App.scss";
-import ChooseLevelPage from "./components/ChooseLevelPage/ChooseLevelPage";
 
 function App() {
-  return <ChooseLevelPage />;
+  return <HomePage />;
 }
 export default App;
