@@ -16,13 +16,9 @@ function GameMenu() {
       <nav className={isNavVisible ? "visible" : "hidden"}>
         <img className="JurassiqueCharacter" src={JurassicCharacter} alt="" />
         <hr />
-        <button type="button" className="GameMenuButton">
-          <Inventory />
-        </button>
+        <Inventory />
         <hr />
-        <button type="button" className="GameMenuButton">
-          <Objectives />
-        </button>
+        <Objectives />
       </nav>
       <button
         className="CloseButton"
