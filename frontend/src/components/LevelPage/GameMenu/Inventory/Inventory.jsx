@@ -10,22 +10,34 @@ function Inventory() {
 
   return (
     <>
-      <button type="button" onClick={handleInventoryToggle}>
-        Inventory
-      </button>
+      <div>
+        <button type="button" onClick={handleInventoryToggle}>
+          <img
+            className="bag"
+            src="./src/assets/pictures/Bag.png"
+            alt="The Bag"
+          />
+        </button>
+      </div>
       <article
         className={`inventoryPopUp ${
           showInventory ? "inventoryPopUp__show" : ""
         }`}
       >
-        Ceci est l'inventaire
-        <button
-          type="button"
-          className="inventoryPopUp__closeButton"
-          onClick={handleInventoryToggle}
-        >
-          Close
-        </button>
+        <div className="openBag">
+          <img
+            src="./src/assets/pictures/OpenBag.png"
+            alt="Open Bag"
+            id="openBag"
+          />
+          <button
+            type="button"
+            className="inventoryPopUp__closeButton"
+            onClick={handleInventoryToggle}
+          >
+            Close
+          </button>
+        </div>
       </article>
     </>
   );
