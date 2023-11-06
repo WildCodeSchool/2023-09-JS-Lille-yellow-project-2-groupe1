@@ -1,7 +1,13 @@
+import { Outlet } from "react-router-dom";
+import MainHeader from "./components/HomePage/MainHeader/MainHeader";
 import "./App.scss";
-import HomePage from "./components/HomePage/HomePage";
 
 function App() {
-  return <HomePage />;
+  return (
+    <>
+      <MainHeader />
+      <Outlet />
+    </>
+  );
 }
 export default App;

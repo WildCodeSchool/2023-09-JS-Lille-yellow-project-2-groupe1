@@ -1,12 +1,11 @@
-$cd-btn: #e7d7bb;
-$cd-txt: #2b160f;
-// Définition de la popup
+@import "../variables.scss";
+
 .message {
   position: absolute;
   right: 20rem;
   bottom: 15rem;
-  background: $cd-btn;
-  color: $cd-txt;
+  background: $primaryColor;
+  color: $secondaryColor;
   font-size: 3rem;
   cursor: pointer;
   border-radius: 10rem;
@@ -17,7 +16,7 @@ $cd-txt: #2b160f;
   border-radius: 50px;
   text-align: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  border: 0.15rem solid #2b160f;
+  border: 0.15rem solid $secondaryColor;
   &:hover {
     transform: scale(1.05);
   }
@@ -39,4 +38,8 @@ $cd-txt: #2b160f;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
     cursor: pointer;
   }
+}
+
+.buttonPtetodactyle {
+  all: unset;
 }

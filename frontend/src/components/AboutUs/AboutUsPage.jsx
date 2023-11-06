@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 import CardProfil from "./CardProfil/CardProfil";
 import Matthieu from "../../assets/pictures/Matthieu.jpeg";
 import Cyril from "../../assets/pictures/Cyril.jpeg";
 import Xavier from "../../assets/pictures/Xavier.jpeg";
 import PA from "../../assets/pictures/Pierre-Adrien.jpeg";
 import Romain from "../../assets/pictures/Romain.jpeg";
-import MainHeader from "../HomePage/MainHeader/MainHeader";
 import "./AboutUsPage.scss";
 
 function AboutUsPage() {
@@ -42,7 +42,11 @@ function AboutUsPage() {
   ];
   return (
     <>
-      <MainHeader />
+      <Link to="/">
+        <button type="button" className="closeButtonAboutUs">
+          ↩
+        </button>
+      </Link>
       <main className="cardContainer">
         {profils.map((e) => (
           <CardProfil

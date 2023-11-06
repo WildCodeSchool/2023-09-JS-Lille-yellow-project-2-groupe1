@@ -1,12 +1,15 @@
 import "./MainHeader.scss";
+import { Link } from "react-router-dom";
 
 function MainHeader() {
   return (
     <header>
       <h1 className="mainTitle">Le collectionneur temporel</h1>
-      <button type="button" className="aboutButton">
-        A propos
-      </button>
+      <Link to="/aboutus">
+        <button type="button" className="aboutButton">
+          A propos
+        </button>
+      </Link>
     </header>
   );
 }
