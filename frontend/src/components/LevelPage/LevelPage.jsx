@@ -8,7 +8,7 @@ function LevelPage() {
     <main>
       <GameMenu />
       <img
-        className="JurassiqueTheme"
+        className="jurassiqueTheme"
         src={JurassicTheme}
         alt="Des dinosaures dans un paysage du Crétacé"
       />

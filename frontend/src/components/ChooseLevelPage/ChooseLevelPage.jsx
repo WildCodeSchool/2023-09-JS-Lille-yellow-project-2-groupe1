@@ -24,7 +24,7 @@ function ChooseLevelPage() {
         ))}
       </main>
       <Link to="/">
-        <button type="button" className="CloseButtonChooseLevelPage">
+        <button type="button" className="closeButtonChooseLevelPage">
           ↩
         </button>
       </Link>

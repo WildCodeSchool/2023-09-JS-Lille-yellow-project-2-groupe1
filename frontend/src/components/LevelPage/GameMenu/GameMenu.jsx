@@ -7,14 +7,14 @@ import NoteBook from "../../../assets/pictures/NoteBook.png";
 function GameMenu() {
   return (
     <nav>
-      <img className="JurassiqueCharacter" src={JurassicCharacter} alt="" />
+      <img className="jurassiqueCharacter" src={JurassicCharacter} alt="" />
       <hr />
-      <button type="button" className="GameMenuButton">
-        <img className="Bag" src={Bag} alt="Inventaire" />
+      <button type="button" className="gameMenuButton">
+        <img className="bag" src={Bag} alt="Inventaire" />
       </button>
       <hr />
-      <button type="button" className="GameMenuButton">
-        <img className="NoteBook" src={NoteBook} alt="Objectif" />
+      <button type="button" className="gameMenuButton">
+        <img className="noteBook" src={NoteBook} alt="Objectif" />
       </button>
     </nav>
   );

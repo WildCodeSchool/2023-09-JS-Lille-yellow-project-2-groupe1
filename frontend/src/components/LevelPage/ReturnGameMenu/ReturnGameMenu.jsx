@@ -8,15 +8,15 @@ function ReturnGameMenu() {
     setPopupMessage(
       <article className="message">
         Voulez-vous vraiment revenir au Menu Principal ?
-        <div className="AreYouSureButton">
+        <div className="areYouSureButton">
           <Link to="/">
-            <button type="button" className="BacktoMainMenu">
+            <button type="button" className="backtoMainMenu">
               Oui
             </button>
           </Link>
           <button
             type="button"
-            className="BacktoMainMenu"
+            className="backtoMainMenu"
             onKeyDown={() => setPopupMessage("")}
             onClick={() => setPopupMessage("")}
           >
@@ -30,9 +30,10 @@ function ReturnGameMenu() {
     <>
       <button
         type="button"
-        className="BackMainMenuButton"
+        className="backMainMenuButton"
         onKeyDown={HandleEvent}
         onClick={HandleEvent}
+        aria-label="Fermer la page de jeu"
       >
         X
       </button>

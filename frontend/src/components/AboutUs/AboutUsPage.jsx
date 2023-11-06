@@ -43,7 +43,7 @@ function AboutUsPage() {
   return (
     <>
       <Link to="/">
-        <button type="button" className="CloseButtonAboutUs">
+        <button type="button" className="closeButtonAboutUs">
           ↩
         </button>
       </Link>
