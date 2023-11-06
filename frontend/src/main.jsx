@@ -12,12 +12,20 @@ const router = createBrowserRouter([
     id: "app",
     loader: async () => {
       try {
-        const response = await fetch("http://localhost:3310/api/data");
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
+        const responseDino = await fetch("http://localhost:3310/api/dinosaurs");
+        const responseEra = await fetch("http://localhost:3310/api/era");
+
+        if (!responseDino.ok) {
+          throw new Error("Failed to fetch dinosaur data");
         }
-        const data = await response.json();
-        return data;
+        const dataDino = await responseDino.json();
+
+        if (!responseEra.ok) {
+          throw new Error("Failed to fetch era data");
+        }
+        const dataEra = await responseEra.json();
+
+        return { dinosaurs: dataDino, era: dataEra };
       } catch (error) {
         console.error(error);
         return null;

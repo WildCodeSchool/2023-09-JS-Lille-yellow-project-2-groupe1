@@ -4,7 +4,9 @@ const express = require("express");
 
 const cors = require("cors");
 
-const data = require("../data.json");
+const dino = require("../dinosaurs.json");
+
+const era = require("../era.json");
 
 const app = express();
 
@@ -15,8 +17,12 @@ app.use(
 );
 
 // app.use(express.static("public"));
-app.get("/api/data", (req, res) => {
-  res.status(200).json(data);
+app.get("/api/dinosaurs", (req, res) => {
+  res.status(200).json(dino);
+});
+
+app.get("/api/era", (req, res) => {
+  res.status(200).json(era);
 });
 
 // Configure it
