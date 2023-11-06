@@ -1,5 +1,6 @@
 import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
+import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
 import JurassicTheme from "../../assets/pictures/JurassicTheme.png";
 import TurnYourPhone from "../../assets/pictures/TurnYourPhone.jpg";
 import TargetButton from "../TargetButton";
@@ -8,7 +9,7 @@ function LevelPage() {
   return (
     <>
       <img
-        className="TurnYourPhone"
+        className="turnYourPhone"
         src={TurnYourPhone}
         alt="Tournes ton téléphone en paysage"
       />
@@ -16,10 +17,11 @@ function LevelPage() {
         <GameMenu />
         <TargetButton />
         <img
-          className="JurassiqueTheme"
+          className="jurassicTheme"
           src={JurassicTheme}
           alt="Des dinosaures dans un paysage du Crétacé"
         />
+        <ReturnGameMenu />
       </main>
     </>
   );

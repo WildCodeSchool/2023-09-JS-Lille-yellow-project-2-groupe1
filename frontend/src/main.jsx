@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import HomePage from "./components/HomePage/HomePage";
 import AboutUs from "./components/AboutUs/AboutUsPage";
+import ChooseLevelPage from "./components/ChooseLevelPage/ChooseLevelPage";
+import LevelPage from "./components/LevelPage/LevelPage";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
     ],
+  },
+  {
+    path: "/ChooseLevelPage",
+    element: <ChooseLevelPage />,
+  },
+  {
+    path: "/LevelPage",
+    element: <LevelPage />,
   },
 ]);
 
