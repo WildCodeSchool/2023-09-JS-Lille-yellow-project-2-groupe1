@@ -10,38 +10,36 @@ function Objectives() {
 
   return (
     <>
-      <div>
-        <button
-          className="objButton"
-          type="button"
-          onClick={handleObjectivesToggle}
-        >
-          <img
-            className="noteBook"
-            src="./src/assets/pictures/NoteBook.png"
-            alt="List of objectives"
-          />
-        </button>
-      </div>
+      <button
+        className="objButton"
+        type="button"
+        onClick={handleObjectivesToggle}
+      >
+        <img
+          className="noteBook"
+          src="./src/assets/pictures/NoteBook.png"
+          alt="Liste des objectifs"
+        />
+      </button>
       <article
         className={`objectivesPopUp ${
           showObjectives ? "objectivesPopUp__show" : ""
         }`}
       >
-        <div className="openNotebook">
+        <section className="openNotebook">
           <img
             src="./src/assets/pictures/OpenNotebook.jpg"
             alt="Open Notebook"
-            id="openChooseLevelPage"
+            className="openRegister"
           />
           <button
             type="button"
             className="objectivesPopUp__closeButton"
             onClick={handleObjectivesToggle}
           >
-            Close
+            Fermé
           </button>
-        </div>
+        </section>
       </article>
     </>
   );
