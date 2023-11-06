@@ -11,7 +11,11 @@ function Inventory() {
   return (
     <>
       <div>
-        <button type="button" onClick={handleInventoryToggle}>
+        <button
+          className="invButton"
+          type="button"
+          onClick={handleInventoryToggle}
+        >
           <img
             className="bag"
             src="./src/assets/pictures/Bag.png"

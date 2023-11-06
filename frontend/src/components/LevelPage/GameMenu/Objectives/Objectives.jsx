@@ -11,7 +11,11 @@ function Objectives() {
   return (
     <>
       <div>
-        <button type="button" onClick={handleObjectivesToggle}>
+        <button
+          className="objButton"
+          type="button"
+          onClick={handleObjectivesToggle}
+        >
           <img
             className="noteBook"
             src="./src/assets/pictures/NoteBook.png"
