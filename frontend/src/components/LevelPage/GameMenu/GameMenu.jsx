@@ -17,11 +17,11 @@ function GameMenu() {
         <img className="JurassiqueCharacter" src={JurassicCharacter} alt="" />
         <hr />
         <button type="button" className="GameMenuButton">
-        <Inventory />
+          <Inventory />
         </button>
         <hr />
         <button type="button" className="GameMenuButton">
-        <Objectives />
+          <Objectives />
         </button>
       </nav>
       <button
