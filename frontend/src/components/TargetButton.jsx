@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import "./TargetButton.scss";
 import { PropTypes } from "prop-types";
-import Pterodactyle from "../assets/pictures/Pterodactyle.png";
 
-function TargetButton({ dino }) {
+function TargetButton({ dino, img, classtag }) {
   const [popupMessage, setPopupMessage] = useState("");
-  const hello = dino.find((dinosaure) => dinosaure.id === 1);
+
   return (
     <>
       <button
         type="button"
-        className="button"
+        className="targetButton"
         onClick={() =>
           setPopupMessage(
             <article className="message">
-              <h1>{hello.name}</h1>
-              <p>{hello.anecdote1}</p>
+              <h1>{dino.name}</h1>
+              <p>{dino.description}</p>
               <button
                 type="button"
                 className="close"
@@ -27,7 +26,7 @@ function TargetButton({ dino }) {
           )
         }
       >
-        clique ici
+        <img src={img} className={`${classtag}`} alt="" />
       </button>
       {popupMessage}
     </>
@@ -35,22 +34,39 @@ function TargetButton({ dino }) {
 }
 
 TargetButton.propTypes = {
-  dino: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-      régime_alimentaire: PropTypes.string.isRequired,
-      longueur: PropTypes.string.isRequired,
-      poids: PropTypes.string.isRequired,
-      anecdote1: PropTypes.string.isRequired,
-      anecdote2: PropTypes.string.isRequired,
-      anecdote3: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      info1: PropTypes.string.isRequired,
-      info2: PropTypes.string.isRequired,
-      info3: PropTypes.string.isRequired,
-    })
-  ).isRequired,
+  dino: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    diet: PropTypes.string.isRequired,
+    length: PropTypes.string.isRequired,
+    weight: PropTypes.string.isRequired,
+    anecdote1: PropTypes.string.isRequired,
+    anecdote2: PropTypes.string.isRequired,
+    anecdote3: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    info1: PropTypes.string.isRequired,
+    info2: PropTypes.string.isRequired,
+    info3: PropTypes.string.isRequired,
+  }),
+  img: PropTypes.string.isRequired,
+  classtag: PropTypes.string.isRequired,
+};
+
+TargetButton.defaultProps = {
+  dino: {
+    id: 0,
+    name: "Dino Name",
+    diet: "Unknown",
+    length: "Unknown",
+    weight: "Unknown",
+    anecdote1: "No information available",
+    anecdote2: "No information available",
+    anecdote3: "No information available",
+    description: "No information available",
+    info1: "No information available",
+    info2: "No information available",
+    info3: "No information available",
+  },
 };
 
 export default TargetButton;
