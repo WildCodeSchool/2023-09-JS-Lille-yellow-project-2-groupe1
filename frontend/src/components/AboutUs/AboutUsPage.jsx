@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CardProfil from "./CardProfil/CardProfil";
 import Matthieu from "../../assets/pictures/Matthieu.jpeg";
 import Cyril from "../../assets/pictures/Cyril.jpeg";
@@ -40,17 +41,24 @@ function AboutUsPage() {
     },
   ];
   return (
-    <main className="cardContainer">
-      {profils.map((e) => (
-        <CardProfil
-          key={e.name}
-          name={e.name}
-          img={e.imgSrc}
-          github={e.github}
-          linkedin={e.linkedin}
-        />
-      ))}
-    </main>
+    <>
+      <Link to="/">
+        <button type="button" className="CloseButtonAboutUs">
+          ↩
+        </button>
+      </Link>
+      <main className="cardContainer">
+        {profils.map((e) => (
+          <CardProfil
+            key={e.name}
+            name={e.name}
+            img={e.imgSrc}
+            github={e.github}
+            linkedin={e.linkedin}
+          />
+        ))}
+      </main>
+    </>
   );
 }
 

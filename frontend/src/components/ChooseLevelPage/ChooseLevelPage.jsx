@@ -10,18 +10,25 @@ function ChooseLevelPage() {
     { name: "MODERNE", Id: 5 },
   ];
   return (
-    <main className="cardContainer">
-      {universe.map((world) => (
-        <article key={world.name} className={`card card${world.Id}`}>
-          <h2 className="titleEra">{world.name}</h2>
-          <Link to="/LevelPage">
-            <button type="button" className="cardContainer__playButton">
-              Jouer
-            </button>
-          </Link>
-        </article>
-      ))}
-    </main>
+    <>
+      <main className="cardContainer">
+        {universe.map((world) => (
+          <article key={world.name} className={`card card${world.Id}`}>
+            <h2 className="titleEra">{world.name}</h2>
+            <Link to="/LevelPage">
+              <button type="button" className="cardContainer__playButton">
+                Jouer
+              </button>
+            </Link>
+          </article>
+        ))}
+      </main>
+      <Link to="/">
+        <button type="button" className="CloseButtonChooseLevelPage">
+          ↩
+        </button>
+      </Link>
+    </>
   );
 }
 

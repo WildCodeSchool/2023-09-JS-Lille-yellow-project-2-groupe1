@@ -1,6 +1,6 @@
 import "./GameMenu.scss";
 import React from "react";
-import JurassicCharacter from "../../../assets/pictures/AvatarJurassique.png";
+import JurassicCharacter from "../../../assets/pictures/AvatarJurassic.png";
 import Bag from "../../../assets/pictures/Bag.png";
 import NoteBook from "../../../assets/pictures/NoteBook.png";
 

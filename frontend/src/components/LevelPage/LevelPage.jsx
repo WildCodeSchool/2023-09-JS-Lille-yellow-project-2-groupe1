@@ -1,6 +1,7 @@
 import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
 import JurassicTheme from "../../assets/pictures/JurassicTheme.png";
+import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
 
 function LevelPage() {
   return (
@@ -11,6 +12,7 @@ function LevelPage() {
         src={JurassicTheme}
         alt="Des dinosaures dans un paysage du Crétacé"
       />
+      <ReturnGameMenu />
     </main>
   );
 }
