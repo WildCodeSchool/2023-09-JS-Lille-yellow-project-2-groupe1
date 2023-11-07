@@ -40,15 +40,16 @@ nav {
 
 .closeNav {
   position: absolute;
-  border: 3px solid $primaryColor;
+  border: 2.5px solid $primaryColor;
   background-color: $secondaryColor;
   border-radius: 200px;
   color: white;
-  width: 5vw;
-  font-size: 1vw;
+  width: 3vw;
+  font-size: 1.5vw;
   height: 3vw;
   margin-top: 0.5vw;
-  margin-left: 0.5vw;
+  left: 15%;
+  top: 50%;
 }
 
 @media screen and (min-width: 940px) {
@@ -57,7 +58,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 660px) {
   .jurassicCharacter {
     width: 15vw;
   }
@@ -69,4 +70,17 @@ nav {
   .noteBook {
     width: 12vw;
   }
+}
+
+.hiddenbutton {
+  position: absolute;
+  left: 0;
+  border-radius: 200px;
+  border: 2.5px solid $primaryColor;
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  height: 3vw;
+  width: 3vw;
+  font-size: 1.5vw;
+  top: 50%;
 }
