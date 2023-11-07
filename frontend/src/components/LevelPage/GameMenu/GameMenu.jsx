@@ -20,11 +20,7 @@ function GameMenu() {
         <hr />
         <Objectives />
       </nav>
-      <button
-        className="closeButton"
-        type="button"
-        onClick={toggleNavVisibility}
-      >
+      <button className="closeNav" type="button" onClick={toggleNavVisibility}>
         {isNavVisible ? "Fermer" : "Ouvrir"}
       </button>
     </>

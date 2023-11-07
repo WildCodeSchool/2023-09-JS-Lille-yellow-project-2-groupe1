@@ -3,32 +3,33 @@
 .backMainMenuButton {
   position: absolute;
   right: 0;
-  margin-top: 20px;
+  margin-top: 2vw;
   border-radius: 200px;
-  border: 3px solid $primaryColor;
+  border: 0.2vw solid $primaryColor;
   background-color: $secondaryColor;
-  height: 2rem;
-  width: 2rem;
+  height: 2vw;
+  width: 2vw;
   align-items: center;
   color: $primaryColor;
-  font-size: 1rem;
-  margin-right: 2rem;
+  font-size: 0.8vw;
+  margin-right: 2vw;
   cursor: pointer;
 }
 
-.message {
+.messagePopUp {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 30%;
-  bottom: 25%;
   background: $primaryColor;
   color: $secondaryColor;
+  width: 30vw;
+  height: 15vw;
   font-size: 3vw;
+  top: 30%;
+  left: 35%;
   border-radius: 10rem;
   transition: transform 1000ms ease-in-out;
   padding: 3rem 1rem;
-  width: 30%;
   border-radius: 50px;
   text-align: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
