@@ -21,7 +21,12 @@ function TargetButton() {
   }
   return (
     <>
-      <button type="button" onKeyDown={HandleEvent} onClick={HandleEvent}>
+      <button
+        type="button"
+        onKeyDown={HandleEvent}
+        onClick={HandleEvent}
+        className="buttonPtetodactyle"
+      >
         <img src={Pterodactyle} alt="pterodactyle" className="Pterodactyle" />
       </button>
       {popupMessage}

@@ -14,14 +14,14 @@ function GameMenu() {
   return (
     <>
       <nav className={isNavVisible ? "visible" : "hidden"}>
-        <img className="JurassiqueCharacter" src={JurassicCharacter} alt="" />
+        <img className="jurassicCharacter" src={JurassicCharacter} alt="" />
         <hr />
         <Inventory />
         <hr />
         <Objectives />
       </nav>
       <button
-        className="CloseButton"
+        className="closeButton"
         type="button"
         onClick={toggleNavVisibility}
       >
