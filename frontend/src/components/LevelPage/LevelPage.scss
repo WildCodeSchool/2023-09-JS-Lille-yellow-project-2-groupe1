@@ -12,22 +12,6 @@ h1 {
   width: 100vw;
 }
 
-.turnYourPhone {
-  position: absolute;
-  width: 50%;
-  opacity: 80%;
-  height: 40vw;
-  width: auto;
-  left: 40%;
-  top: 30%;
-}
-
-@media screen and (min-width: 660px) {
-  .turnYourPhone {
-    display: none;
-  }
-}
-
 .closeButton {
   position: relative;
 }

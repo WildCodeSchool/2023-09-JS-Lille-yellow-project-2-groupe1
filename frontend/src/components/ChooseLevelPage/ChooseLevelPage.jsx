@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./ChooseLevelPage.scss";
 import button from "../../assets/pictures/playButtonSP.png";
-import TurnYourPhone from "../../assets/pictures/TurnYourPhone.jpg";
+import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 
 function ChooseLevelPage() {
   const universe = [
@@ -13,11 +13,6 @@ function ChooseLevelPage() {
   ];
   return (
     <>
-      <img
-        className="turnYourPhone"
-        src={TurnYourPhone}
-        alt="Tournes ton téléphone en paysage"
-      />
       <main className="cardEraContainer">
         {universe.map((world) => (
           <article key={world.name} className={`card card${world.id}`}>
@@ -45,6 +40,7 @@ function ChooseLevelPage() {
           </button>
         </Link>
       </main>
+      <TurnYourPhone />
     </>
   );
 }

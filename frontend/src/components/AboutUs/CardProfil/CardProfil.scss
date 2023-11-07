@@ -37,3 +37,21 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .cardProfil {
+    width: 15rem;
+    h2 {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardProfil {
+    width: 20rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

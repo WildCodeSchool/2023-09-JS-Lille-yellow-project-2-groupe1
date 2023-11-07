@@ -2,17 +2,12 @@ import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
 import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
 import JurassicTheme from "../../assets/pictures/JurassicTheme.png";
-import TurnYourPhone from "../../assets/pictures/TurnYourPhone.jpg";
 import TargetButton from "../TargetButton";
+import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 
 function LevelPage() {
   return (
     <>
-      <img
-        className="turnYourPhone"
-        src={TurnYourPhone}
-        alt="Tournes ton téléphone en paysage"
-      />
       <main>
         <GameMenu />
         <TargetButton />
@@ -23,6 +18,7 @@ function LevelPage() {
         />
         <ReturnGameMenu />
       </main>
+      <TurnYourPhone />
     </>
   );
 }
