@@ -1,8 +1,8 @@
 import "./GameMenu.scss";
 import { useState } from "react";
 import JurassicCharacter from "../../../assets/pictures/AvatarJurassique.png";
-import Bag from "../../../assets/pictures/Bag.png";
-import NoteBook from "../../../assets/pictures/NoteBook.png";
+import Objectives from "./Objectives/Objectives";
+import Inventory from "./Inventory/Inventory";
 
 function GameMenu() {
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -16,13 +16,9 @@ function GameMenu() {
       <nav className={isNavVisible ? "visible" : "hidden"}>
         <img className="jurassicCharacter" src={JurassicCharacter} alt="" />
         <hr />
-        <button type="button" className="gameMenuButton">
-          <img className="bag" src={Bag} alt="Inventaire" />
-        </button>
+        <Inventory />
         <hr />
-        <button type="button" className="gameMenuButton">
-          <img className="noteBook" src={NoteBook} alt="Objectif" />
-        </button>
+        <Objectives />
       </nav>
       <button
         className="closeButton"
