@@ -19,21 +19,17 @@ function ChooseLevelPage() {
           <p className="cardEraContainer__levelDescription">
             {era.description}
           </p>
-          <Link to="/LevelPage">
-            <button type="button" className="playDevice">
-              <img
-                src={button}
-                alt="Bouton jouer"
-                className="cardEraContainer__playButton"
-              />
-            </button>
+          <Link to="/LevelPage" className="playDevice">
+            <img
+              src={button}
+              alt="Bouton jouer"
+              className="cardEraContainer__playButton"
+            />
           </Link>
         </article>
       ))}
-      <Link to="/">
-        <button type="button" className="closeButtonChooseLevelPage">
-          ↩
-        </button>
+      <Link to="/" className="closeButtonChooseLevelPage">
+        <button type="button">↩</button>
       </Link>
     </main>
   );

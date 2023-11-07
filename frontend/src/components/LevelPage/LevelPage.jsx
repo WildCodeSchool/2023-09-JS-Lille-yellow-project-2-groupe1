@@ -6,19 +6,18 @@ import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
 import JurassicTheme from "../../assets/pictures/JurassicTheme.png";
 import TurnYourPhone from "../../assets/pictures/TurnYourPhone.jpg";
 import Pterodactyle from "../../assets/pictures/Pterodactyle.png";
-import tRex from "../../assets/pictures/t-rex.svg";
+import tRex from "../../assets/pictures/t-rex.png";
 
 function LevelPage() {
   const dinosaursArray = useRouteLoaderData("levelPage");
-  const pterodactyle = {
-    data: dinosaursArray.find((dinosaure) => dinosaure.id === 6),
-    class: "pterodactyle",
-  };
-  const trex = {
-    data: dinosaursArray.find((dinosaure) => dinosaure.id === 1),
-    class: "t-rex",
-  };
-
+  function getDinosaurData(dinosaurId, classtag) {
+    return {
+      data: dinosaursArray.find((dinosaure) => dinosaure.id === dinosaurId),
+      class: classtag,
+    };
+  }
+  const trex = getDinosaurData(1, "t-rex");
+  const pterodactyle = getDinosaurData(6, "pterodactyle");
   return (
     <>
       <img
