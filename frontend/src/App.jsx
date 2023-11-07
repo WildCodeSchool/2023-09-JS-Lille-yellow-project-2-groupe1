@@ -1,11 +1,13 @@
-// import { useEffect, useState } from "react";
-import { useRouteLoaderData } from "react-router-dom";
-import Level from "./components/LevelPage/LevelPage";
+import { Outlet } from "react-router-dom";
+import MainHeader from "./components/HomePage/MainHeader/MainHeader";
 import "./App.scss";
 
 function App() {
-  const data = useRouteLoaderData("app");
-
-  return <Level dino={data} />;
+  return (
+    <>
+      <MainHeader />
+      <Outlet />
+    </>
+  );
 }
 export default App;

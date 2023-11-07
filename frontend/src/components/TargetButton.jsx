@@ -4,7 +4,6 @@ import { PropTypes } from "prop-types";
 
 function TargetButton({ dino, img, classtag }) {
   const [popupMessage, setPopupMessage] = useState("");
-
   return (
     <>
       <button
@@ -40,33 +39,10 @@ TargetButton.propTypes = {
     diet: PropTypes.string.isRequired,
     length: PropTypes.string.isRequired,
     weight: PropTypes.string.isRequired,
-    anecdote1: PropTypes.string.isRequired,
-    anecdote2: PropTypes.string.isRequired,
-    anecdote3: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    info1: PropTypes.string.isRequired,
-    info2: PropTypes.string.isRequired,
-    info3: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
   img: PropTypes.string.isRequired,
   classtag: PropTypes.string.isRequired,
-};
-
-TargetButton.defaultProps = {
-  dino: {
-    id: 0,
-    name: "Dino Name",
-    diet: "Unknown",
-    length: "Unknown",
-    weight: "Unknown",
-    anecdote1: "No information available",
-    anecdote2: "No information available",
-    anecdote3: "No information available",
-    description: "No information available",
-    info1: "No information available",
-    info2: "No information available",
-    info3: "No information available",
-  },
 };
 
 export default TargetButton;

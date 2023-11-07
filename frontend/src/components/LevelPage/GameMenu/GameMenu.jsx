@@ -14,28 +14,18 @@ function GameMenu() {
   return (
     <>
       <nav className={isNavVisible ? "visible" : "hidden"}>
-        <img
-          className="JurassiqueCharacter"
-          src={JurassicCharacter}
-          draggable="false"
-          alt=""
-        />
+        <img className="jurassicCharacter" src={JurassicCharacter} alt="" />
         <hr />
-        <button type="button" className="GameMenuButton">
-          <img className="Bag" src={Bag} alt="Inventaire" draggable="false" />
+        <button type="button" className="gameMenuButton">
+          <img className="bag" src={Bag} alt="Inventaire" />
         </button>
         <hr />
-        <button type="button" className="GameMenuButton">
-          <img
-            className="NoteBook"
-            src={NoteBook}
-            alt="Objectif"
-            draggable="false"
-          />
+        <button type="button" className="gameMenuButton">
+          <img className="noteBook" src={NoteBook} alt="Objectif" />
         </button>
       </nav>
       <button
-        className="CloseButton"
+        className="closeButton"
         type="button"
         onClick={toggleNavVisibility}
       >

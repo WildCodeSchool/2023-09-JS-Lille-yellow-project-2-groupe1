@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Rules from "./Rules/Rules";
 import Story from "./Story/Story";
 import "./ContainerStoryRules.scss";
@@ -7,9 +8,11 @@ function ContainerStoryRules() {
     <section className="storyRules">
       <Story />
       <Rules />
-      <button type="button" className="storyRules__playButton">
-        Voyager
-      </button>
+      <Link to="/ChooseLevelPage">
+        <button type="button" className="storyRules__playButton">
+          Voyager
+        </button>
+      </Link>
     </section>
   );
 }
