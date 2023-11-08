@@ -10,8 +10,8 @@ function TargetButton() {
   const [popupMessage, setPopupMessage] = useState("");
   function HandleEvent() {
     setPopupMessage(
-      <article className="popPtéro">
-        <img src={Pterodactyle} alt="Ptéro" className="Ptéro" />
+      <article className="popPtero">
+        <img src={Pterodactyle} alt="Pterodactyle" className="ptero" />
 
         <h1 className="name">Ptérodactyle</h1>
         <img src={Brain} alt="cerveau" className="brain" />
@@ -35,7 +35,7 @@ function TargetButton() {
           onClick={HandleEvent}
           className="buttonEgg"
         >
-          <img src={Egg} alt="oeuf" className="Ptéro-egg" />
+          <img src={Egg} alt="oeuf" className="pteroEgg" />
         </button>
       </article>
     );
@@ -48,7 +48,7 @@ function TargetButton() {
         onClick={HandleEvent}
         className="buttonPtetodactyle"
       >
-        <img src={Pterodactyle} alt="pterodactyle" className="Pterodactyle" />
+        <img src={Pterodactyle} alt="pterodactyle" className="pterodactyle" />
       </button>
       {popupMessage}
     </>
