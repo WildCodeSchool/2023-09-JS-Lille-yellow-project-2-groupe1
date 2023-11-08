@@ -30,8 +30,12 @@ function ChooseLevelPage() {
             </Link>
           </article>
         ))}
-        <Link to="/" className="closeButtonChooseLevelPage">
-          <button type="button">↩</button>
+        <Link
+          to="/"
+          className="closeButtonChooseLevelPage"
+          aria-label="retourner au menu principal"
+        >
+          ↩
         </Link>
       </main>
       <TurnYourPhone />
