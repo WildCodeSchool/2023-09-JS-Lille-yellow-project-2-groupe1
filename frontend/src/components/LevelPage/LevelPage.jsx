@@ -4,7 +4,7 @@ import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
 import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
 import JurassicTheme from "../../assets/pictures/JurassicTheme.png";
-import TurnYourPhone from "../../assets/pictures/TurnYourPhone.jpg";
+import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 import Pterodactyle from "../../assets/pictures/Pterodactyle.png";
 import tRex from "../../assets/pictures/t-rex.png";
 
