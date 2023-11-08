@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Tyrannosaure Rex",
+    "diet": "Carnivore",
+    "length": "12 mètres",
+    "weight": "9 tonnes",
+    "description": "Le Tyrannosaure Rex, surnommé T. Rex, est l'un des dinosaures les plus emblématiques de tous les temps. C'était un redoutable prédateur carnivore doté de puissantes mâchoires et de courtes pattes avant. Il régnait en maître sur la chaîne alimentaire de son époque, chassant d'autres dinosaures avec efficacité."
+  },
+  {
+    "id": 2,
+    "name": "Tricératops",
+    "diet": "Herbivore",
+    "length": "9 mètres",
+    "weight": "12 tonnes",
+    "description": " Le Tricératops était un gigantesque herbivore qui arborait trois impressionnantes cornes sur son visage. Ces cornes lui servaient à la fois pour se défendre contre les prédateurs et dans des rituels sociaux avec ses congénères. Il a partagé son époque avec le redoutable Tyrannosaure Rex."
+  },
+  {
+    "id": 3,
+    "name": "Velociraptor",
+    "diet": "Carnivore",
+    "length": "2 mètres",
+    "weight": "45 kilogrammes",
+    "description": "Les Velociraptors étaient de petits dinosaures carnivores connus pour leur intelligence, leur vitesse et leur habileté à chasser en meute. Contrairement à leur image dans le film Jurassic Park, ils étaient bien plus petits en réalité, mais cela ne les empêchait pas d'être de redoutables prédateurs."
+  },
+  {
+    "id": 4,
+    "name": "Brachiosaure",
+    "diet": "Herbivore",
+    "length": "25 mètres",
+    "weight": "50 tonnes",
+    "description": "Le Brachiosaure, l'un des géants du règne des dinosaures, se nourrissait des feuilles des arbres les plus élevés de son époque grâce à son long cou impressionnant. Cette caractéristique unique lui permettait d'accéder à la nourriture inatteignable pour de nombreux autres herbivores."
+  },
+  {
+    "id": 5,
+    "name": "Stégosaure",
+    "diet": "Herbivore",
+    "length": "9 mètres",
+    "weight": "6 tonnes",
+    "description": "Le Stégosaure, célèbre pour ses plaques dorsales distinctives, était un herbivore du Crétacé supérieur. Ces plaques servaient probablement à réguler sa température corporelle et à se défendre contre les prédateurs. Une créature fascinante de cette époque."
+  },
+  {
+    "id": 6,
+    "name": "Quetzalcoatlus",
+    "diet": "Piscivore",
+    "length": "Environ 10-12 mètres",
+    "weight": "Environ 250-300 kilogrammes",
+    "description": "Le Quetzalcoatlus était l'un des plus grands ptérosaures de l'ère Crétacé. Ces prédateurs aériens se spécialisaient dans la chasse de poissons en plongeant dans l'eau. Leur envergure massive les rendait véritablement majestueux dans le ciel préhistorique."
+  }
+]

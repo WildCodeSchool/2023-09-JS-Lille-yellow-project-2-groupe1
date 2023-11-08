@@ -48,12 +48,11 @@
 
 .noteBook {
   width: 10rem;
-  background-color: $primaryColor;
 }
 
 .objButton {
   border: 0;
   margin: 0;
   padding: 0;
-  background-color: $primaryColor;
+  all: unset;
 }

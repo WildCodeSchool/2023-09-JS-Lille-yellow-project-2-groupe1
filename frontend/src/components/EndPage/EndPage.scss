@@ -1,0 +1,10 @@
+@import "../../variables.scss";
+
+.endPageContainer {
+  display: flex;
+  justify-content: center;
+  h2 {
+    font-size: 4rem;
+    color: $secondaryColor;
+  }
+}

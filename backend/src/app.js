@@ -2,7 +2,28 @@
 
 const express = require("express");
 
+const cors = require("cors");
+
+const dino = require("../dinosaurs.json");
+
+const era = require("../era.json");
+
 const app = express();
+
+app.use(
+  cors({
+    origin: [process.env.FRONTEND_URL],
+  })
+);
+
+// app.use(express.static("public"));
+app.get("/api/dinosaurs", (req, res) => {
+  res.status(200).json(dino);
+});
+
+app.get("/api/era", (req, res) => {
+  res.status(200).json(era);
+});
 
 // Configure it
 
