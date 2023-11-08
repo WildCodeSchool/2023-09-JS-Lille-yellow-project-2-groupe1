@@ -21,11 +21,11 @@ function GameMenu() {
         <Objectives />
       </nav>
       <button
-        className="closeButton"
+        className={isNavVisible ? "closeNav" : "hiddenbutton"}
         type="button"
         onClick={toggleNavVisibility}
       >
-        {isNavVisible ? "Fermer" : "Ouvrir"}
+        {isNavVisible ? "❮" : "❯"}
       </button>
     </>
   );

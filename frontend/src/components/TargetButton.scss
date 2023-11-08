@@ -2,11 +2,11 @@
 
 .message {
   position: absolute;
-  right: 20rem;
-  bottom: 15rem;
+  right: 30%;
+  bottom: 30%;
   background: $primaryColor;
   color: $secondaryColor;
-  font-size: 3rem;
+  font-size: 3vw;
   cursor: pointer;
   border-radius: 10rem;
   transition: transform 1000ms ease-in-out;
@@ -29,7 +29,7 @@
 }
 
 .Pterodactyle {
-  width: 10vw;
+  width: 8vw;
   position: absolute;
   top: 20%;
   left: 42%;
