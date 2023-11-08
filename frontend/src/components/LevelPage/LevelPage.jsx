@@ -20,11 +20,6 @@ function LevelPage() {
   const pterodactyle = getDinosaurData(6, "pterodactyle");
   return (
     <>
-      <img
-        className="turnYourPhone"
-        src={TurnYourPhone}
-        alt="Tournes ton téléphone en paysage"
-      />
       <main>
         <GameMenu />
 
@@ -43,6 +38,7 @@ function LevelPage() {
         />
         <ReturnGameMenu />
       </main>
+      <TurnYourPhone />
     </>
   );
 }
