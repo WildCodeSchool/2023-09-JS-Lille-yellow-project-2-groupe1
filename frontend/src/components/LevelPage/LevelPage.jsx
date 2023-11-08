@@ -1,11 +1,12 @@
 import { useRouteLoaderData } from "react-router-dom";
-import TargetButton from "../TargetButton";
 import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
 import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
-import JurassicTheme from "../../assets/pictures/JurassicTheme.png";
+import JurassicTheme from "../../assets/pictures/jurassic/JurassicTheme.png";
 import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
-import Pterodactyle from "../../assets/pictures/Pterodactyle.png";
+import TargetButton from "./TargetButton/TargetButton";
+import Pterodactyle from "../../assets/pictures/jurassic/Pterodactyle.png";
+
 import tRex from "../../assets/pictures/t-rex.png";
 
 function LevelPage() {
