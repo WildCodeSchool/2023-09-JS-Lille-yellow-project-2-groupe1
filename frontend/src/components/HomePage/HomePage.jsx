@@ -1,6 +1,6 @@
 import "./HomePage.scss";
 import ContainerStoryRules from "./ContainerStoryRules/ContainerStoryRules";
-import theCollector from "../../assets/pictures/theCollector.png";
+import theCollector from "../../assets/pictures/ComponentsPics/theCollector.png";
 
 function HomePage() {
   return (
