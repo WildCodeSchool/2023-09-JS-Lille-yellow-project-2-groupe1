@@ -2,12 +2,11 @@ import { useRouteLoaderData } from "react-router-dom";
 import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
 import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
-import JurassicTheme from "../../assets/pictures/jurassic/JurassicTheme.png";
+import JurassicTheme from "../../assets/pictures/Jurassic/JurassicTheme.png";
 import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 import TargetButton from "./TargetButton/TargetButton";
-import Pterodactyle from "../../assets/pictures/jurassic/Pterodactyle.png";
-
-import tRex from "../../assets/pictures/t-rex.png";
+import Pterodactyle from "../../assets/pictures/Jurassic/Pterodactyle.png";
+import tRex from "../../assets/pictures/Jurassic/t-rex.png";
 
 function LevelPage() {
   const dinosaursArray = useRouteLoaderData("levelPage");

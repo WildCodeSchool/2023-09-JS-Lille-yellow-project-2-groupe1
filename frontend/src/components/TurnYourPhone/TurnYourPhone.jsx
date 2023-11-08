@@ -1,4 +1,4 @@
-import TurnYourPhone from "../../assets/pictures/TurnYourPhone.jpg";
+import TurnYourPhone from "../../assets/pictures/ComponentsPics/TurnYourPhone.jpg";
 import "./TurnYourPhone.scss";
 
 function TurnYourphone() {

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Objectives.scss";
+import NoteBook from "../../../../assets/pictures/ComponentsPics/NoteBook.png";
+import OpenNoteBook from "../../../../assets/pictures/ComponentsPics/OpenNotebook.jpg";
 
 function Objectives() {
   const [showObjectives, setObjectives] = useState(false);
@@ -15,11 +17,7 @@ function Objectives() {
         type="button"
         onClick={handleObjectivesToggle}
       >
-        <img
-          className="noteBook"
-          src="./src/assets/pictures/NoteBook.png"
-          alt="Liste des objectifs"
-        />
+        <img className="noteBook" src={NoteBook} alt="Liste des objectifs" />
       </button>
       <article
         className={`objectivesPopUp ${
@@ -28,7 +26,7 @@ function Objectives() {
       >
         <section className="openNotebook">
           <img
-            src="./src/assets/pictures/OpenNotebook.jpg"
+            src={OpenNoteBook}
             alt="Open Notebook"
             className="openRegister"
           />

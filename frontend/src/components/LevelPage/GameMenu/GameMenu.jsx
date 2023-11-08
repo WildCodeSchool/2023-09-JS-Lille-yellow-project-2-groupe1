@@ -1,6 +1,6 @@
 import "./GameMenu.scss";
 import { useState } from "react";
-import JurassicCharacter from "../../../assets/pictures/jurassic/AvatarJurassic.png";
+import JurassicCharacter from "../../../assets/pictures/Jurassic/AvatarJurassic.png";
 import Objectives from "./Objectives/Objectives";
 import Inventory from "./Inventory/Inventory";
 

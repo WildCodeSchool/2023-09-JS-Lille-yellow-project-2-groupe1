@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Inventory.scss";
+import Bag from "../../../../assets/pictures/ComponentsPics/Bag.png";
+import OpenBag from "../../../../assets/pictures/ComponentsPics/OpenBag.png";
 
 function Inventory() {
   const [showInventory, setShowInventory] = useState(false);
@@ -15,7 +17,7 @@ function Inventory() {
         type="button"
         onClick={handleInventoryToggle}
       >
-        <img className="bag" src="./src/assets/pictures/Bag.png" alt="Le sac" />
+        <img className="bag" src={Bag} alt="Le sac" />
       </button>
       <article
         className={`inventoryPopUp ${
@@ -23,11 +25,7 @@ function Inventory() {
         }`}
       >
         <section className="openBag">
-          <img
-            src="./src/assets/pictures/OpenBag.png"
-            alt="Open Bag"
-            className="insideBag"
-          />
+          <img src={OpenBag} alt="Open Bag" className="insideBag" />
           <button
             type="button"
             className="inventoryPopUp__closeButton"

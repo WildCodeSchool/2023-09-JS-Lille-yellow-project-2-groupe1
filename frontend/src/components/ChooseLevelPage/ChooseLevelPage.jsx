@@ -1,6 +1,6 @@
 import { useRouteLoaderData, Link } from "react-router-dom";
 import "./ChooseLevelPage.scss";
-import button from "../../assets/pictures/playButtonSP.png";
+import button from "../../assets/pictures/ChooseLevelPagePics/playButtonSP.png";
 import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 
 function ChooseLevelPage() {
