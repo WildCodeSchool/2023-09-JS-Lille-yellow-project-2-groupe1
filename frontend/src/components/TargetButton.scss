@@ -1,6 +1,7 @@
 @import "../variables.scss";
 
 .message {
+  z-index: 1;
   position: absolute;
   right: 30%;
   bottom: 30%;

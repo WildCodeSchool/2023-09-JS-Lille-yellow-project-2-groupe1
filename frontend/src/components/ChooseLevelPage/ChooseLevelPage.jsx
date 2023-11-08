@@ -30,8 +30,10 @@ function ChooseLevelPage() {
             </Link>
           </article>
         ))}
-        <Link to="/" className="closeButtonChooseLevelPage">
-          <button type="button">↩</button>
+        <Link to="/">
+          <button className="closeButtonChooseLevelPage" type="button">
+            ↩
+          </button>
         </Link>
       </main>
       <TurnYourPhone />
