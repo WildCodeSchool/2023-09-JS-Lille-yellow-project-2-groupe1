@@ -39,17 +39,27 @@ nav {
   display: none;
 }
 
-.closeButton {
+.closeNav {
   position: absolute;
+  border: 2.5px solid $primaryColor;
+  background-color: $secondaryColor;
+  border-radius: 200px;
+  color: white;
+  width: 3vw;
+  font-size: 1.5vw;
+  height: 5.5vh;
+  margin-top: 0.5vw;
+  left: 15%;
+  top: 50%;
 }
 
 @media screen and (min-width: 940px) {
-  .closeButton {
+  .closeNav {
     display: none;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 660px) {
   .jurassicCharacter {
     width: 15vw;
   }
@@ -63,18 +73,15 @@ nav {
   }
 }
 
-.closeButton {
+.hiddenbutton {
   position: absolute;
-  right: 0;
-  margin-top: 20px;
+  left: 0;
   border-radius: 200px;
-  border: 3px solid $primaryColor;
+  border: 2.5px solid $primaryColor;
   background-color: $secondaryColor;
-  height: 2rem;
-  width: 2rem;
-  align-items: center;
   color: $primaryColor;
-  font-size: 1rem;
-  margin-right: 2rem;
-  top: 0;
+  height: 5.5vh;
+  width: 3vw;
+  font-size: 1.5vw;
+  top: 50%;
 }

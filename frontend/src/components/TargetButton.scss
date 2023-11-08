@@ -2,14 +2,12 @@
 
 .message {
   position: absolute;
-  right: 20rem;
-  bottom: 15rem;
+  right: 30%;
+  bottom: 30%;
   background: $primaryColor;
   color: $secondaryColor;
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
-  border-radius: 10rem;
-  transition: transform 1000ms ease-in-out;
   padding: 3rem 1rem;
   margin: 4.375rem auto;
   width: 30%;
@@ -17,8 +15,8 @@
   text-align: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   border: 0.15rem solid $secondaryColor;
-  &:hover {
-    transform: scale(1.05);
+  p {
+    font-size: 1rem;
   }
 }
 
@@ -27,12 +25,26 @@
   right: 2rem;
   top: 0.5rem;
 }
-
-.Pterodactyle {
+.targetButton {
+  all: unset;
+}
+.pterodactyle {
   width: 10vw;
   position: absolute;
   top: 20%;
   left: 42%;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+
+.t-rex {
+  width: 20vw;
+  position: absolute;
+  top: 45%;
+  left: 60%;
   overflow: hidden;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
