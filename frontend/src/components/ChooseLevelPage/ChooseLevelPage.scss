@@ -7,7 +7,7 @@
   &__playButton {
     width: 12vw;
     height: 9vh;
-    margin: 3rem;
+    margin-bottom: 3rem;
   }
 }
 .card {
@@ -37,6 +37,7 @@
     background-image: url(../../assets/pictures/Moderne.png);
   }
   & h2 {
+    font-size: 2vw;
     margin-top: 3rem;
     text-shadow:
       -2px -2px 0 $secondaryColor,
@@ -56,6 +57,7 @@
     width: 90%;
     opacity: 0;
     transition: opacity 3s;
+    font-size: 0.1rem;
   }
   & .cardEraContainer__playButton {
     cursor: pointer;
@@ -72,6 +74,7 @@
     }
     .cardEraContainer__levelDescription {
       opacity: 1;
+      font-size: 1rem;
     }
   }
   &:not(:hover) {
@@ -93,12 +96,25 @@
   border-radius: 200px;
   border: 3px solid $primaryColor;
   background-color: $secondaryColor;
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 0.7rem;
   align-items: center;
   color: $primaryColor;
   font-size: 1rem;
   margin-right: 2rem;
   top: 0;
   cursor: pointer;
+}
+
+@media (min-width: 940px) {
+  .closeButtonChooseLevelPage {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+@media (orientation: landscape) {
+  .cardEraContainer__playButton {
+    margin-bottom: 1.5rem;
+  }
 }
