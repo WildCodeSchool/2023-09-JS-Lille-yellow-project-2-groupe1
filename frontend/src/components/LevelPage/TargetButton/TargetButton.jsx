@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import Pterodactyle from "../../../../assets/pictures/jurassic/Pterodactyle.png";
-import Brain from "../../../../assets/pictures/Brain.png";
-import Egg from "../../../../assets/pictures/jurassic/Pterodactyle-egg.png";
+import Pterodactyle from "../../../assets/pictures/jurassic/Pterodactyle.png";
+import Brain from "../../../assets/pictures/Brain.png";
+import Egg from "../../../assets/pictures/jurassic/Pterodactyle-egg.png";
 
 import "./TargetButton.scss";
 

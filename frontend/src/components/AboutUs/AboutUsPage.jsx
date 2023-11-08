@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import CardProfil from "./CardProfil/CardProfil";
-import Matthieu from "../../assets/pictures/Matthieu.jpeg";
-import Cyril from "../../assets/pictures/Cyril.jpeg";
-import Xavier from "../../assets/pictures/Xavier.jpeg";
-import PA from "../../assets/pictures/Pierre-Adrien.jpeg";
-import Romain from "../../assets/pictures/Romain.jpeg";
+import Matthieu from "../../assets/pictures/team/Matthieu.jpeg";
+import Cyril from "../../assets/pictures/team/Cyril.jpeg";
+import Xavier from "../../assets/pictures/team/Xavier.jpeg";
+import PA from "../../assets/pictures/team/Pierre-Adrien.jpeg";
+import Romain from "../../assets/pictures/team/Romain.jpeg";
 import "./AboutUsPage.scss";
 
 function AboutUsPage() {
