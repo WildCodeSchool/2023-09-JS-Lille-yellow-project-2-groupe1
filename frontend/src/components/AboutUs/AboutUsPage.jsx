@@ -5,6 +5,7 @@ import Cyril from "../../assets/pictures/team/Cyril.jpeg";
 import Xavier from "../../assets/pictures/team/Xavier.jpeg";
 import PA from "../../assets/pictures/team/Pierre-Adrien.jpeg";
 import Romain from "../../assets/pictures/team/Romain.jpeg";
+import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 import "./AboutUsPage.scss";
 
 function AboutUsPage() {
@@ -58,6 +59,7 @@ function AboutUsPage() {
           />
         ))}
       </main>
+      <TurnYourPhone />
     </>
   );
 }

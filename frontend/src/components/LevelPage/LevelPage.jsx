@@ -3,9 +3,10 @@ import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
 import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
 import JurassicTheme from "../../assets/pictures/jurassic/JurassicTheme.png";
-import TurnYourPhone from "../../assets/pictures/TurnYourPhone.jpg";
+import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 import TargetButton from "./TargetButton/TargetButton";
 import Pterodactyle from "../../assets/pictures/jurassic/Pterodactyle.png";
+
 import tRex from "../../assets/pictures/t-rex.png";
 
 function LevelPage() {
@@ -20,11 +21,6 @@ function LevelPage() {
   const pterodactyle = getDinosaurData(6, "pterodactyle");
   return (
     <>
-      <img
-        className="turnYourPhone"
-        src={TurnYourPhone}
-        alt="Tournes ton téléphone en paysage"
-      />
       <main>
         <GameMenu />
 
@@ -43,6 +39,7 @@ function LevelPage() {
         />
         <ReturnGameMenu />
       </main>
+      <TurnYourPhone />
     </>
   );
 }
