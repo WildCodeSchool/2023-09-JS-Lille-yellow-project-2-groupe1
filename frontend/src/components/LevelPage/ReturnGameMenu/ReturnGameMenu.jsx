@@ -6,7 +6,7 @@ function ReturnGameMenu() {
   const [popupMessage, setPopupMessage] = useState("");
   function HandleEvent() {
     setPopupMessage(
-      <article className="message">
+      <article className="messagePopUp">
         Voulez-vous vraiment revenir au Menu Principal ?
         <div className="areYouSureButton">
           <Link to="/">
