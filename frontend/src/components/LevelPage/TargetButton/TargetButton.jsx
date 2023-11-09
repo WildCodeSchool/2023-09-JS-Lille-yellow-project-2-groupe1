@@ -67,8 +67,16 @@ TargetButton.propTypes = {
     itemSrc: PropTypes.string,
     itemClass: PropTypes.string,
     itemClassButton: PropTypes.string,
-  }).isRequired,
+  }),
   imgPopUpClass: PropTypes.string.isRequired,
 };
 
+TargetButton.defaultProps = {
+  item: {
+    itemName: "",
+    itemSrc: "",
+    itemClass: "",
+    itemClassButton: "",
+  },
+};
 export default TargetButton;
