@@ -3,7 +3,7 @@ import "./TargetButton.scss";
 import { PropTypes } from "prop-types";
 import Brain from "../../../assets/pictures/ComponentsPics/Brain.png";
 
-function TargetButton({ dino, img, classtag, item, imgPopUpClass }) {
+function TargetButton({ dino, img, imgClass, item, imgPopUpClass }) {
   const [popupMessage, setPopupMessage] = useState("");
   return (
     <>
@@ -39,7 +39,7 @@ function TargetButton({ dino, img, classtag, item, imgPopUpClass }) {
           )
         }
       >
-        <img src={img} className={`${classtag}`} alt="" />
+        <img src={img} className={`${imgClass}`} alt="" />
       </button>
       {popupMessage}
     </>
@@ -56,7 +56,7 @@ TargetButton.propTypes = {
     description: PropTypes.string.isRequired,
   }).isRequired,
   img: PropTypes.string.isRequired,
-  classtag: PropTypes.string.isRequired,
+  imgClass: PropTypes.string.isRequired,
   item: PropTypes.shape({
     itemSrc: PropTypes.string,
     itemClass: PropTypes.string,

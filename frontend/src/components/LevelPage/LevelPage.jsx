@@ -13,7 +13,7 @@ function LevelPage() {
   const dinosaursArray = useRouteLoaderData("levelPage");
   function getDinosaurData(
     dinosaurId,
-    classtag,
+    imgClass,
     itemSrc = "",
     itemClass = "",
     itemClassButton = "",
@@ -21,7 +21,7 @@ function LevelPage() {
   ) {
     return {
       data: dinosaursArray.find((dinosaure) => dinosaure.id === dinosaurId),
-      class: classtag,
+      imgClass,
       item: { itemSrc, itemClass, itemClassButton },
       imgPopUpClass,
     };
@@ -44,14 +44,14 @@ function LevelPage() {
         <TargetButton
           dino={pterodactyle.data}
           img={Pterodactyle}
-          classtag={pterodactyle.class}
+          imgClass={pterodactyle.imgClass}
           item={pterodactyle.item}
           imgPopUpClass={pterodactyle.imgPopUpClass}
         />
         <TargetButton
           dino={tRex.data}
           img={tyrannosaurusRex}
-          classtag={tRex.class}
+          imgClass={tRex.imgClass}
           imgPopUpClass={tRex.imgPopUpClass}
         />
 
