@@ -4,12 +4,14 @@
   display: flex;
   width: 100vw;
   height: 100vh;
+
   &__playButton {
     width: 12vw;
     height: 9vh;
     margin-bottom: 3rem;
   }
 }
+
 .card {
   flex: 1;
   display: flex;
@@ -21,21 +23,27 @@
   background-size: cover;
   width: 20vw;
   height: 100vh;
+
   &1 {
     background-image: url(../../assets/pictures/ChooseLevelPagePics/Jurassique.png);
   }
+
   &2 {
     background-image: url(../../assets/pictures/ChooseLevelPagePics/Romain.png);
   }
+
   &3 {
     background-image: url(../../assets/pictures/ChooseLevelPagePics/Egypte.png);
   }
+
   &4 {
     background-image: url(../../assets/pictures/ChooseLevelPagePics/Moderne.png);
   }
+
   &5 {
     background-image: url(../../assets/pictures/ChooseLevelPagePics/Moderne.png);
   }
+
   & h2 {
     font-size: 2vw;
     margin-top: 3rem;
@@ -46,6 +54,7 @@
       2px 2px 0 $secondaryColor;
     color: $primaryColor;
   }
+
   & .cardEraContainer__levelDescription {
     text-shadow:
       -1px -1px 0 $secondaryColor,
@@ -59,40 +68,47 @@
     transition: opacity 3s;
     font-size: 0.1rem;
   }
+
   & .cardEraContainer__playButton {
     cursor: pointer;
     opacity: 0;
     transition: opacity 1s;
   }
+
   &:hover {
     flex: 3;
     width: $maxPicWidth;
     filter: brightness(1.3);
     transition-duration: 0.4s;
+
     .cardEraContainer__playButton {
       opacity: 1;
     }
+
     .cardEraContainer__levelDescription {
       opacity: 1;
       font-size: 1rem;
     }
   }
+
   &:not(:hover) {
     flex: 1 6%;
     width: $minPicWidth;
     filter: brightness(0.5);
+
     .cardEraContainer__levelDescription {
       transition: opacity 0.5s;
     }
   }
 }
+
 .playDevice {
   all: unset;
 }
+
 .closeButtonChooseLevelPage {
   position: absolute;
-  right: 0;
-  margin-top: 20px;
+  top: 2rem;
   border-radius: 200px;
   border: 3px solid $primaryColor;
   background-color: $secondaryColor;
@@ -102,8 +118,7 @@
   align-items: center;
   color: $primaryColor;
   font-size: 0.8rem;
-  margin-right: 2rem;
-  top: 0;
+  right: 2rem;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -116,6 +131,7 @@
     font-size: 1rem;
   }
 }
+
 @media (orientation: landscape) {
   .cardEraContainer__playButton {
     margin-bottom: 1.5rem;

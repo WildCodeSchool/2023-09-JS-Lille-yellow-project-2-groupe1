@@ -1,9 +1,7 @@
 @import "../../../variables.scss";
 
 .backMainMenuButton {
-  position: absolute;
-  right: 0;
-  margin-top: 2vw;
+  top: 2vw;
   border-radius: 200px;
   border: 0.2vw solid $primaryColor;
   background-color: $secondaryColor;
@@ -12,12 +10,11 @@
   align-items: center;
   color: $primaryColor;
   font-size: 0.8vw;
-  margin-right: 2vw;
+  right: 2vw;
   cursor: pointer;
 }
 
 .messagePopUp {
-  position: absolute;
   display: flex;
   flex-direction: column;
   background: $primaryColor;

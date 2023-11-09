@@ -17,14 +17,17 @@ header {
 }
 
 .aboutButton {
+  text-decoration: none;
+  text-align: center;
   border-radius: 10px;
   border: 3px solid $primaryColor;
   background-color: $secondaryColor;
   height: 3.5vw;
+  line-height: 3.5vw;
   width: 10vw;
   align-items: center;
   color: $primaryColor;
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-right: 4rem;
   cursor: pointer;
 }

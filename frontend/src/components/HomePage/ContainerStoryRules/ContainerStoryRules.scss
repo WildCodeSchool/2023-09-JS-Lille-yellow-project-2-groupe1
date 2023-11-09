@@ -12,21 +12,27 @@
 
   &__playButton {
     width: 15vw;
-    font-size: 2rem;
+    font-size: 2vw;
     border-color: $secondaryColor;
     background-color: $secondaryColor;
-    height: 5rem;
+    height: 3.5vw;
+    text-align: center;
+    line-height: 3.5vw;
     border-radius: 20px;
-    align-items: center;
+    text-decoration: none;
     color: $primaryColor;
-    margin-top: 1.7rem;
+    padding-top: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     cursor: pointer;
   }
 }
+
 .scenarioTitle {
   text-align: center;
   font-size: 1.5rem;
 }
+
 .rulesTitle {
   text-align: center;
   font-size: 1.5rem;

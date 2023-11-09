@@ -43,10 +43,12 @@ function AboutUsPage() {
   ];
   return (
     <>
-      <Link to="/">
-        <button type="button" className="closeButtonAboutUs">
-          ↩
-        </button>
+      <Link
+        to="/"
+        className="closeButtonAboutUs"
+        aria-label="Ferme le bouton à propos"
+      >
+        ↩
       </Link>
       <main className="cardContainer">
         {profils.map((e) => (
