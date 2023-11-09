@@ -14,7 +14,7 @@ function LevelPage() {
   function getDinosaurData(
     dinosaurId,
     imgClass,
-    imgPopUpClass = "",
+    imgPopUpClass,
     itemName = "",
     itemSrc = "",
     itemClass = "",
