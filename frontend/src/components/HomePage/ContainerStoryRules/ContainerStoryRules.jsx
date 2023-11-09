@@ -8,10 +8,12 @@ function ContainerStoryRules() {
     <section className="storyRules">
       <Story />
       <Rules />
-      <Link to="/ChooseLevelPage">
-        <button type="button" className="storyRules__playButton">
-          Voyager
-        </button>
+      <Link
+        to="/ChooseLevelPage"
+        type="button"
+        className="storyRules__playButton"
+      >
+        Voyager
       </Link>
     </section>
   );

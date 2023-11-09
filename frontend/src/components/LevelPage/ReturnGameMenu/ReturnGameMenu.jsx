@@ -8,11 +8,9 @@ function ReturnGameMenu() {
     setPopupMessage(
       <article className="messagePopUp">
         Voulez-vous vraiment revenir au Menu Principal ?
-        <div className="areYouSureButton">
-          <Link to="/">
-            <button type="button" className="backtoMainMenu">
-              Oui
-            </button>
+        <footer className="areYouSureButton">
+          <Link to="/" className="backtoMainMenu">
+            Oui
           </Link>
           <button
             type="button"
@@ -22,7 +20,7 @@ function ReturnGameMenu() {
           >
             Non
           </button>
-        </div>
+        </footer>
       </article>
     );
   }
