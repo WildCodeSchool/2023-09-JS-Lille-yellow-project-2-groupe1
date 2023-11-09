@@ -46,7 +46,7 @@ function AboutUsPage() {
       <Link
         to="/"
         className="closeButtonAboutUs"
-        aria-label="Ferme le bouton à propos"
+        aria-label="Revenir à la page principale"
       >
         ↩
       </Link>

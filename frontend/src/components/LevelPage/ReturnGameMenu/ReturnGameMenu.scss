@@ -1,6 +1,8 @@
 @import "../../../variables.scss";
 
 .backMainMenuButton {
+  position: absolute;
+  right: 0;
   top: 2vw;
   border-radius: 200px;
   border: 0.2vw solid $primaryColor;
@@ -15,6 +17,7 @@
 }
 
 .messagePopUp {
+  position: absolute;
   display: flex;
   flex-direction: column;
   background: $primaryColor;
@@ -51,6 +54,7 @@
   font-size: 1rem;
   border-radius: 20px;
   cursor: pointer;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
     scale: 1.2;
