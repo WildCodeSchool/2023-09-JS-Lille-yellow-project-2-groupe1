@@ -22,7 +22,7 @@ function LevelPage() {
   ) {
     return {
       data: dinosaursArray.find((dinosaure) => dinosaure.id === dinosaurId),
-      classtag,
+      class: classtag,
       item: { itemSrc, itemClass, itemClassButton },
       imgPopUpClass,
     };
