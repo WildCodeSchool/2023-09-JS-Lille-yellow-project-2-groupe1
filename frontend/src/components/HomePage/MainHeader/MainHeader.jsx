@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function MainHeader() {
   return (
-    <header>
+    <header className="mainHeader">
       <h1 className="mainTitle">Le collectionneur temporel</h1>
       <Link to="/aboutus" type="button" className="aboutButton">
         A propos
