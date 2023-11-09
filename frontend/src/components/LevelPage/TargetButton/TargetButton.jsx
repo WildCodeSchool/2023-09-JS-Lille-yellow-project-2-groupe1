@@ -72,11 +72,6 @@ TargetButton.propTypes = {
 };
 
 TargetButton.defaultProps = {
-  item: {
-    itemName: "",
-    itemSrc: "",
-    itemClass: "",
-    itemClassButton: "",
-  },
+  item: null,
 };
 export default TargetButton;
