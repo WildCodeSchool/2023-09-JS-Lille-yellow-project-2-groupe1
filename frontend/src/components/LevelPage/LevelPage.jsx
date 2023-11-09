@@ -15,26 +15,28 @@ function LevelPage() {
   function getDinosaurData(
     dinosaurId,
     imgClass,
+    imgPopUpClass = "",
+    itemName = "",
     itemSrc = "",
     itemClass = "",
-    itemClassButton = "",
-    imgPopUpClass = ""
+    itemClassButton = ""
   ) {
     return {
       data: dinosaursArray.find((dinosaure) => dinosaure.id === dinosaurId),
       imgClass,
-      item: { itemSrc, itemClass, itemClassButton },
+      item: { itemName, itemSrc, itemClass, itemClassButton },
       imgPopUpClass,
     };
   }
-  const tRex = getDinosaurData(1, "t-rex", "", "", "", "tRexPopUp");
+  const tRex = getDinosaurData(1, "t-rex", "tRexPopUp");
   const pterodactyle = getDinosaurData(
     6,
     "pterodactyle",
+    "pterodactylePopUp",
+    "Oeuf de pterodactyle",
     egg,
     "eggClass",
-    "eggClassButton",
-    "pterodactylePopUp"
+    "eggClassButton"
   );
 
   return (

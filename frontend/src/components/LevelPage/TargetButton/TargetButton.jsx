@@ -10,13 +10,18 @@ function TargetButton({ dino, img, imgClass, item, imgPopUpClass }) {
       <button
         type="button"
         className="targetButton"
+        aria-label={`L'image du ${dino.name}`}
         onClick={() =>
           setPopupMessage(
             <article className="message">
               <header className="popUpHeader">
                 <img src={img} alt="" className={`${imgPopUpClass}`} />
                 {item ? (
-                  <button type="button" className={item.itemClassButton}>
+                  <button
+                    type="button"
+                    className={item.itemClassButton}
+                    aria-label={`${item.itemName}`}
+                  >
                     <img src={item.itemSrc} alt="" className={item.itemClass} />
                   </button>
                 ) : (
@@ -58,6 +63,7 @@ TargetButton.propTypes = {
   img: PropTypes.string.isRequired,
   imgClass: PropTypes.string.isRequired,
   item: PropTypes.shape({
+    itemName: PropTypes.string,
     itemSrc: PropTypes.string,
     itemClass: PropTypes.string,
     itemClassButton: PropTypes.string,
