@@ -1,0 +1,85 @@
+@import "../../../variables.scss";
+
+hr {
+  border: solid 2px black;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  border-right: solid 5px $secondaryColor;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/pictures/WallpaperGameMenu.png);
+}
+
+.jurassicCharacter {
+  width: 10vw;
+}
+
+.bag {
+  width: 10vw;
+}
+
+.noteBook {
+  width: 10vw;
+}
+
+.gameMenuButton {
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.closeNav {
+  border: 2.5px solid $primaryColor;
+  background-color: $secondaryColor;
+  border-radius: 200px;
+  color: $primaryColor;
+  width: 3vw;
+  font-size: 1.5vw;
+  height: 5.5vh;
+  left: 15%;
+  top: 50%;
+}
+
+@media screen and (min-width: 660px) {
+  .jurassicCharacter {
+    width: 15vw;
+  }
+
+  .bag {
+    width: 12vw;
+  }
+
+  .noteBook {
+    width: 12vw;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .closeNav {
+    display: none;
+  }
+}
+
+.hiddenbutton {
+  position: absolute;
+  left: 0;
+  border-radius: 200px;
+  border: 2.5px solid $primaryColor;
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  height: 5.5vh;
+  width: 3vw;
+  font-size: 1.5vw;
+  top: 50%;
+}

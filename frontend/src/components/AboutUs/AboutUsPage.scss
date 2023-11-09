@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.closeButtonAboutUs {
+  position: absolute;
+  border-radius: 200px;
+  border: 3px solid $primaryColor;
+  background-color: $secondaryColor;
+  height: 6.5vh;
+  width: 4vw;
+  align-items: center;
+  color: $primaryColor;
+  font-size: 2vw;
+  left: 2vw;
+  top: 2vw;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}

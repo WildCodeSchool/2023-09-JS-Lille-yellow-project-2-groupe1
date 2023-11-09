@@ -1,0 +1,62 @@
+@import "../../../variables.scss";
+
+.backMainMenuButton {
+  position: absolute;
+  right: 0;
+  top: 2vh;
+  border-radius: 200px;
+  border: 0.2vw solid $primaryColor;
+  background-color: $secondaryColor;
+  height: 3.5vh;
+  width: 2vw;
+  align-items: center;
+  color: $primaryColor;
+  font-size: 0.8vw;
+  right: 2vw;
+  cursor: pointer;
+}
+
+.messagePopUp {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: $primaryColor;
+  color: $secondaryColor;
+  width: 30vw;
+  height: 30vh;
+  font-size: 3vw;
+  top: 30%;
+  left: 35%;
+  border-radius: 10rem;
+  transition: transform 1000ms ease-in-out;
+  padding: 3rem 1rem;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 0.15rem solid #2b160f;
+}
+
+.areYouSureButton {
+  display: inline;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.backtoMainMenu {
+  text-decoration: none;
+  padding: 0.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  border: 3px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    scale: 1.2;
+  }
+}
