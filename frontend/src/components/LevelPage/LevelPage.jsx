@@ -16,10 +16,10 @@ function LevelPage() {
     dinosaurId,
     imgClass,
     imgPopUpClass,
-    itemName = "",
-    itemSrc = "",
-    itemClass = "",
-    itemClassButton = ""
+    itemName = null,
+    itemSrc = null,
+    itemClass = null,
+    itemClassButton = null
   ) {
     return {
       data: dinosaursArray.find((dinosaure) => dinosaure.id === dinosaurId),
