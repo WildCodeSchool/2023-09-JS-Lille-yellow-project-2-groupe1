@@ -5,10 +5,8 @@ function MainHeader() {
   return (
     <header className="mainHeader">
       <h1 className="mainTitle">Le collectionneur temporel</h1>
-      <Link to="/aboutus">
-        <button type="button" className="aboutButton">
-          A propos
-        </button>
+      <Link to="/aboutus" type="button" className="aboutButton">
+        A propos
       </Link>
     </header>
   );

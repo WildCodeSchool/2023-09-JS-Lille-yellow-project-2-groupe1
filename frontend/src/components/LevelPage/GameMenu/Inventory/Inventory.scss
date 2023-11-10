@@ -13,7 +13,6 @@
   width: 50%;
   height: 50%;
   text-align: center;
-  margin: 0 auto;
   padding: 1rem;
   transition: opacity 0.3s;
 
@@ -24,10 +23,10 @@
   }
 
   &__show {
-    border: 10px solid #8b4513;
+    border: 10px solid $thirdColor;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-color: #d2b48c;
+    background-color: $primaryColor;
     opacity: 1;
     z-index: 1;
   }
@@ -43,12 +42,13 @@
 
 .bag {
   width: 10vw;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
 }
 
 .invButton {
-  border: 0;
-  margin: 0;
-  padding: 0;
   all: unset;
 }
 
