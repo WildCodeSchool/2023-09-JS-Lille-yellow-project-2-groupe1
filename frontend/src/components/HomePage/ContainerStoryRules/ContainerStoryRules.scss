@@ -11,13 +11,12 @@
   font-size: 1.1rem;
 
   &__playButton {
-    width: 15vw;
+    width: 14vw;
     font-size: 2vw;
     border-color: $secondaryColor;
     background-color: $secondaryColor;
-    height: 3.5vh;
+    height: 6vh;
     text-align: center;
-    line-height: 3.5vh;
     border-radius: 20px;
     text-decoration: none;
     color: $primaryColor;
@@ -25,6 +24,9 @@
     margin-top: 2%;
     margin-bottom: 2%;
     cursor: pointer;
+    &:hover {
+      background-color: $thirdColor;
+    }
   }
 }
 

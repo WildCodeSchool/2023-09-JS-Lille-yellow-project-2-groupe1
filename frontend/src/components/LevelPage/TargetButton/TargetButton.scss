@@ -1,4 +1,27 @@
 @import "../../../variables.scss";
+.message {
+  position: absolute;
+  background-color: $primaryColor;
+  border: 2px solid $secondaryColor;
+  border-radius: 50px;
+  width: 30vw;
+  height: 40vh;
+  top: 20%;
+  left: 40%;
+  z-index: 1;
+  p {
+    font-size: 0.7vw;
+  }
+}
+
+.popUpHeader {
+  display: flex;
+}
+
+.name {
+  padding: 2rem 1rem 1rem 1rem;
+  font-size: 1.5vw;
+}
 
 .close {
   position: absolute;
@@ -6,60 +29,46 @@
   top: 0.5rem;
 }
 
-.pterodactyle {
-  width: 10vw;
+.targetButton {
+  all: unset;
+}
+.quetzalcoatlus {
+  width: 9vw;
   position: absolute;
   top: 20%;
   left: 42%;
   overflow: hidden;
 
   &:hover {
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
   }
 }
 
-.buttonPterodactyle {
-  all: unset;
-}
-
-.ptero {
-  width: 10vw;
-  height: 10vh;
-  z-index: 1;
-}
-
-.pteroEgg {
-  width: 2vw;
-  height: 2vh;
-}
-
-.popPtero {
+.t-rex {
+  width: 20vw;
   position: absolute;
-  background-color: $primaryColor;
-  border: 2px solid $secondaryColor;
-  border-radius: 50px;
-  width: 30vw;
-  height: 30vh;
-  top: 20%;
-  left: 40%;
-  display: flex;
-  flex-wrap: wrap;
+  top: 45%;
+  left: 60%;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+.tRexPopUp {
+  width: 13vw;
+  margin-top: 1rem;
 }
 
-.name {
-  font-size: 3vw;
+.quetzalcoatlusPopUp {
+  all: unset;
+  width: 11vw;
 }
 
-.info {
-  font-size: 0.5vw;
-  flex: 1;
-  border-left: 0.125rem solid $secondaryColor;
-  border-right: 0.125rem solid $secondaryColor;
-  height: 1.5vh;
-  margin-right: 1.2rem;
-  margin-left: 0.6rem;
-  padding-left: 0.3rem;
+.eggClass {
+  width: 2vw;
+  height: 4vh;
 }
 
 .brain {
@@ -67,17 +76,44 @@
   height: 8vh;
 }
 
-.buttonEgg {
+.info {
+  flex: 1;
+  border-left: 0.125rem solid $secondaryColor;
+  border-right: 0.125rem solid $secondaryColor;
+  height: 80%;
+  margin-top: 0;
+  margin-right: 1.2rem;
+  margin-left: 0.6rem;
+  padding-left: 0.3rem;
+}
+
+.eggClassButton {
   all: unset;
   width: 2vw;
   height: 2vh;
   position: absolute;
-  top: 20%;
-  left: 5%;
+  top: 35%;
+  left: 12%;
   z-index: 1;
   cursor: pointer;
 
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .message {
+    p {
+      font-size: 0.9vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .message {
+    p {
+      font-size: 1vw;
+    }
   }
 }

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./Inventory.scss";
 import Bag from "../../../../assets/pictures/ComponentsPics/Bag.png";
-import OpenBag from "../../../../assets/pictures/ComponentsPics/OpenBag.png";
 
 function Inventory() {
   const [showInventory, setShowInventory] = useState(false);
@@ -25,13 +24,12 @@ function Inventory() {
         }`}
       >
         <section className="openBag">
-          <img src={OpenBag} alt="Open Bag" className="insideBag" />
           <button
             type="button"
             className="inventoryPopUp__closeButton"
             onClick={handleInventoryToggle}
           >
-            Fermé
+            X
           </button>
         </section>
       </article>

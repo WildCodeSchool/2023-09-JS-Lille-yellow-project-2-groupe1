@@ -5,30 +5,57 @@ import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
 import JurassicTheme from "../../assets/pictures/jurassic/JurassicTheme.png";
 import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 import TargetButton from "./TargetButton/TargetButton";
-import Pterodactyle from "../../assets/pictures/jurassic/Pterodactyle.png";
-import tRex from "../../assets/pictures/jurassic/t-rex.png";
+import Quetzalcoatlus from "../../assets/pictures/jurassic/quetzalcoatlus.png";
+import egg from "../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
+import tyrannosaurusRex from "../../assets/pictures/jurassic/t-rex.png";
 
 function LevelPage() {
   const dinosaursArray = useRouteLoaderData("levelPage");
-  function getDinosaurData(dinosaurId, classtag) {
+  function getDinosaurData(
+    dinosaurId,
+    imgClass,
+    imgPopUpClass,
+    itemName = null,
+    itemSrc = null,
+    itemClass = null,
+    itemClassButton = null
+  ) {
     return {
       data: dinosaursArray.find((dinosaure) => dinosaure.id === dinosaurId),
-      class: classtag,
+      imgClass,
+      item: { itemName, itemSrc, itemClass, itemClassButton },
+      imgPopUpClass,
     };
   }
-  const trex = getDinosaurData(1, "t-rex");
-  const pterodactyle = getDinosaurData(6, "pterodactyle");
+  const tRex = getDinosaurData(1, "t-rex", "tRexPopUp");
+  const quetzalcoatlus = getDinosaurData(
+    6,
+    "quetzalcoatlus",
+    "quetzalcoatlusPopUp",
+    "Oeuf de quetzalcoatlus",
+    egg,
+    "eggClass",
+    "eggClassButton"
+  );
+
   return (
     <>
       <main>
         <GameMenu />
 
         <TargetButton
-          dino={pterodactyle.data}
-          img={Pterodactyle}
-          classtag={pterodactyle.class}
+          dino={quetzalcoatlus.data}
+          img={Quetzalcoatlus}
+          imgClass={quetzalcoatlus.imgClass}
+          item={quetzalcoatlus.item}
+          imgPopUpClass={quetzalcoatlus.imgPopUpClass}
         />
-        <TargetButton dino={trex.data} img={tRex} classtag={trex.class} />
+        <TargetButton
+          dino={tRex.data}
+          img={tyrannosaurusRex}
+          imgClass={tRex.imgClass}
+          imgPopUpClass={tRex.imgPopUpClass}
+        />
 
         <img
           className="jurassicTheme"
