@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./Objectives.scss";
 import NoteBook from "../../../../assets/pictures/ComponentsPics/NoteBook.png";
-import OpenNoteBook from "../../../../assets/pictures/ComponentsPics/OpenNotebook.jpg";
 
 function Objectives() {
   const [showObjectives, setObjectives] = useState(false);
@@ -24,20 +23,13 @@ function Objectives() {
           showObjectives ? "objectivesPopUp__show" : ""
         }`}
       >
-        <section className="openNotebook">
-          <img
-            src={OpenNoteBook}
-            alt="Open Notebook"
-            className="openRegister"
-          />
-          <button
-            type="button"
-            className="objectivesPopUp__closeButton"
-            onClick={handleObjectivesToggle}
-          >
-            Fermé
-          </button>
-        </section>
+        <button
+          type="button"
+          className="objectivesPopUp__closeButton"
+          onClick={handleObjectivesToggle}
+        >
+          X
+        </button>
       </article>
     </>
   );

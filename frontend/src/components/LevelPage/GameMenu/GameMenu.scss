@@ -15,7 +15,7 @@ nav {
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../../../assets/pictures/WallpaperGameMenu.png);
+  background-image: url(../../../assets/pictures/ComponentsPics/WallpaperGameMenu.png);
 }
 
 .jurassicCharacter {
@@ -40,6 +40,7 @@ nav {
 }
 
 .closeNav {
+  position: absolute;
   border: 2.5px solid $primaryColor;
   background-color: $secondaryColor;
   border-radius: 200px;

@@ -1,6 +1,6 @@
 @import "../../../variables.scss";
 
-header {
+.mainHeader {
   display: flex;
   background-color: $thirdColor;
   align-items: center;
@@ -30,4 +30,7 @@ header {
   font-size: 2vw;
   margin-right: 4rem;
   cursor: pointer;
+  &:hover {
+    background-color: $thirdColor;
+  }
 }
