@@ -3,7 +3,7 @@ import "./Objectives.scss";
 import NoteBook from "../../../../assets/pictures/ComponentsPics/NoteBook.png";
 
 function Objectives() {
-  const [showObjectives, setObjectives] = useState(false);
+  const [showObjectives, setObjectives] = useState(true);
 
   const handleObjectivesToggle = () => {
     setObjectives(!showObjectives);
@@ -26,6 +26,7 @@ function Objectives() {
         <button
           type="button"
           className="objectivesPopUp__closeButton"
+          aria-label="Fermer la pop-up"
           onClick={handleObjectivesToggle}
         >
           X
