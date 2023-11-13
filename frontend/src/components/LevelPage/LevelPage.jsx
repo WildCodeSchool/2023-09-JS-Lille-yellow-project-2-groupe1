@@ -5,8 +5,8 @@ import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
 import JurassicTheme from "../../assets/pictures/jurassic/JurassicTheme.png";
 import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 import TargetButton from "./TargetButton/TargetButton";
-import Pterodactyle from "../../assets/pictures/jurassic/Pterodactyle.png";
-import egg from "../../assets/pictures/jurassic/Pterodactyle-egg.png";
+import Quetzalcoatlus from "../../assets/pictures/jurassic/quetzalcoatlus.png";
+import egg from "../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
 import tyrannosaurusRex from "../../assets/pictures/jurassic/t-rex.png";
 
 function LevelPage() {
@@ -28,11 +28,11 @@ function LevelPage() {
     };
   }
   const tRex = getDinosaurData(1, "t-rex", "tRexPopUp");
-  const pterodactyle = getDinosaurData(
+  const quetzalcoatlus = getDinosaurData(
     6,
-    "pterodactyle",
-    "pterodactylePopUp",
-    "Oeuf de pterodactyle",
+    "quetzalcoatlus",
+    "quetzalcoatlusPopUp",
+    "Oeuf de quetzalcoatlus",
     egg,
     "eggClass",
     "eggClassButton"
@@ -44,11 +44,11 @@ function LevelPage() {
         <GameMenu />
 
         <TargetButton
-          dino={pterodactyle.data}
-          img={Pterodactyle}
-          imgClass={pterodactyle.imgClass}
-          item={pterodactyle.item}
-          imgPopUpClass={pterodactyle.imgPopUpClass}
+          dino={quetzalcoatlus.data}
+          img={Quetzalcoatlus}
+          imgClass={quetzalcoatlus.imgClass}
+          item={quetzalcoatlus.item}
+          imgPopUpClass={quetzalcoatlus.imgPopUpClass}
         />
         <TargetButton
           dino={tRex.data}

@@ -10,7 +10,7 @@
   left: 40%;
   z-index: 1;
   p {
-    font-size: 0.8vw;
+    font-size: 0.7vw;
   }
 }
 
@@ -40,10 +40,11 @@
 
 .info {
   flex: 1;
+  border-left: 0.125rem solid $secondaryColor;
+  border-right: 0.125rem solid $secondaryColor;
   height: 80%;
-  border-left: 2px solid $secondaryColor;
-  border-right: 2px solid $secondaryColor;
-  margin-right: 20px;
-  margin-left: 10px;
-  padding-left: 10px;
+  margin-top: 0;
+  margin-right: 1.2rem;
+  margin-left: 0.6rem;
+  padding-left: 0.3rem;
 }

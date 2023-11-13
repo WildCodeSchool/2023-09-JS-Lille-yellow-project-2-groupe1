@@ -9,7 +9,7 @@ nav {
   display: flex;
   flex-direction: column;
   width: 20vw;
-  border-right: solid 5px #2b160f;
+  border-right: solid 5px $secondaryColor;
   height: 100vh;
   justify-content: space-around;
   align-items: center;
@@ -44,19 +44,12 @@ nav {
   border: 2.5px solid $primaryColor;
   background-color: $secondaryColor;
   border-radius: 200px;
-  color: white;
+  color: $primaryColor;
   width: 3vw;
   font-size: 1.5vw;
   height: 5.5vh;
-  margin-top: 0.5vw;
   left: 15%;
   top: 50%;
-}
-
-@media screen and (min-width: 940px) {
-  .closeNav {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 660px) {
@@ -70,6 +63,12 @@ nav {
 
   .noteBook {
     width: 12vw;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .closeNav {
+    display: none;
   }
 }
 
