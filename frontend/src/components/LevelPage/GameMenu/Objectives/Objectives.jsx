@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useGlobalContext } from "../../../Context/GlobalContextProvider";
 import "./Objectives.scss";
 import NoteBook from "../../../../assets/pictures/ComponentsPics/NoteBook.png";
 
 function Objectives() {
-  const [showObjectives, setObjectives] = useState(false);
+  const [showObjectives, setObjectives] = useState(true);
+  const { objectives } = useGlobalContext();
 
   const handleObjectivesToggle = () => {
     setObjectives(!showObjectives);
@@ -23,13 +25,21 @@ function Objectives() {
           showObjectives ? "objectivesPopUp__show" : ""
         }`}
       >
-        <button
-          type="button"
-          className="objectivesPopUp__closeButton"
-          onClick={handleObjectivesToggle}
-        >
-          X
-        </button>
+        <header className="headerObjectives">
+          <button
+            type="button"
+            className="objectivesPopUp__closeButton"
+            onClick={handleObjectivesToggle}
+          >
+            X
+          </button>
+          <h2 className="objectivesTitle">Objectifs</h2>
+        </header>
+        <ul className="objectivesList">
+          {objectives[0].map((e) => (
+            <li>{e}</li>
+          ))}
+        </ul>
       </article>
     </>
   );
