@@ -1,10 +1,10 @@
 import "./GameMenu.scss";
 import { useState } from "react";
-import JurassicCharacter from "../../../assets/pictures/jurassic/AvatarJurassic.png";
+import PropTypes from "prop-types";
 import Objectives from "./Objectives/Objectives";
 import Inventory from "./Inventory/Inventory";
 
-function GameMenu() {
+function GameMenu({ bag, characterImg, characterClass }) {
   const [isNavVisible, setIsNavVisible] = useState(true);
 
   const toggleNavVisibility = () => {
@@ -14,15 +14,16 @@ function GameMenu() {
   return (
     <>
       <nav className={isNavVisible ? "visible" : "hidden"}>
-        <img className="jurassicCharacter" src={JurassicCharacter} alt="" />
+        <img className={`${characterClass}`} src={characterImg} alt="" />
         <hr />
-        <Inventory />
+        <Inventory bag={bag} />
         <hr />
         <Objectives />
       </nav>
       <button
         className={isNavVisible ? "closeNav" : "hiddenbutton"}
         type="button"
+        aria-label="Boutton pour ouvrir ou fermer le menu"
         onClick={toggleNavVisibility}
       >
         {isNavVisible ? "❮" : "❯"}
@@ -31,4 +32,12 @@ function GameMenu() {
   );
 }
 
+GameMenu.propTypes = {
+  bag: PropTypes.arrayOf(PropTypes.string),
+  characterImg: PropTypes.string.isRequired,
+  characterClass: PropTypes.string.isRequired,
+};
+GameMenu.defaultProps = {
+  bag: [],
+};
 export default GameMenu;

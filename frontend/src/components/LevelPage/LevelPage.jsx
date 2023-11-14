@@ -1,4 +1,5 @@
 import { useRouteLoaderData } from "react-router-dom";
+import { useState } from "react";
 import GameMenu from "./GameMenu/GameMenu";
 import "./LevelPage.scss";
 import ReturnGameMenu from "./ReturnGameMenu/ReturnGameMenu";
@@ -8,8 +9,11 @@ import TargetButton from "./TargetButton/TargetButton";
 import Quetzalcoatlus from "../../assets/pictures/jurassic/quetzalcoatlus.png";
 import egg from "../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
 import tyrannosaurusRex from "../../assets/pictures/jurassic/t-rex.png";
+import JurassicCharacter from "../../assets/pictures/jurassic/AvatarJurassic.png";
 
 function LevelPage() {
+  const characterClass = "jurassicCharacter";
+  const [bag, setBag] = useState([]);
   const dinosaursArray = useRouteLoaderData("levelPage");
   function getDinosaurData(
     dinosaurId,
@@ -41,7 +45,11 @@ function LevelPage() {
   return (
     <>
       <main>
-        <GameMenu />
+        <GameMenu
+          bag={bag}
+          characterImg={JurassicCharacter}
+          characterClass={characterClass}
+        />
 
         <TargetButton
           data={quetzalcoatlus.data}
@@ -49,6 +57,8 @@ function LevelPage() {
           imgClass={quetzalcoatlus.imgClass}
           item={quetzalcoatlus.item}
           imgPopUpClass={quetzalcoatlus.imgPopUpClass}
+          bag={bag}
+          setBag={setBag}
         />
         <TargetButton
           data={tRex.data}
