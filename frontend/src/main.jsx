@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { GlobalContextProvider } from "./components/Context/GlobalContextProvider";
 
 import App from "./App";
 import HomePage from "./components/HomePage/HomePage";
@@ -91,6 +92,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <GlobalContextProvider>
+      <RouterProvider router={router} />
+    </GlobalContextProvider>
   </React.StrictMode>
 );

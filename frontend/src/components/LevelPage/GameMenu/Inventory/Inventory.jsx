@@ -1,20 +1,20 @@
 import { useState } from "react";
-import "./Inventory.scss";
 import PropTypes from "prop-types";
+import "./Inventory.scss";
 import Bag from "../../../../assets/pictures/ComponentsPics/Bag.png";
 import egg from "../../../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
+import tooth from "../../../../assets/pictures/jurassic/tRexTooth.png";
 
 function Inventory({ bag }) {
   const [showInventory, setShowInventory] = useState(false);
   const [info, setInfo] = useState("");
+
   const handleInventoryToggle = () => {
     setShowInventory(!showInventory);
   };
 
-  const handleEnter = () => {
-    setInfo(
-      <article className="eggPopUpInBag">L'oeuf du quetzalcoatlus</article>
-    );
+  const handleEnter = (itemName) => {
+    setInfo(<article className="PopUpInBag">{`${itemName}`}</article>);
   };
 
   const handleLeave = () => {
@@ -49,12 +49,27 @@ function Inventory({ bag }) {
               key="eggButton"
               type="button"
               className="eggButton"
-              onFocus={() => handleEnter()}
+              onFocus={() => handleEnter("Oeuf de quetzalcoatlus")}
               onBlur={handleLeave}
-              onMouseEnter={() => handleEnter()}
+              onMouseEnter={() => handleEnter("Oeuf de quetzalcoatlus")}
               onMouseLeave={handleLeave}
             >
               <img src={egg} className="eggImgInBag" alt="L'oeuf" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "tooth") ? (
+            <button
+              key="toothButton"
+              type="button"
+              className="toothButton"
+              onFocus={() => handleEnter("Dent du T-Rex")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Dent du T-Rex")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={tooth} className="toothImgInBag" alt="La dent" />
             </button>
           ) : (
             ""

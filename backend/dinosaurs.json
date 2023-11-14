@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Tyrannosaure Rex",
+    "name": "Tyrannosaurus Rex",
     "diet": "Carnivore",
     "length": "12 mètres",
     "weight": "9 tonnes",
-    "description": "Le Tyrannosaure Rex, surnommé T. Rex, est l'un des dinosaures les plus emblématiques de tous les temps. C'était un redoutable prédateur carnivore doté de puissantes mâchoires et de courtes pattes avant. Il régnait en maître sur la chaîne alimentaire de son époque, chassant d'autres dinosaures avec efficacité."
+    "description": "Le Tyrannosaurus Rex, surnommé T. Rex, est l'un des dinosaures les plus emblématiques de tous les temps. C'était un redoutable prédateur carnivore doté de puissantes mâchoires et de courtes pattes avant. Il régnait en maître sur la chaîne alimentaire de son époque, chassant d'autres dinosaures avec efficacité."
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "diet": "Herbivore",
     "length": "9 mètres",
     "weight": "12 tonnes",
-    "description": " Le Tricératops était un gigantesque herbivore qui arborait trois impressionnantes cornes sur son visage. Ces cornes lui servaient à la fois pour se défendre contre les prédateurs et dans des rituels sociaux avec ses congénères. Il a partagé son époque avec le redoutable Tyrannosaure Rex."
+    "description": " Le Tricératops était un gigantesque herbivore qui arborait trois impressionnantes cornes sur son visage. Ces cornes lui servaient à la fois pour se défendre contre les prédateurs et dans des rituels sociaux avec ses congénères. Il a partagé son époque avec le redoutable Tyrannosaurus Rex."
   },
   {
     "id": 3,
