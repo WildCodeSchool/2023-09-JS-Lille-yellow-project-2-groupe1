@@ -5,19 +5,33 @@ import Story from "./Story/Story";
 import "./ContainerStoryRules.scss";
 
 function ContainerStoryRules() {
-  const objectivesArray = [
-    "Récupérer l'oeuf du quetzalcoatlus",
-    "Récupérer la dent du Tyranossaurus Rex",
-    "Récupérer une griffe de vélociraptor",
+  const objectivesItemArray = [
+    {
+      objective: "Récupérer l'oeuf du quetzalcoatlus",
+      objectiveClass: "eggObjective",
+      item: "egg",
+    },
+    {
+      objective: "Récupérer la dent du Tyranossaurus Rex",
+      objectiveClass: "toothObjective",
+      item: "tooth",
+    },
+    {
+      objective: "Récupérer une plume de vélociraptor",
+      objectiveClass: "featherObjective",
+      item: "feather",
+    },
   ];
 
-  const { setObjectives } = useGlobalContext();
+  const { setObjectives, setBag } = useGlobalContext();
   function randomObjectives() {
     const objectivesArrayRandom = [];
 
     while (objectivesArrayRandom.length < 2) {
-      const randomIndex = Math.floor(Math.random() * objectivesArray.length);
-      const randomObjective = objectivesArray[randomIndex];
+      const randomIndex = Math.floor(
+        Math.random() * objectivesItemArray.length
+      );
+      const randomObjective = objectivesItemArray[randomIndex];
 
       if (!objectivesArrayRandom.includes(randomObjective)) {
         objectivesArrayRandom.push(randomObjective);
@@ -35,7 +49,9 @@ function ContainerStoryRules() {
         to="/ChooseLevelPage"
         type="button"
         className="storyRules__playButton"
-        onClick={() => setObjectives([randomObjectives()])}
+        onClick={() => {
+          setObjectives([randomObjectives()], setBag([]));
+        }}
       >
         Voyager
       </Link>

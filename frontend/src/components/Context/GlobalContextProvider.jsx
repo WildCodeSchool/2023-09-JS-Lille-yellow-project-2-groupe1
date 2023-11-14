@@ -5,6 +5,7 @@ const GlobalContext = createContext();
 
 function GlobalContextProvider({ children }) {
   const [items, setItems] = useState("");
+  const [bag, setBag] = useState([]);
   const [objectives, setObjectives] = useState("");
   const [score, setScores] = useState(0);
   const [time, setTime] = useState(0);
@@ -12,15 +13,17 @@ function GlobalContextProvider({ children }) {
   const contextValue = useMemo(() => {
     return {
       items,
+      bag,
       objectives,
       score,
       time,
       setItems,
+      setBag,
       setObjectives,
       setScores,
       setTime,
     };
-  }, [items, objectives, score, time]);
+  }, [items, bag, objectives, score, time]);
 
   return (
     <GlobalContext.Provider value={contextValue}>

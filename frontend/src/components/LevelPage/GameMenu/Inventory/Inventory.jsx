@@ -1,12 +1,24 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import "./Inventory.scss";
 import Bag from "../../../../assets/pictures/ComponentsPics/Bag.png";
+import egg from "../../../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
+import tooth from "../../../../assets/pictures/jurassic/tRexTooth.png";
 
-function Inventory() {
+function Inventory({ bag }) {
   const [showInventory, setShowInventory] = useState(false);
+  const [info, setInfo] = useState("");
 
   const handleInventoryToggle = () => {
     setShowInventory(!showInventory);
+  };
+
+  const handleEnter = (itemName) => {
+    setInfo(<article className="PopUpInBag">{`${itemName}`}</article>);
+  };
+
+  const handleLeave = () => {
+    setInfo("");
   };
 
   return (
@@ -23,18 +35,58 @@ function Inventory() {
           showInventory ? "inventoryPopUp__show" : ""
         }`}
       >
-        <section className="openBag">
-          <button
-            type="button"
-            className="inventoryPopUp__closeButton"
-            onClick={handleInventoryToggle}
-          >
-            X
-          </button>
-        </section>
+        <button
+          type="button"
+          aria-label="Fermer la pop-up"
+          className="inventoryPopUp__closeButton"
+          onClick={handleInventoryToggle}
+        >
+          X
+        </button>
+        <main className="itemsContainer">
+          {bag.find((e) => e === "egg") ? (
+            <button
+              key="eggButton"
+              type="button"
+              className="eggButton"
+              onFocus={() => handleEnter("Oeuf de quetzalcoatlus")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Oeuf de quetzalcoatlus")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={egg} className="eggImgInBag" alt="L'oeuf" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "tooth") ? (
+            <button
+              key="toothButton"
+              type="button"
+              className="toothButton"
+              onFocus={() => handleEnter("Dent du Tyranossaurus Rex")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Dent du T-Rex")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={tooth} className="toothImgInBag" alt="La dent" />
+            </button>
+          ) : (
+            ""
+          )}
+          {info}
+        </main>
       </article>
     </>
   );
 }
+
+Inventory.propTypes = {
+  bag: PropTypes.arrayOf(PropTypes.string),
+};
+
+Inventory.defaultProps = {
+  bag: [],
+};
 
 export default Inventory;

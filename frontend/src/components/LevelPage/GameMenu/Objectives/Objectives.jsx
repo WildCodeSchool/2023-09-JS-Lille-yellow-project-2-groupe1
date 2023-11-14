@@ -5,7 +5,7 @@ import NoteBook from "../../../../assets/pictures/ComponentsPics/NoteBook.png";
 
 function Objectives() {
   const [showObjectives, setObjectives] = useState(true);
-  const { objectives } = useGlobalContext();
+  const { bag, objectives } = useGlobalContext();
 
   const handleObjectivesToggle = () => {
     setObjectives(!showObjectives);
@@ -37,7 +37,14 @@ function Objectives() {
         </header>
         <ul className="objectivesList">
           {objectives[0].map((e) => (
-            <li>{e}</li>
+            <li
+              key={e.item}
+              className={
+                bag.find((element) => element === e.item) ? "textObjective" : ""
+              }
+            >
+              {e.objective}
+            </li>
           ))}
         </ul>
       </article>
