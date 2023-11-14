@@ -12,6 +12,8 @@ const era = require("../era.json");
 
 const app = express();
 
+const modern = require("../modern.json");
+
 app.use(
   cors({
     origin: [process.env.FRONTEND_URL],
@@ -29,6 +31,10 @@ app.get("/api/egypt", (req, res) => {
 
 app.get("/api/era", (req, res) => {
   res.status(200).json(era);
+});
+
+app.get("/api/modern", (req, res) => {
+  res.status(200).json(modern);
 });
 
 // Configure it
