@@ -57,3 +57,36 @@
   border: 2px solid $primaryColor;
   color: $primaryColor;
 }
+.itemsContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 5vh;
+  margin-left: 3vw;
+}
+.eggButton {
+  background: none;
+  border: none;
+}
+.eggImgInBag {
+  width: 3vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+.toothButton {
+  background: none;
+  border: none;
+}
+.toothImgInBag {
+  width: 3vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+
+.PopUpInBag {
+  color: $secondaryColor;
+  background-color: $primaryColor;
+  border: 2px solid $secondaryColor;
+  width: 10vw;
+}

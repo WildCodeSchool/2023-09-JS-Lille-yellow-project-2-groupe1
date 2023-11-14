@@ -3,8 +3,17 @@ import "./TargetButton.scss";
 import { PropTypes } from "prop-types";
 import Brain from "../../../assets/pictures/ComponentsPics/Brain.png";
 
-function TargetButton({ data, img, imgClass, item, imgPopUpClass }) {
+function TargetButton({
+  data,
+  img,
+  imgClass,
+  item,
+  imgPopUpClass,
+  bag,
+  setBag,
+}) {
   const [popupMessage, setPopupMessage] = useState("");
+
   return (
     <>
       <button
@@ -16,11 +25,15 @@ function TargetButton({ data, img, imgClass, item, imgPopUpClass }) {
             <article className="message">
               <header className="popUpHeader">
                 <img src={img} alt="" className={`${imgPopUpClass}`} />
-                {item ? (
+                {item.itemName ? (
                   <button
                     type="button"
                     className={item.itemClassButton}
-                    aria-label={`${item.itemName}`}
+                    aria-label={`L'objet du ${dino.name}`}
+                    onClick={() => {
+                      setPopupMessage("");
+                      setBag([...bag, `${item.itemName}`]);
+                    }}
                   >
                     <img src={item.itemSrc} alt="" className={item.itemClass} />
                   </button>
@@ -35,10 +48,11 @@ function TargetButton({ data, img, imgClass, item, imgPopUpClass }) {
               </main>
               <button
                 type="button"
+                aria-label="Boutton pour fermer la pop-up"
                 className="close"
                 onClick={() => setPopupMessage("")}
               >
-                close
+                X
               </button>
             </article>
           )
@@ -69,9 +83,13 @@ TargetButton.propTypes = {
     itemClassButton: PropTypes.string,
   }),
   imgPopUpClass: PropTypes.string.isRequired,
+  bag: PropTypes.arrayOf(PropTypes.string),
+  setBag: PropTypes.func,
 };
 
 TargetButton.defaultProps = {
   item: null,
+  bag: [],
+  setBag: null,
 };
 export default TargetButton;
