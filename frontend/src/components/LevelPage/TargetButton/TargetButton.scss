@@ -4,12 +4,18 @@
   background-color: $primaryColor;
   border: 2px solid $secondaryColor;
   border-radius: 50px;
-  width: 30vw;
-  height: 40vh;
+  width: 50vw;
+  height: 60vh;
   top: 20%;
-  left: 40%;
+  left: 33%;
   z-index: 1;
+  h2 {
+    font-size: 2vw;
+    margin-top: 13vh;
+    margin-left: 4vw;
+  }
   p {
+    margin-top: 3vh;
     font-size: 0.7vw;
   }
 }
@@ -25,11 +31,12 @@
 
 .close {
   position: absolute;
-  right: 2rem;
-  top: 0.5rem;
+  right: 5%;
+  top: 5%;
   background-color: $secondaryColor;
   border: 2px solid $primaryColor;
   color: $primaryColor;
+  cursor: pointer;
 }
 
 .targetButton {
@@ -60,18 +67,19 @@
   }
 }
 .tRexPopUp {
-  width: 13vw;
-  margin-top: 1rem;
+  width: 20vw;
+  margin-left: 2vw;
+  margin-top: 1vh;
 }
 
 .quetzalcoatlusPopUp {
   all: unset;
-  width: 11vw;
+  width: 22vw;
 }
 
 .eggClass {
-  width: 2vw;
-  height: 4vh;
+  width: 3vw;
+  transform: rotate(-0.3rad);
 }
 
 .brain {
@@ -92,17 +100,32 @@
 
 .eggClassButton {
   all: unset;
-  width: 2vw;
-  height: 2vh;
   position: absolute;
-  top: 35%;
-  left: 12%;
+  top: 55%;
+  left: 15%;
   z-index: 1;
   cursor: pointer;
 
   &:hover {
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
   }
+}
+
+.toothClassButton {
+  all: unset;
+  position: absolute;
+  top: 55%;
+  left: 6%;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+  }
+}
+.toothClass {
+  width: 3vw;
+  transform: rotate(0.5rad);
 }
 
 @media screen and (min-width: 600px) {
@@ -116,7 +139,7 @@
 @media screen and (min-width: 1000px) {
   .message {
     p {
-      font-size: 1vw;
+      font-size: 1.2vw;
     }
   }
 }

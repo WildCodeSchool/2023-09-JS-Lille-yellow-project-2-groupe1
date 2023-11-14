@@ -25,14 +25,14 @@ function TargetButton({
             <article className="message">
               <header className="popUpHeader">
                 <img src={img} alt="" className={`${imgPopUpClass}`} />
-                {item ? (
+                {item.itemName ? (
                   <button
                     type="button"
                     className={item.itemClassButton}
-                    aria-label={`${item.itemName}`}
+                    aria-label={`L'objet du ${dino.name}`}
                     onClick={() => {
                       setPopupMessage("");
-                      setBag([...bag, "egg"]);
+                      setBag([...bag, `${item.itemName}`]);
                     }}
                   >
                     <img src={item.itemSrc} alt="" className={item.itemClass} />
