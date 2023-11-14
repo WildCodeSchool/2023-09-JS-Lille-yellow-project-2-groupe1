@@ -74,7 +74,7 @@ function LevelPage() {
         />
 
         <TargetButton
-          dino={quetzalcoatlus.data}
+          data={quetzalcoatlus.data}
           img={Quetzalcoatlus}
           imgClass={quetzalcoatlus.imgClass}
           item={quetzalcoatlus.item}
@@ -83,7 +83,7 @@ function LevelPage() {
           setBag={setBag}
         />
         <TargetButton
-          dino={tRex.data}
+          data={tRex.data}
           img={tyrannosaurusRex}
           imgClass={tRex.imgClass}
           item={tRex.item}

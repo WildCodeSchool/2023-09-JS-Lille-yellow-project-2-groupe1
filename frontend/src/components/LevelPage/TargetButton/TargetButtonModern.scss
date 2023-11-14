@@ -1,0 +1,89 @@
+@import "../../../variables.scss";
+
+.napoleon {
+  width: 6vw;
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.napoleonPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.rousseau {
+  width: 6vw;
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+  overflow: hidden;
+  transform: rotate(18.9rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.rousseauPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.louisXVI {
+  width: 6vw;
+  position: absolute;
+  bottom: 16%;
+  left: 20%;
+  overflow: hidden;
+  transform: rotate(18.9rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.louisXVIPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.victorHugo {
+  width: 7vw;
+  position: absolute;
+  bottom: 15%;
+  right: 30%;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.victorHugoPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.marieAntoinette {
+  width: 5vw;
+  position: absolute;
+  top: 51.5%;
+  right: 18%;
+  overflow: hidden;
+  transform: rotate(25rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.marieAntoinettePopUp {
+  width: 7vw;
+  margin: 1rem;
+}
