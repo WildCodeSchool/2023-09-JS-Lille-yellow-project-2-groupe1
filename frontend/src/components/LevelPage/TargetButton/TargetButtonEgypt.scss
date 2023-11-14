@@ -1,0 +1,81 @@
+.horus {
+  position: absolute;
+  bottom: 9%;
+  left: 15%;
+  width: 10vw;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+
+.horusPopUp {
+  width: 5vw;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.isis {
+  position: absolute;
+  bottom: 44.2%;
+  right: 35.8%;
+  width: 5vw;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+.isisPopUp {
+  width: 5vw;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.anubis {
+  position: absolute;
+  bottom: 19%;
+  left: 26.5%;
+  width: 10vw;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+.anubisPopUp {
+  width: 5vw;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.toutankhamon {
+  position: absolute;
+  bottom: 33%;
+  right: 45.5%;
+  width: 8vw;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+.toutankhamonPopUp {
+  width: 5vw;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.re {
+  position: absolute;
+  bottom: 17%;
+  right: 25.7%;
+  width: 10vw;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+.rePopUp {
+  width: 5vw;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}

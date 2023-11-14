@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Toutankhamon",
+    "gender": "Homme",
+    "type": "Humain",
+    "function": "Pharaon",
+    "description": "Toutankhamon, pharaon égyptien de la XVIIIe dynastie, a régné de 1332 à 1323 av. J.-C. Sa renommée repose sur la découverte exceptionnelle de sa tombe par Howard Carter en 1922, révélant une richesse artistique et funéraire sans précédent. Sa courte vie et son règne n'ont pas été politiquement marquants, mais la découverte de sa tombe a captivé le monde, offrant un précieux aperçu de l'Égypte antique."
+  },
+  {
+    "id": 2,
+    "name": "Horus",
+    "gender": "Dieu",
+    "type": "Divinité",
+    "function": "Dieu du Ciel",
+    "description": "Horus, dieu égyptien du ciel, était vénéré pour sa tête de faucon, symbolisant la royauté et la protection du pharaon. Fils d'Osiris et d'Isis, il était central dans la mythologie en menant une lutte épique contre Seth pour venger son père défunt. Cette bataille représente la dualité entre l'ordre et le chaos dans la cosmologie égyptienne. Horus était également associé à la régénération, incarnant le renouveau symbolisé par le cycle du soleil. Sa vénération était particulièrement prononcée dans l'Égypte ancienne, reflétant son rôle crucial dans la préservation de l'ordre divin."
+  },
+  {
+    "id": 3,
+    "name": "Isis",
+    "gender": "Femme",
+    "type": "Divinité",
+    "function": "Déesse de la Magie et de la Maternité",
+    "description": "Isis, déesse majeure de la mythologie égyptienne, était vénérée pour ses pouvoirs magiques, sa maternité bienveillante, et sa symbolique de fertilité. Épouse d'Osiris, elle joua un rôle essentiel dans la résurrection de son mari, symbolisant l'espoir et la vie après la mort. Son culte s'étendait à travers l'Égypte antique, et elle était souvent invoquée pour sa protection et sa bienveillance envers les défunts. La figure d'Isis transcendait la mythologie pour devenir une représentation puissante de la féminité et de la vie éternelle dans la culture égyptienne."
+  },
+  {
+    "id": 4,
+    "name": "Rê",
+    "gender": "Dieu",
+    "type": "Divinité",
+    "function": "Dieu du Soleil",
+    "description": "Rê, la divinité suprême de l'Égypte antique, était le dieu solaire incarnant la création et la vie. Souvent représenté avec un disque solaire, il symbolisait la puissance bienfaisante du soleil. Les anciens Égyptiens le considéraient comme le créateur de toute vie et le gardien de l'ordre cosmique. Rê était adoré à travers le pays, et son culte évolua pour inclure d'autres divinités solaires. Son rôle central dans la religion égyptienne renforçait la croyance en la régénération quotidienne du soleil et le lien entre le divin et le naturel."
+  },
+  {
+    "id": 5,
+    "name": "Anubis",
+    "gender": "Homme",
+    "type": "Divinité",
+    "function": "Dieu de l'Au-delà",
+    "description": "Anubis, dieu égyptien de l'au-delà, était vénéré pour son rôle crucial dans les rites funéraires et la momification. Reconnaissable à sa tête de chacal, il guidait les âmes des défunts à travers le royaume des morts. En tant que protecteur des tombes, Anubis était impliqué dans le processus de jugement des âmes. Son culte était particulièrement important pendant l'Égypte ancienne, incarnant la transition entre la vie et la mort et apportant réconfort aux croyants face au passage vers l'au-delà."
+  }
+]

@@ -9,7 +9,9 @@ import HomePage from "./components/HomePage/HomePage";
 import AboutUs from "./components/AboutUs/AboutUsPage";
 import ChooseLevelPage from "./components/ChooseLevelPage/ChooseLevelPage";
 import LevelPage from "./components/LevelPage/LevelPage";
+import Egypt from "./components/LevelPage/Egypt";
 import Modern from "./components/LevelPage/ModernLevelPage/Modern";
+
 
 const router = createBrowserRouter([
   {
@@ -67,6 +69,21 @@ const router = createBrowserRouter([
     },
   },
   {
+
+    path: "/Egypt",
+    element: <Egypt />,
+    id: "egypt",
+    loader: async () => {
+      try {
+        const responseEgypt = await fetch("http://localhost:3310/api/egypt");
+
+        if (!responseEgypt.ok) {
+          throw new Error("Failed to fetch Egypt data");
+        }
+        const dataEgypt = await responseEgypt.json();
+
+        return dataEgypt;
+
     path: "/Modern",
     element: <Modern />,
     id: "modern",
@@ -80,6 +97,7 @@ const router = createBrowserRouter([
         const dataModern = await responseModern.json();
 
         return dataModern;
+
       } catch (error) {
         console.error(error);
         return null;

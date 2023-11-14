@@ -1,0 +1,55 @@
+.pterodactyle {
+  width: 10vw;
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+
+.t-rex {
+  width: 20vw;
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+.tRexPopUp {
+  width: 13vw;
+  margin-top: 1rem;
+}
+
+.buttonPtetodactyle {
+  all: unset;
+}
+
+.pterodactylePopUp {
+  all: unset;
+  width: 15vw;
+  z-index: 0;
+}
+
+.eggClass {
+  width: 2vw;
+  height: 4vh;
+}
+.eggClassButton {
+  all: unset;
+  width: 2vw;
+  height: 2vh;
+  position: absolute;
+  top: 21%;
+  left: 8%;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  }
+}

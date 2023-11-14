@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./TargetButton.scss";
+import "./TargetButtonJurassic.scss";
+import "./TargetButtonEgypt.scss";
 import { PropTypes } from "prop-types";
 import Brain from "../../../assets/pictures/ComponentsPics/Brain.png";
 
@@ -29,7 +31,7 @@ function TargetButton({
                   <button
                     type="button"
                     className={item.itemClassButton}
-                    aria-label={`L'objet du ${dino.name}`}
+                    aria-label={`L'objet du ${data.name}`}
                     onClick={() => {
                       setPopupMessage("");
                       setBag([...bag, `${item.itemName}`]);
