@@ -3,8 +3,8 @@
 .napoleon {
   width: 6vw;
   position: absolute;
-  top: 80%;
-  left: 50%;
+  bottom: 5%;
+  left: 40%;
   overflow: hidden;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
@@ -20,8 +20,8 @@
 .rousseau {
   width: 6vw;
   position: absolute;
-  top: 75%;
-  left: 92%;
+  bottom: 15%;
+  right: 2%;
   overflow: hidden;
   transform: rotate(18.9rad);
   &:hover {
@@ -38,7 +38,7 @@
 .louisXVI {
   width: 6vw;
   position: absolute;
-  top: 72%;
+  bottom: 16%;
   left: 20%;
   overflow: hidden;
   transform: rotate(18.9rad);
@@ -56,8 +56,8 @@
 .victorHugo {
   width: 7vw;
   position: absolute;
-  top: 75%;
-  left: 62%;
+  bottom: 15%;
+  right: 30%;
   overflow: hidden;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
@@ -73,8 +73,8 @@
 .marieAntoinette {
   width: 5vw;
   position: absolute;
-  top: 51.2%;
-  left: 78%;
+  top: 51.5%;
+  right: 18%;
   overflow: hidden;
   transform: rotate(25rad);
   &:hover {

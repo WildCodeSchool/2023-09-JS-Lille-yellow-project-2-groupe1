@@ -3,14 +3,14 @@ import "./TargetButton.scss";
 import { PropTypes } from "prop-types";
 import Brain from "../../../assets/pictures/ComponentsPics/Brain.png";
 
-function TargetButton({ dino, img, imgClass, item, imgPopUpClass }) {
+function TargetButton({ data, img, imgClass, item, imgPopUpClass }) {
   const [popupMessage, setPopupMessage] = useState("");
   return (
     <>
       <button
         type="button"
         className="targetButton"
-        aria-label={`L'image du ${dino.name}`}
+        aria-label={`L'image du ${data.name}`}
         onClick={() =>
           setPopupMessage(
             <article className="message">
@@ -27,11 +27,11 @@ function TargetButton({ dino, img, imgClass, item, imgPopUpClass }) {
                 ) : (
                   ""
                 )}
-                <h2 className="name">{dino.name}</h2>
+                <h2 className="name">{data.name}</h2>
               </header>
               <main>
                 <img src={Brain} alt="cerveau" className="brain" />
-                <p className="info">{dino.description}</p>
+                <p className="info">{data.description}</p>
               </main>
               <button
                 type="button"
@@ -52,7 +52,7 @@ function TargetButton({ dino, img, imgClass, item, imgPopUpClass }) {
 }
 
 TargetButton.propTypes = {
-  dino: PropTypes.shape({
+  data: PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     diet: PropTypes.string.isRequired,

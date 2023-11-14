@@ -8,7 +8,6 @@ import Louis from "../../../assets/pictures/Modern/Louis.png";
 import Napoleon from "../../../assets/pictures/Modern/Napoleon.png";
 import MarieAntoinette from "../../../assets/pictures/Modern/MarieAntoinette.png";
 import Hugo from "../../../assets/pictures/Modern/VictorHugo.png";
-import egg from "../../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
 import Rousseau from "../../../assets/pictures/Modern/Rousseau.png";
 import "../TargetButton/TargetButtonModern.scss";
 
@@ -31,15 +30,7 @@ function Modern() {
     };
   }
   const napoleon = getModernData(1, "napoleon", "napoleonPopUp");
-  const rousseau = getModernData(
-    2,
-    "rousseau",
-    "rousseauPopUp",
-    "oeuf de quetzalcoatlus",
-    egg,
-    "eggClass",
-    "eggClassButton"
-  );
+  const rousseau = getModernData(2, "rousseau", "rousseauPopUp");
   const marieAntoinette = getModernData(
     3,
     "marieAntoinette",
@@ -54,32 +45,32 @@ function Modern() {
         <GameMenu />
 
         <TargetButton
-          dino={napoleon.data}
+          data={napoleon.data}
           img={Napoleon}
           imgClass={napoleon.imgClass}
           imgPopUpClass={napoleon.imgPopUpClass}
           className={napoleon}
         />
         <TargetButton
-          dino={rousseau.data}
+          data={rousseau.data}
           img={Rousseau}
           imgClass={rousseau.imgClass}
           imgPopUpClass={rousseau.imgPopUpClass}
         />
         <TargetButton
-          dino={marieAntoinette.data}
+          data={marieAntoinette.data}
           img={MarieAntoinette}
           imgClass={marieAntoinette.imgClass}
           imgPopUpClass={marieAntoinette.imgPopUpClass}
         />
         <TargetButton
-          dino={louisXVI.data}
+          data={louisXVI.data}
           img={Louis}
           imgClass={louisXVI.imgClass}
           imgPopUpClass={louisXVI.imgPopUpClass}
         />
         <TargetButton
-          dino={victorHugo.data}
+          data={victorHugo.data}
           img={Hugo}
           imgClass={victorHugo.imgClass}
           imgPopUpClass={victorHugo.imgPopUpClass}
