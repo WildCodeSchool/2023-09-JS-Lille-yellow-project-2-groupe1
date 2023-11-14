@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Napoléon",
+    "description": "est un militaire et homme d'État français, premier empereur des Français du 18 mai 1804 au 6 avril 1814 et du 20 mars au 22 juin 1815, sous le nom de Napoléon Ier. "
+  },
+  {
+    "id": 2,
+    "name": "Jean-Jacques Rousseau",
+    "description": "Philosophe, écrivain et musicien genevois du 18e siècle. Sa pensée a eu un impact profond sur la politique, la philosophie et l'éducation de son époque."
+  },
+  {
+    "id": 3,
+    "name": "Marie Antoinette",
+    "description": "Archiduchesse d'Autriche et reine de France au 18e siècle. Mariée à Louis XVI, elle était la dernière reine de France avant la Révolution française. Elle a été exécutée par la guillotine pendant la Révolution en 1793."
+  },
+  {
+    "id": 4,
+    "name": "Victor Hugo",
+    "description": "Ecrivain, poète et dramaturge français du 19e siècle. Il est l'auteur de nombreux chefs-d'œuvre littéraires. Il a joué un rôle majeur dans la vie culturelle et politique de la France au XIXe siècle."
+  },
+  {
+    "id": 5,
+    "name": "Louis XVI",
+    "description": "Louis XVI était le dernier roi de France avant la Révolution française. Il a régné de 1774 à 1792 et a été marié à Marie Antoinette. Louis XVI a été exécuté par la guillotine en 1793 pendant la période de la Terreur, mettant fin à la monarchie française."
+  }
+]
