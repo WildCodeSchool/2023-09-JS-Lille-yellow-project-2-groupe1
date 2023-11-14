@@ -50,7 +50,7 @@ function ContainerStoryRules() {
         type="button"
         className="storyRules__playButton"
         onClick={() => {
-          setObjectives([randomObjectives()]);
+          setObjectives(randomObjectives());
           setBag([]);
         }}
       >

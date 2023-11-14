@@ -36,7 +36,7 @@ function Objectives() {
           <h2 className="objectivesTitle">Objectifs</h2>
         </header>
         <ul className="objectivesList">
-          {objectives[0].map((e) => (
+          {objectives.map((e) => (
             <li
               key={e.item}
               className={

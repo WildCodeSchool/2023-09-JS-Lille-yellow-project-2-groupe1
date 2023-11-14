@@ -31,7 +31,7 @@ function LevelPage() {
     };
   }
   let tRex;
-  if (objectives[0].some((e) => e.item === "tooth")) {
+  if (objectives.some((e) => e.item === "tooth")) {
     tRex = getDinosaurData(
       1,
       "t-rex",
@@ -45,7 +45,7 @@ function LevelPage() {
     tRex = getDinosaurData(1, "t-rex", "tRexPopUp");
   }
   let quetzalcoatlus;
-  if (objectives[0].some((e) => e.item === "egg")) {
+  if (objectives.some((e) => e.item === "egg")) {
     quetzalcoatlus = getDinosaurData(
       6,
       "quetzalcoatlus",
