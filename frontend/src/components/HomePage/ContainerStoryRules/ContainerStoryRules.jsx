@@ -22,12 +22,12 @@ function ContainerStoryRules() {
       item: "feather",
     },
   ];
-
+  const numberOfObjectives = 2;
   const { setObjectives, setBag } = useGlobalContext();
   function randomObjectives() {
     const objectivesArrayRandom = [];
 
-    while (objectivesArrayRandom.length < 2) {
+    while (objectivesArrayRandom.length < numberOfObjectives) {
       const randomIndex = Math.floor(
         Math.random() * objectivesItemArray.length
       );
@@ -50,7 +50,8 @@ function ContainerStoryRules() {
         type="button"
         className="storyRules__playButton"
         onClick={() => {
-          setObjectives([randomObjectives()], setBag([]));
+          setObjectives([randomObjectives()]);
+          setBag([]);
         }}
       >
         Voyager

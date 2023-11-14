@@ -64,7 +64,7 @@ function Inventory({ bag }) {
               key="toothButton"
               type="button"
               className="toothButton"
-              onFocus={() => handleEnter("Dent du Tyranossaurus Rex")}
+              onFocus={() => handleEnter("Dent du T-Rex")}
               onBlur={handleLeave}
               onMouseEnter={() => handleEnter("Dent du T-Rex")}
               onMouseLeave={handleLeave}
