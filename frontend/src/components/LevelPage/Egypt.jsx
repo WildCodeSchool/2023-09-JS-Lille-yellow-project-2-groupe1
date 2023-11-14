@@ -5,7 +5,6 @@ import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 import TargetButton from "./TargetButton/TargetButton";
 import "./TargetButton/TargetButton.scss";
 import "./TargetButton/TargetButtonEgypt.scss";
-import EgyptTheme from "../../assets/pictures/Egypt/EgyptTheme.png";
 import Horus from "../../assets/pictures/Egypt/Horus.png";
 import Anubis from "../../assets/pictures/Egypt/Anubis.png";
 import Isis from "../../assets/pictures/Egypt/Isis.png";
@@ -49,7 +48,7 @@ function Egypt() {
 
   return (
     <>
-      <main>
+      <main className="egyptTheme">
         <GameMenu />
 
         <TargetButton
@@ -82,13 +81,6 @@ function Egypt() {
           img={Anubis}
           imgClass={anubis.imgClass}
           imgPopUpClass={anubis.imgPopUpClass}
-        />
-
-        <img
-          className="egyptTheme"
-          src={EgyptTheme}
-          alt="Un décor de l'Egypte antique"
-          draggable="false"
         />
         <ReturnGameMenu />
       </main>

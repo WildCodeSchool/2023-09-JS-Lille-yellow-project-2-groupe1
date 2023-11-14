@@ -1,8 +1,9 @@
 @import "../../variables.scss";
 
 .egyptTheme {
-  height: 100vh;
-  width: 100vw;
+  background-image: url("../../assets/pictures/Egypt/EgyptTheme.png");
+  background-size: cover;
+  background-position: bottom;
 }
 .tabletClass {
   width: 2vw;

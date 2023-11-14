@@ -8,13 +8,12 @@ hr {
 nav {
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 15vw;
   border-right: solid 5px $secondaryColor;
   height: 100vh;
   justify-content: space-around;
   align-items: center;
   background-size: cover;
-  background-repeat: no-repeat;
   background-image: url(../../../assets/pictures/ComponentsPics/WallpaperGameMenu.png);
 }
 
@@ -36,7 +35,7 @@ nav {
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
 }
 
 .closeNav {
@@ -48,7 +47,7 @@ nav {
   width: 3vw;
   font-size: 1.5vw;
   height: 5.5vh;
-  left: 15%;
+  left: 13.7%;
   top: 50%;
 }
 
