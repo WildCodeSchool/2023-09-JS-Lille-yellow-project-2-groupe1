@@ -44,14 +44,14 @@ function LevelPage() {
         <GameMenu />
 
         <TargetButton
-          dino={quetzalcoatlus.data}
+          data={quetzalcoatlus.data}
           img={Quetzalcoatlus}
           imgClass={quetzalcoatlus.imgClass}
           item={quetzalcoatlus.item}
           imgPopUpClass={quetzalcoatlus.imgPopUpClass}
         />
         <TargetButton
-          dino={tRex.data}
+          data={tRex.data}
           img={tyrannosaurusRex}
           imgClass={tRex.imgClass}
           imgPopUpClass={tRex.imgPopUpClass}

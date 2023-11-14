@@ -52,32 +52,32 @@ function Egypt() {
         <GameMenu />
 
         <TargetButton
-          dino={toutankhamon.data}
+          data={toutankhamon.data}
           img={Toutankhamon}
           imgClass={toutankhamon.imgClass}
           imgPopUpClass={toutankhamon.imgPopUpClass}
         />
         <TargetButton
-          dino={horus.data}
+          data={horus.data}
           img={Horus}
           imgClass={horus.imgClass}
           imgPopUpClass={horus.imgPopUpClass}
         />
         <TargetButton
-          dino={isis.data}
+          data={isis.data}
           img={Isis}
           imgClass={isis.imgClass}
           item={isis.item}
           imgPopUpClass={isis.imgPopUpClass}
         />
         <TargetButton
-          dino={re.data}
+          data={re.data}
           img={Re}
           imgClass={re.imgClass}
           imgPopUpClass={re.imgPopUpClass}
         />
         <TargetButton
-          dino={anubis.data}
+          data={anubis.data}
           img={Anubis}
           imgClass={anubis.imgClass}
           imgPopUpClass={anubis.imgPopUpClass}
