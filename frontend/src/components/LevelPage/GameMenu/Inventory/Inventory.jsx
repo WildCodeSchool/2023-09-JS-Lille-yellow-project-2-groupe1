@@ -11,6 +11,16 @@ function Inventory({ bag }) {
     setShowInventory(!showInventory);
   };
 
+  const handleEnter = () => {
+    setInfo(
+      <article className="eggPopUpInBag">L'oeuf du quetzalcoatlus</article>
+    );
+  };
+
+  const handleLeave = () => {
+    setInfo("");
+  };
+
   return (
     <>
       <button
@@ -35,19 +45,17 @@ function Inventory({ bag }) {
         </button>
         <main className="itemsContainer">
           {bag.find((e) => e === "egg") ? (
-            <img
-              src={egg}
-              className="eggImgInBag"
-              alt="L'oeuf"
-              onMouseEnter={() =>
-                setInfo(
-                  <article className="eggPopUpInBag">
-                    L'oeuf du quetzalcoatlus
-                  </article>
-                )
-              }
-              onMouseLeave={() => setInfo("")}
-            />
+            <button
+              key="eggButton"
+              type="button"
+              className="eggButton"
+              onFocus={() => handleEnter()}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter()}
+              onMouseLeave={handleLeave}
+            >
+              <img src={egg} className="eggImgInBag" alt="L'oeuf" />
+            </button>
           ) : (
             ""
           )}
@@ -57,10 +65,13 @@ function Inventory({ bag }) {
     </>
   );
 }
+
 Inventory.propTypes = {
   bag: PropTypes.arrayOf(PropTypes.string),
 };
+
 Inventory.defaultProps = {
   bag: [],
 };
+
 export default Inventory;
