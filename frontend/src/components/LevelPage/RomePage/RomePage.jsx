@@ -1,12 +1,20 @@
 import { useRouteLoaderData } from "react-router-dom";
 import GameMenu from "../GameMenu/GameMenu";
 import ReturnGameMenu from "../ReturnGameMenu/ReturnGameMenu";
-import RomeTheme from "../../../assets/pictures/Rome/RomeTheme.png";
 import TurnYourPhone from "../../TurnYourPhone/TurnYourPhone";
-import TargetButtonRome from "./TargetButtonRome";
+import TargetButtonRome from "../TargetButton/TargetButton";
+// import "./TargetButton/TargetButton.scss";
+// import "./TargetButton/TargetButtonRome.scss";
 import JuliusCaesar from "../../../assets/pictures/Rome/JuliusCaesar.png";
 import armor from "../../../assets/pictures/Rome/Armor.png";
 import Vercingetorix from "../../../assets/pictures/Rome/Vercingetorix.png";
+import Cicero from "../../../assets/pictures/Rome/Cicero.png";
+import Auguste from "../../../assets/pictures/Rome/Auguste.png";
+import dagger from "../../../assets/pictures/Rome/Dagger.png";
+import Spartacus from "../../../assets/pictures/Rome/Spartacus.png";
+import ironFetters from "../../../assets/pictures/Rome/IronFetters.png";
+import Pompey from "../../../assets/pictures/Rome/Pompey.png";
+import "./RomePage.scss";
 
 function RomePage() {
   const romeArray = useRouteLoaderData("romePage");
@@ -34,6 +42,24 @@ function RomePage() {
     "armorClass",
     "armorClassButton"
   );
+  const cicero = getRomeData(2, "cicéron", "ciceronPopUp");
+  const auguste = getRomeData(
+    3,
+    "auguste",
+    "Dague qui a servi a assassiner Jules César",
+    dagger,
+    "daggerClass",
+    "dagerClassButton"
+  );
+  const spartacus = getRomeData(
+    4,
+    "spartacus",
+    "Gladiateur et chef d'une révolte d'esclaves, il a mené la Troisième Guerre servile contre la République romaine.",
+    ironFetters,
+    "ironFettersClass",
+    "ironFettersClassButton"
+  );
+  const pompey = getRomeData(5, "pompée", "pompéePopUp");
   const vercingetorix = getRomeData(6, "vercingétorix", "vercingétorixPopUp");
   return (
     <>
@@ -48,17 +74,36 @@ function RomePage() {
           imgPopUpClass={juliusCaesar.imgPopUpClass}
         />
         <TargetButtonRome
+          data={cicero.data}
+          img={Cicero}
+          imgClasse={cicero.imgClasse}
+          item={cicero.item}
+          imgPopUpClass={cicero.imgPopUpClass}
+        />
+        <TargetButtonRome
+          data={auguste.data}
+          img={Auguste}
+          imgClasse={auguste.imgClasse}
+          item={auguste.item}
+          imgPopUpClass={auguste.imgPopUpClass}
+        />
+        <TargetButtonRome
+          data={spartacus.data}
+          img={Spartacus}
+          imgClasse={spartacus.imgClasse}
+          imgPopUpClass={spartacus.imgPopUpClass}
+        />
+        <TargetButtonRome
+          data={pompey.data}
+          img={Pompey}
+          imgClasse={pompey.imgClasse}
+          imgPopUpClass={pompey.imgPopUpClass}
+        />
+        <TargetButtonRome
           data={vercingetorix.data}
           img={Vercingetorix}
           imgClasse={vercingetorix.imgClasse}
           imgPopUpClass={vercingetorix.imgPopUpClass}
-        />
-
-        <img
-          className="romeTheme"
-          src={RomeTheme}
-          alt="des romains dans un paysage Romain."
-          draggable="false"
         />
         <ReturnGameMenu />
       </main>

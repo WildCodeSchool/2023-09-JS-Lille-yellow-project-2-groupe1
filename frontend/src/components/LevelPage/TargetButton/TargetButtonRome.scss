@@ -1,0 +1,107 @@
+.juliusCaesar {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  width: 0vw;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+
+.juliusCaesarPopUp {
+  width: 7vw;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.cicero {
+  width: 6vw;
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+  overflow: hidden;
+  transform: rotate(18.9rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.ciceroPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.auguste {
+  width: 6vw;
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+  overflow: hidden;
+  transform: rotate(18.9rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.augustePopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.spartacus {
+  width: 6vw;
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+  overflow: hidden;
+  transform: rotate(18.9rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.spartacusPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.pompey {
+  width: 6vw;
+  position: absolute;
+  bottom: 16%;
+  left: 20%;
+  overflow: hidden;
+  transform: rotate(18.9rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.pompeyPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.vercingetorix {
+  width: 5vw;
+  position: absolute;
+  top: 51.5%;
+  right: 18%;
+  overflow: hidden;
+  transform: rotate(25rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.vercingetorixPopUp {
+  width: 7vw;
+  margin: 1rem;
+}

@@ -69,7 +69,7 @@ const router = createBrowserRouter([
     },
   },
   {
-    path: "/RomePage",
+    path: "/Rome",
     element: <RomePage />,
     id: "romePage",
     loader: async () => {

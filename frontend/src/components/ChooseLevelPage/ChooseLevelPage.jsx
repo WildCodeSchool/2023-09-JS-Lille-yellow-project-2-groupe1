@@ -8,7 +8,7 @@ function ChooseLevelPage() {
 
   const universe = [
     { name: "CRÉTACÉ", id: 1 },
-    { name: "ROMAIN", id: 2 },
+    { name: "ROME", id: 2 },
     { name: "EGYPTE", id: 3 },
     { name: "MOYEN-AGE", id: 4 },
     { name: "MODERNE", id: 5 },
@@ -16,7 +16,7 @@ function ChooseLevelPage() {
 
   const levelPaths = {
     1: "/LevelPage",
-    2: "/LevelPageRomain",
+    2: "/Rome",
     3: "/Egypt",
     4: "/LevelPageMoyenAge",
     5: "/Modern",

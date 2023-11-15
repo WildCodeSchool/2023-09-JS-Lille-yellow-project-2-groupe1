@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./TargetButton.scss";
 import "./TargetButtonJurassic.scss";
 import "./TargetButtonEgypt.scss";
+import "./TargetButtonRome.scss";
 import { PropTypes } from "prop-types";
 import Brain from "../../../assets/pictures/ComponentsPics/Brain.png";
 
