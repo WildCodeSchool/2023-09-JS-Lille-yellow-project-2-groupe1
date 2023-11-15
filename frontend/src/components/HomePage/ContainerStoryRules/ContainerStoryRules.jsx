@@ -46,7 +46,7 @@ function ContainerStoryRules() {
       <Story />
       <Rules />
       <Link
-        to="/ChooseLevelPage"
+        to="/launcher"
         type="button"
         className="storyRules__playButton"
         onClick={() => {

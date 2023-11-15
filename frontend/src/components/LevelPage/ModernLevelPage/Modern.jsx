@@ -10,6 +10,7 @@ import MarieAntoinette from "../../../assets/pictures/Modern/MarieAntoinette.png
 import Hugo from "../../../assets/pictures/Modern/VictorHugo.png";
 import Rousseau from "../../../assets/pictures/Modern/Rousseau.png";
 import "../TargetButton/TargetButtonModern.scss";
+import ReturnChooseLevelPageButton from "../ReturnChooseLevelPagebutton/ReturnChooseLevelPagebutton";
 
 function Modern() {
   const modernArray = useRouteLoaderData("modern");
@@ -79,6 +80,7 @@ function Modern() {
         <ReturnGameMenu />
       </main>
       <TurnYourPhone />
+      <ReturnChooseLevelPageButton />
     </>
   );
 }
