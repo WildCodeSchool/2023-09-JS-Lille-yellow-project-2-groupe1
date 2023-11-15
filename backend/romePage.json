@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nom": "Jules César",
+    "description": "Général et homme d'État romain, il a joué un rôle clé dans la fin de la République romaine et l'avènement de l'Empire.",
+    "realisations": "Conquête de la Gaule, Dictateur à vie, Réforme du calendrier julien"
+  },
+  {
+    "id": 2,
+    "nom": "Cicéron",
+    "description": "Orateur et homme d'État, célèbre pour ses discours et ses écrits philosophiques.",
+    "realisations": "Orateur éloquent, Consul de la République romaine"
+  },
+  {
+    "id": 3,
+    "nom": "Auguste",
+    "description": "Le premier empereur romain, a instauré la Pax Romana et réformé les institutions de l'Empire.",
+    "realisations": "Fondation de l'Empire romain, Réforme administrative"
+  },
+  {
+    "id": 4,
+    "nom": "Spartacus",
+    "description": "Gladiateur et chef d'une révolte d'esclaves, il a mené la Troisième Guerre servile contre la République romaine.",
+    "realisations": "Révolte des esclaves, Batailles contre l'armée romaine"
+  },
+  {
+    "id": 5,
+    "nom": "Sénèque",
+    "description": "Philosophe, dramaturge et homme d'État, conseiller de l'empereur Néron.",
+    "realisations": "Philosophie stoïcienne, Conseiller impérial"
+  },
+  {
+    "id": 6,
+    "nom": "Vercingétorix",
+    "description": "Chef gaulois, il a mené la résistance contre Jules César lors de la Guerre des Gaules.",
+    "realisations": "Chef de la résistance gauloise, Bataille de Gergovie"
+  }
+]

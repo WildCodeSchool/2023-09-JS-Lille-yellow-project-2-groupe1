@@ -9,6 +9,7 @@ import HomePage from "./components/HomePage/HomePage";
 import AboutUs from "./components/AboutUs/AboutUsPage";
 import ChooseLevelPage from "./components/ChooseLevelPage/ChooseLevelPage";
 import LevelPage from "./components/LevelPage/LevelPage";
+import RomePage from "./components/LevelPage/RomePage/RomePage";
 import Egypt from "./components/LevelPage/Egypt";
 import Modern from "./components/LevelPage/ModernLevelPage/Modern";
 
@@ -61,6 +62,26 @@ const router = createBrowserRouter([
         const dataDino = await responseDino.json();
 
         return dataDino;
+      } catch (error) {
+        console.error(error);
+        return null;
+      }
+    },
+  },
+  {
+    path: "/RomePage",
+    element: <RomePage />,
+    id: "romePage",
+    loader: async () => {
+      try {
+        const responseRome = await fetch("http://localhost:3310/api/romePage");
+
+        if (!responseRome.ok) {
+          throw new Error("Failed to fetch romePage data");
+        }
+        const dataRome = await responseRome.json();
+
+        return dataRome;
       } catch (error) {
         console.error(error);
         return null;
