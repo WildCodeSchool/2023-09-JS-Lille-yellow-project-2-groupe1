@@ -12,7 +12,6 @@ import LevelPage from "./components/LevelPage/LevelPage";
 import Egypt from "./components/LevelPage/Egypt";
 import Modern from "./components/LevelPage/ModernLevelPage/Modern";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -69,7 +68,6 @@ const router = createBrowserRouter([
     },
   },
   {
-
     path: "/Egypt",
     element: <Egypt />,
     id: "egypt",
@@ -83,7 +81,13 @@ const router = createBrowserRouter([
         const dataEgypt = await responseEgypt.json();
 
         return dataEgypt;
-
+      } catch (error) {
+        console.error(error);
+        return null;
+      }
+    },
+  },
+  {
     path: "/Modern",
     element: <Modern />,
     id: "modern",
@@ -97,7 +101,6 @@ const router = createBrowserRouter([
         const dataModern = await responseModern.json();
 
         return dataModern;
-
       } catch (error) {
         console.error(error);
         return null;

@@ -13,6 +13,15 @@ function ChooseLevelPage() {
     { name: "MOYEN-AGE", id: 4 },
     { name: "MODERNE", id: 5 },
   ];
+
+  const levelPaths = {
+    1: "/LevelPage",
+    2: "/LevelPageRomain",
+    3: "/Egypt",
+    4: "/LevelPageMoyenAge",
+    5: "/Modern",
+  };
+
   return (
     <>
       <main className="cardEraContainer">
@@ -22,7 +31,7 @@ function ChooseLevelPage() {
             <p className="cardEraContainer__levelDescription">
               {era.description}
             </p>
-            <Link to="/LevelPage" className="playDevice">
+            <Link to={levelPaths[world.id]} className="playDevice">
               <img
                 src={button}
                 alt="Bouton jouer"

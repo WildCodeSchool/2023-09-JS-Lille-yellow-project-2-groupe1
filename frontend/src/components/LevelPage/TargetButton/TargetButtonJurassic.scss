@@ -1,11 +1,55 @@
-.pterodactyle {
-  width: 10vw;
+.eggClassButton {
+  all: unset;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+  }
+}
+
+.toothClassButton {
+  all: unset;
+  position: absolute;
+  top: 45%;
+  left: 6%;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+  }
+}
+.toothClass {
+  width: 3vw;
+  transform: rotate(0.5rad);
+}
+
+.tRexPopUp {
+  width: 20vw;
+  margin-left: 2vw;
+  margin-top: 1vh;
+}
+
+.quetzalcoatlusPopUp {
+  all: unset;
+  width: 22vw;
+}
+
+.eggClass {
+  width: 3vw;
+  transform: rotate(-0.3rad);
+}
+
+.quetzalcoatlus {
+  width: 9vw;
   position: absolute;
   top: 20%;
   left: 42%;
   overflow: hidden;
   &:hover {
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
   }
 }
@@ -17,39 +61,7 @@
   left: 60%;
   overflow: hidden;
   &:hover {
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
-  }
-}
-.tRexPopUp {
-  width: 13vw;
-  margin-top: 1rem;
-}
-
-.buttonPtetodactyle {
-  all: unset;
-}
-
-.pterodactylePopUp {
-  all: unset;
-  width: 15vw;
-  z-index: 0;
-}
-
-.eggClass {
-  width: 2vw;
-  height: 4vh;
-}
-.eggClassButton {
-  all: unset;
-  width: 2vw;
-  height: 2vh;
-  position: absolute;
-  top: 21%;
-  left: 8%;
-  z-index: 1;
-  cursor: pointer;
-  &:hover {
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
   }
 }
