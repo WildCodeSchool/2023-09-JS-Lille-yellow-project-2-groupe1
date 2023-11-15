@@ -186,53 +186,6 @@ function Inventory({ bag }) {
           ) : (
             ""
           )}
-          {bag.find((e) => e === "scepter") ? (
-            <button
-              key="scepterButton"
-              type="button"
-              className="scepterButton"
-              onFocus={() => handleEnter("Le sceptre de Toutankhamon")}
-              onBlur={handleLeave}
-              onMouseEnter={() => handleEnter("Le sceptre de Toutankhamon")}
-              onMouseLeave={handleLeave}
-            >
-              <img src={scepter} className="scepterImgInBag" alt="Le sceptre" />
-            </button>
-          ) : (
-            ""
-          )}
-          {bag.find((e) => e === "papyrus") ? (
-            <button
-              key="papyrusButton"
-              type="button"
-              className="papyrusButton"
-              onFocus={() => handleEnter("Le papyrus d'Annubis")}
-              onBlur={handleLeave}
-              onMouseEnter={() => handleEnter("Le papyrus d'Annubis")}
-              onMouseLeave={handleLeave}
-            >
-              <img src={papyrus} className="papyrusImgInBag" alt="Le papyrus" />
-            </button>
-          ) : (
-            ""
-          )}
-          {bag.find((e) => e === "tablet") ? (
-            <button
-              key="tabletButton"
-              type="button"
-              className="tabletButton"
-              onFocus={() => handleEnter("La tablette de hieroglyphe d'Isis")}
-              onBlur={handleLeave}
-              onMouseEnter={() =>
-                handleEnter("La tablette de hieroglyphe d'Isis")
-              }
-              onMouseLeave={handleLeave}
-            >
-              <img src={tablet} className="papyrusImgInBag" alt="La tablette" />
-            </button>
-          ) : (
-            ""
-          )}
           {info}
         </main>
       </article>
