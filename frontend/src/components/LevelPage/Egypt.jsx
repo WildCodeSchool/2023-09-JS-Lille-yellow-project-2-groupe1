@@ -12,9 +12,13 @@ import Toutankhamon from "../../assets/pictures/Egypt/Toutankhamon.png";
 import Re from "../../assets/pictures/Egypt/re.png";
 import "./Egypt.scss";
 import tablette from "../../assets/pictures/Egypt/tablette.png";
+import sceptre from "../../assets/pictures/Egypt/sceptre.png";
+import papyrus from "../../assets/pictures/Egypt/papyrus.png";
+import egyptCharacter from "../../assets/pictures/Egypt/EgyptCharacter.png";
 
 function Egypt() {
   const egyptArray = useRouteLoaderData("egypt");
+  const characterClass = "egyptCharacter";
   function getEgyptData(
     egyptId,
     imgClass,
@@ -32,7 +36,15 @@ function Egypt() {
     };
   }
 
-  const toutankhamon = getEgyptData(1, "toutankhamon", "toutankhamonPopUp");
+  const toutankhamon = getEgyptData(
+    1,
+    "toutankhamon",
+    "toutankhamonPopUp",
+    "sceptre",
+    sceptre,
+    "sceptreClass",
+    "sceptreClassButton"
+  );
   const horus = getEgyptData(2, "horus", "horusPopUp");
   const isis = getEgyptData(
     3,
@@ -44,17 +56,29 @@ function Egypt() {
     "tabletClassButton"
   );
   const re = getEgyptData(4, "re", "rePopUp");
-  const anubis = getEgyptData(5, "anubis", "anubisPopUp");
+  const anubis = getEgyptData(
+    5,
+    "anubis",
+    "anubisPopUp",
+    "papyrus",
+    papyrus,
+    "papyrusClass",
+    "papyrusClassbutton"
+  );
 
   return (
     <>
       <main className="egyptTheme">
-        <GameMenu />
+        <GameMenu
+          characterImg={egyptCharacter}
+          characterClass={characterClass}
+        />
 
         <TargetButton
           data={toutankhamon.data}
           img={Toutankhamon}
           imgClass={toutankhamon.imgClass}
+          item={toutankhamon.item}
           imgPopUpClass={toutankhamon.imgPopUpClass}
         />
         <TargetButton
@@ -80,6 +104,7 @@ function Egypt() {
           data={anubis.data}
           img={Anubis}
           imgClass={anubis.imgClass}
+          item={anubis.item}
           imgPopUpClass={anubis.imgPopUpClass}
         />
         <ReturnGameMenu />

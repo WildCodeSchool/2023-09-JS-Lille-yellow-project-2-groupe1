@@ -6,16 +6,54 @@
   background-position: bottom;
 }
 .tabletClass {
-  width: 2vw;
-  height: 4vh;
+  width: 3vw;
+  height: 5vh;
 }
 .tabletClassButton {
   all: unset;
   width: 2.5vw;
   height: 2.5vh;
   position: absolute;
-  top: 21%;
+  top: 25%;
   left: 8%;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  }
+}
+.sceptreClass {
+  width: 4vw;
+  height: 8vh;
+  transform: rotate(30deg);
+}
+
+.sceptreClassButton {
+  all: unset;
+  width: 2.5vw;
+  height: 2.5vh;
+  position: absolute;
+  top: 23%;
+  left: 2%;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  }
+}
+
+.papyrusClass {
+  width: 4vw;
+  height: 8vh;
+}
+
+.papyrusClassbutton {
+  all: unset;
+  width: 2.5vw;
+  height: 2.5vh;
+  position: absolute;
+  top: 46.5%;
+  left: 17%;
   z-index: 1;
   cursor: pointer;
   &:hover {
