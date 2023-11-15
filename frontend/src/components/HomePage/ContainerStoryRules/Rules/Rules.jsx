@@ -1,7 +1,7 @@
 function Rules() {
   return (
-    <section>
-      <h2 className="rulesTitle">Règles du jeu</h2>
+    <section className="rulesTitle">
+      <h2>Règles du jeu</h2>
       <p>Cliquez sur "voyager", choisissez l’époque à visiter.</p>
       <p>
         Dans l’interface du jeu, vous trouverez une liste d’artefacts à

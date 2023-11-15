@@ -1,16 +1,19 @@
 @import "../../../variables.scss";
 
 .storyRules {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  width: 100%;
+  font-size: small;
   padding: 1vw;
   background-color: $primaryColor;
   color: $secondaryColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 35vw;
-  font-size: 1.1rem;
 
   &__playButton {
+    position: absolute;
+    top: 75%;
+    right: 16%;
     width: 14vw;
     font-size: 2vw;
     border-color: $secondaryColor;
@@ -24,6 +27,7 @@
     margin-top: 2%;
     margin-bottom: 2%;
     cursor: pointer;
+
     &:hover {
       background-color: $thirdColor;
     }
@@ -38,4 +42,24 @@
 .rulesTitle {
   text-align: center;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .storyRules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+
+    &__playButton {
+      height: 6%;
+      width: 20%;
+      align-items: end;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+  }
 }

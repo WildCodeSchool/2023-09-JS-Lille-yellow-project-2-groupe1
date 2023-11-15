@@ -54,7 +54,7 @@ function ContainerStoryRules() {
           setBag([]);
         }}
       >
-        Voyager
+        Jouer
       </Link>
     </section>
   );
