@@ -23,5 +23,10 @@
     "id": 5,
     "name": "Louis XVI",
     "description": "Louis XVI était le dernier roi de France avant la Révolution française. Il a régné de 1774 à 1792 et a été marié à Marie Antoinette. Louis XVI a été exécuté par la guillotine en 1793 pendant la période de la Terreur, mettant fin à la monarchie française."
+  },
+  {
+    "id": 6,
+    "name": "Frères Montgolfier",
+    "description": "Les frères Montgolfier, Joseph et Étienne, étaient des inventeurs français du XVIIIe siècle. Ils sont célèbres pour avoir inventé le premier ballon aérostatique en 1783. Cette invention a marqué le début de l'ère de l'aviation et a contribué de manière significative au développement ultérieur de la technologie aérospatiale."
   }
 ]
