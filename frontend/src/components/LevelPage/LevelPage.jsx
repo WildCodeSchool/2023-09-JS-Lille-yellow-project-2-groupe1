@@ -10,6 +10,7 @@ import egg from "../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
 import tyrannosaurusRex from "../../assets/pictures/jurassic/t-rex.png";
 import JurassicCharacter from "../../assets/pictures/jurassic/AvatarJurassic.png";
 import tooth from "../../assets/pictures/jurassic/tRexTooth.png";
+import Timer from "../Timer/Timer";
 import Velociraptor from "../../assets/pictures/jurassic/velociraptor.png";
 import claw from "../../assets/pictures/jurassic/velociraptorclaw.png";
 import Triceratops from "../../assets/pictures/jurassic/triceraptops.png";
@@ -18,7 +19,7 @@ import Stegosaurus from "../../assets/pictures/jurassic/stegosaurus.png";
 
 function LevelPage() {
   const characterClass = "jurassicCharacter";
-  const { objectives, bag, setBag } = useGlobalContext();
+  const { objectives, bag, setBag, score, setScore } = useGlobalContext();
   const dinosaursArray = useRouteLoaderData("levelPage");
   function getDinosaurData(
     dinosaurId,
@@ -111,6 +112,8 @@ function LevelPage() {
           imgPopUpClass={quetzalcoatlus.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={tRex.data}
@@ -120,6 +123,8 @@ function LevelPage() {
           imgPopUpClass={tRex.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={velociraptor.data}
@@ -129,6 +134,8 @@ function LevelPage() {
           imgPopUpClass={velociraptor.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={triceratops.data}
@@ -137,6 +144,8 @@ function LevelPage() {
           imgPopUpClass={triceratops.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={brachiosaurus.data}
@@ -145,6 +154,8 @@ function LevelPage() {
           imgPopUpClass={brachiosaurus.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={stegosaurus.data}
@@ -153,10 +164,13 @@ function LevelPage() {
           imgPopUpClass={stegosaurus.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <ReturnGameMenu />
       </main>
       <TurnYourPhone />
+      <Timer />
     </>
   );
 }

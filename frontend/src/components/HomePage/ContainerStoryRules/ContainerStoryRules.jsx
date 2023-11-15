@@ -67,6 +67,7 @@ function ContainerStoryRules() {
         onClick={() => {
           setObjectives(randomObjectives());
           setBag([]);
+          setTimeout(600);
         }}
       >
         Voyager

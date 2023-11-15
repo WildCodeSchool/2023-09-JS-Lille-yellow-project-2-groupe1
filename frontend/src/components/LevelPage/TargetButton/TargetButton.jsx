@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./TargetButton.scss";
 import "./TargetButtonJurassic.scss";
 import { PropTypes } from "prop-types";
 import Brain from "../../../assets/pictures/ComponentsPics/Brain.png";
+import { useGlobalContext } from "../../Context/GlobalContextProvider";
 
 function TargetButton({
   data,
@@ -12,8 +14,18 @@ function TargetButton({
   imgPopUpClass,
   bag,
   setBag,
+  score,
+  setScore,
 }) {
   const [popupMessage, setPopupMessage] = useState("");
+  const navigate = useNavigate();
+  const { time } = useGlobalContext();
+
+  useEffect(() => {
+    if (score === 2 || time === 0) {
+      navigate("/endpage");
+    }
+  }, [score === 2, time === 0]);
 
   return (
     <>
@@ -34,6 +46,7 @@ function TargetButton({
                     onClick={() => {
                       setPopupMessage("");
                       setBag([...bag, `${item.itemName}`]);
+                      setScore(score + 1);
                     }}
                   >
                     <img src={item.itemSrc} alt="" className={item.itemClass} />
@@ -86,13 +99,17 @@ TargetButton.propTypes = {
   imgPopUpClass: PropTypes.string.isRequired,
   bag: PropTypes.arrayOf(PropTypes.string),
   setBag: PropTypes.func,
+  score: PropTypes.number,
+  setScore: PropTypes.func,
 };
 
 TargetButton.defaultProps = {
   item: {
     itemName: null,
- },
+  },
   bag: [],
   setBag: null,
+  score: 0,
+  setScore: null,
 };
 export default TargetButton;

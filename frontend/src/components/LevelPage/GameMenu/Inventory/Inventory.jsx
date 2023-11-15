@@ -76,7 +76,7 @@ function Inventory({ bag }) {
           ) : (
             ""
           )}
-           {bag.find((e) => e === "claw") ? (
+          {bag.find((e) => e === "claw") ? (
             <button
               key="clawButton"
               type="button"
@@ -87,7 +87,6 @@ function Inventory({ bag }) {
               onMouseLeave={handleLeave}
             >
               <img src={claw} className="clawImgInBag" alt="La griffe" />
-
             </button>
           ) : (
             ""
@@ -133,8 +132,8 @@ function Inventory({ bag }) {
               onMouseLeave={handleLeave}
             >
               <img src={pen} className="penImgInBag" alt="Stylo" />
-              </button>
-              ) : (
+            </button>
+          ) : (
             ""
           )}
           {info}
