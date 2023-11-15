@@ -184,6 +184,7 @@ function Inventory({ bag }) {
               <img src={tablet} className="papyrusImgInBag" alt="La tablette" />
             </button>
           ) : (
+
             ""
           )}
           {info}
