@@ -1,0 +1,18 @@
+@import "../../../variables.scss";
+
+.returnChooseLevelPage {
+  position: absolute;
+  top: 2rem;
+  border-radius: 200px;
+  border: 3px solid $primaryColor;
+  background-color: $secondaryColor;
+  height: 1.5rem;
+  width: 1.5rem;
+  align-items: center;
+  color: $primaryColor;
+  font-size: 1rem;
+  left: 17vw;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}

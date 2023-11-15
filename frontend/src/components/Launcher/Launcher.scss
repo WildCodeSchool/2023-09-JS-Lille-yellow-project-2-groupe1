@@ -1,0 +1,23 @@
+.backgroundlauncher {
+  background-image: url("../../assets/pictures/ComponentsPics/LauncherTheme.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.viktor {
+  position: absolute;
+  width: 30vw;
+  left: 20%;
+  bottom: 0;
+}
+
+.timeMachine {
+  position: absolute;
+  width: 20vw;
+  right: 20%;
+  bottom: 10%;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}

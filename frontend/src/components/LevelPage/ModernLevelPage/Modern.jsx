@@ -13,6 +13,7 @@ import Rousseau from "../../../assets/pictures/Modern/Rousseau.png";
 import MontgolfierBrothers from "../../../assets/pictures/Modern/Montgolfierbrothers.png";
 import NapoleonCharacter from "../../../assets/pictures/Modern/NapoleonCharacter.png";
 import "../TargetButton/TargetButtonModern.scss";
+import ReturnChooseLevelPageButton from "../ReturnChooseLevelPagebutton/ReturnChooseLevelPagebutton";
 import pen from "../../../assets/pictures/Modern/HugoPen.png";
 import necklace from "../../../assets/pictures/Modern/Necklace.png";
 import sword from "../../../assets/pictures/Modern/NapoleonSword.png";
@@ -149,6 +150,7 @@ function Modern() {
         <ReturnGameMenu />
       </main>
       <TurnYourPhone />
+      <ReturnChooseLevelPageButton />
     </>
   );
 }

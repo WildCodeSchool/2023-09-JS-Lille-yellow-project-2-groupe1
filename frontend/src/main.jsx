@@ -11,6 +11,7 @@ import ChooseLevelPage from "./components/ChooseLevelPage/ChooseLevelPage";
 import LevelPage from "./components/LevelPage/LevelPage";
 import Egypt from "./components/LevelPage/Egypt";
 import Modern from "./components/LevelPage/ModernLevelPage/Modern";
+import Launcher from "./components/Launcher/Launcher";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+  { path: "/launcher", element: <Launcher /> },
   {
     path: "/ChooseLevelPage",
     element: <ChooseLevelPage />,
