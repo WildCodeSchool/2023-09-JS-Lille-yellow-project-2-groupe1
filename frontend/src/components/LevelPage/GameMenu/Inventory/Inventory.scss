@@ -133,3 +133,34 @@
   border: 2px solid $secondaryColor;
   width: 10vw;
 }
+
+.scepterButton {
+  background: none;
+  border: none;
+}
+.scepterImgInBag {
+  width: 3vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+.tabletButton {
+  background: none;
+  border: none;
+}
+.tabletImgInBag {
+  width: 3vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+.papyrusButton {
+  background: none;
+  border: none;
+}
+.papyrusImgInBag {
+  width: 3vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}

@@ -91,7 +91,7 @@ TargetButton.propTypes = {
 TargetButton.defaultProps = {
   item: {
     itemName: null,
- },
+  },
   bag: [],
   setBag: null,
 };
