@@ -94,6 +94,39 @@
   }
 }
 
+.swordButton {
+  background: none;
+  border: none;
+}
+.swordImgInBag {
+  width: 6vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+
+.penButton {
+  background: none;
+  border: none;
+}
+.penImgInBag {
+  width: 6vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+
+.necklaceButton {
+  background: none;
+  border: none;
+}
+.necklaceImgInBag {
+  width: 3vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+
 .PopUpInBag {
   color: $secondaryColor;
   background-color: $primaryColor;
