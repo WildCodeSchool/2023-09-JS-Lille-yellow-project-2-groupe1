@@ -4,6 +4,7 @@ import "./Inventory.scss";
 import Bag from "../../../../assets/pictures/ComponentsPics/Bag.png";
 import egg from "../../../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
 import tooth from "../../../../assets/pictures/jurassic/tRexTooth.png";
+import claw from "../../../../assets/pictures/jurassic/velociraptorclaw.png";
 
 function Inventory({ bag }) {
   const [showInventory, setShowInventory] = useState(false);
@@ -70,6 +71,21 @@ function Inventory({ bag }) {
               onMouseLeave={handleLeave}
             >
               <img src={tooth} className="toothImgInBag" alt="La dent" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "claw") ? (
+            <button
+              key="clawButton"
+              type="button"
+              className="clawButton"
+              onFocus={() => handleEnter("La griffe du velociraptor")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("La griffe du velociraptor")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={claw} className="clawImgInBag" alt="La griffe" />
             </button>
           ) : (
             ""
