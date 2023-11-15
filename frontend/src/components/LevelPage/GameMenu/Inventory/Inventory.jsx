@@ -7,6 +7,7 @@ import tooth from "../../../../assets/pictures/jurassic/tRexTooth.png";
 import sword from "../../../../assets/pictures/Modern/NapoleonSword.png";
 import pen from "../../../../assets/pictures/Modern/HugoPen.png";
 import necklace from "../../../../assets/pictures/Modern/Necklace.png";
+import claw from "../../../../assets/pictures/jurassic/velociraptorclaw.png";
 
 function Inventory({ bag }) {
   const [showInventory, setShowInventory] = useState(false);
@@ -75,6 +76,22 @@ function Inventory({ bag }) {
           ) : (
             ""
           )}
+           {bag.find((e) => e === "claw") ? (
+            <button
+              key="clawButton"
+              type="button"
+              className="clawButton"
+              onFocus={() => handleEnter("La griffe du velociraptor")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("La griffe du velociraptor")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={claw} className="clawImgInBag" alt="La griffe" />
+
+            </button>
+          ) : (
+            ""
+          )}
           {bag.find((e) => e === "sword") ? (
             <button
               key="swordButton"
@@ -116,8 +133,8 @@ function Inventory({ bag }) {
               onMouseLeave={handleLeave}
             >
               <img src={pen} className="penImgInBag" alt="Stylo" />
-            </button>
-          ) : (
+              </button>
+              ) : (
             ""
           )}
           {info}

@@ -17,9 +17,9 @@ function ContainerStoryRules() {
       item: "tooth",
     },
     {
-      objective: "Récupérer une plume de vélociraptor",
-      objectiveClass: "featherObjective",
-      item: "feather",
+      objective: "Récupérer une griffe de vélociraptor",
+      objectiveClass: "clawObjective",
+      item: "claw",
     },
     {
       objective: "Récupérer le collier de Marie-Antoinette",
