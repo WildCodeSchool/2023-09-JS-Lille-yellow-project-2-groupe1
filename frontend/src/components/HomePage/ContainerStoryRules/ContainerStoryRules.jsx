@@ -36,6 +36,22 @@ function ContainerStoryRules() {
       objectiveClass: "penObjective",
       item: "pen",
     },
+
+    {
+      objective: "Récupérer le sceptre de Toutankhamon",
+      objectiveClass: "scepterObjective",
+      item: "scepter",
+    },
+    {
+      objective: "Récupérer le papyrus d'Annubis",
+      objectiveClass: "papyrusObjective",
+      item: "papyrus",
+    },
+    {
+      objective: "Récupérer la tablette de Hiéroglyphe d'Isis",
+      objectiveClass: "tabletObjective",
+      item: "tablet",
+    },
   ];
   const numberOfObjectives = 6;
   const { setObjectives, setBag } = useGlobalContext();
