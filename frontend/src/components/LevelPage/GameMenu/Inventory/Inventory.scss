@@ -83,6 +83,16 @@
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 }
+.clawButton {
+  background: none;
+  border: none;
+}
+.clawImgInBag {
+  width: 3vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
 
 .PopUpInBag {
   color: $secondaryColor;
