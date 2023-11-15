@@ -1,31 +1,27 @@
-.eggClassButton {
-  all: unset;
+.quetzalcoatlus {
+  width: 9vw;
   position: absolute;
-  top: 55%;
-  left: 15%;
-  z-index: 1;
-  cursor: pointer;
+  top: 20%;
+  left: 42%;
+  overflow: hidden;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
   }
 }
 
-.toothClassButton {
-  all: unset;
+.t-rex {
+  width: 17vw;
   position: absolute;
-  top: 45%;
-  left: 6%;
-  z-index: 1;
-  cursor: pointer;
+  top: 40%;
+  left: 58%;
+  overflow: hidden;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
   }
 }
-.toothClass {
-  width: 3vw;
-  transform: rotate(0.5rad);
-}
-
 .tRexPopUp {
   width: 20vw;
   margin-left: 2vw;
@@ -42,26 +38,121 @@
   transform: rotate(-0.3rad);
 }
 
-.quetzalcoatlus {
-  width: 9vw;
+.eggClassButton {
+  all: unset;
   position: absolute;
-  top: 20%;
-  left: 42%;
+  top: 55%;
+  left: 15%;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+  }
+}
+
+.toothClassButton {
+  all: unset;
+  position: absolute;
+  top: 55%;
+  left: 6%;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+  }
+}
+.toothClass {
+  width: 3vw;
+  transform: rotate(0.5rad);
+}
+
+.velociraptor {
+  width: 6vw;
+  position: absolute;
+  top: 70%;
+  left: 30%;
   overflow: hidden;
+  transform: scaleX(-1);
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
   }
 }
+.velociraptorPopUp {
+  width: 22vw;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  margin-right: 1vw;
+}
 
-.t-rex {
-  width: 20vw;
+.clawClassButton {
+  all: unset;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 1;
+  cursor: pointer;
+  transform: rotate(1rad);
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+  }
+}
+.clawClass {
+  width: 4vw;
+}
+.triceratops {
+  width: 5vw;
   position: absolute;
   top: 45%;
-  left: 60%;
+  left: 25%;
   overflow: hidden;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
   }
+}
+.triceratopsPopUp {
+  width: 20vw;
+  margin-left: 3vw;
+  margin-top: 1vh;
+}
+.brachiosaurus {
+  width: 9vw;
+  position: absolute;
+  top: 37%;
+  left: 82%;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+.brachiosaurusPopUp {
+  width: 19vw;
+  margin-left: 3vw;
+  margin-top: 1vh;
+  margin-right: 1vw;
+}
+.stegosaurus {
+  width: 7vw;
+  position: absolute;
+  top: 51%;
+  left: 47%;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+.stegosaurusPopUp {
+  width: 25vw;
+  margin-left: 3vw;
+  margin-top: 2vh;
 }
