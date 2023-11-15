@@ -12,17 +12,32 @@ function ContainerStoryRules() {
       item: "egg",
     },
     {
-      objective: "Récupérer la dent du Tyranossaurus Rex",
+      objective: "Récupérer la dent du Tyranosaurus Rex",
       objectiveClass: "toothObjective",
       item: "tooth",
     },
     {
-      objective: "Récupérer une plume de vélociraptor",
-      objectiveClass: "featherObjective",
-      item: "feather",
+      objective: "Récupérer une griffe de vélociraptor",
+      objectiveClass: "clawObjective",
+      item: "claw",
+    },
+    {
+      objective: "Récupérer le collier de Marie-Antoinette",
+      objectiveClass: "necklaceObjective",
+      item: "necklace",
+    },
+    {
+      objective: "Récupérer l'épée de Napoléon",
+      objectiveClass: "swordObjective",
+      item: "sword",
+    },
+    {
+      objective: "Récupérer le stylo de Victor Hugo",
+      objectiveClass: "penObjective",
+      item: "pen",
     },
   ];
-  const numberOfObjectives = 2;
+  const numberOfObjectives = 6;
   const { setObjectives, setBag } = useGlobalContext();
   function randomObjectives() {
     const objectivesArrayRandom = [];

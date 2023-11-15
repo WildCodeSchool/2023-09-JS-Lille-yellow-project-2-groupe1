@@ -4,11 +4,14 @@ import "./Inventory.scss";
 import Bag from "../../../../assets/pictures/ComponentsPics/Bag.png";
 import egg from "../../../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
 import tooth from "../../../../assets/pictures/jurassic/tRexTooth.png";
+import sword from "../../../../assets/pictures/Modern/NapoleonSword.png";
+import pen from "../../../../assets/pictures/Modern/HugoPen.png";
+import necklace from "../../../../assets/pictures/Modern/Necklace.png";
+import claw from "../../../../assets/pictures/jurassic/velociraptorclaw.png";
 
 function Inventory({ bag }) {
   const [showInventory, setShowInventory] = useState(false);
   const [info, setInfo] = useState("");
-
   const handleInventoryToggle = () => {
     setShowInventory(!showInventory);
   };
@@ -20,7 +23,6 @@ function Inventory({ bag }) {
   const handleLeave = () => {
     setInfo("");
   };
-
   return (
     <>
       <button
@@ -72,6 +74,67 @@ function Inventory({ bag }) {
               <img src={tooth} className="toothImgInBag" alt="La dent" />
             </button>
           ) : (
+            ""
+          )}
+           {bag.find((e) => e === "claw") ? (
+            <button
+              key="clawButton"
+              type="button"
+              className="clawButton"
+              onFocus={() => handleEnter("La griffe du velociraptor")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("La griffe du velociraptor")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={claw} className="clawImgInBag" alt="La griffe" />
+
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "sword") ? (
+            <button
+              key="swordButton"
+              type="button"
+              className="swordButton"
+              onFocus={() => handleEnter("Epée de Napoléon")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Epée de Napoléon")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={sword} className="swordImgInBag" alt="L'épée" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "necklace") ? (
+            <button
+              key="necklaceButton"
+              type="button"
+              className="necklaceButton"
+              onFocus={() => handleEnter("Collier de Marie-Antoinette")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Collier de Marie-Antoinette")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={necklace} className="necklaceImgInBag" alt="Collier" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "pen") ? (
+            <button
+              key="penButton"
+              type="button"
+              className="penButton"
+              onFocus={() => handleEnter("Stylo de Victor Hugo")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Stylo de Victor Hugo")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={pen} className="penImgInBag" alt="Stylo" />
+              </button>
+              ) : (
             ""
           )}
           {info}

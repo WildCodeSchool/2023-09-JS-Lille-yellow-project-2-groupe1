@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Tyrannosaurus Rex",
+    "name": "Tyrannosaure Rex",
     "diet": "Carnivore",
     "length": "12 mètres",
     "weight": "9 tonnes",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "name": "Velociraptor",
+    "name": "Vélociraptor",
     "diet": "Carnivore",
     "length": "2 mètres",
     "weight": "45 kilogrammes",
