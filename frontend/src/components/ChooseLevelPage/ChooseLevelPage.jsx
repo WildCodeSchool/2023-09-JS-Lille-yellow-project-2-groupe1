@@ -2,6 +2,7 @@ import { useRouteLoaderData, Link } from "react-router-dom";
 import "./ChooseLevelPage.scss";
 import button from "../../assets/pictures/ChooseLevelPagePics/playButtonSP.png";
 import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
+import Timer from "../Timer/Timer";
 
 function ChooseLevelPage() {
   const era = useRouteLoaderData("ChooseLevelPage");
@@ -49,6 +50,7 @@ function ChooseLevelPage() {
         </Link>
       </main>
       <TurnYourPhone />
+      <Timer />
     </>
   );
 }
