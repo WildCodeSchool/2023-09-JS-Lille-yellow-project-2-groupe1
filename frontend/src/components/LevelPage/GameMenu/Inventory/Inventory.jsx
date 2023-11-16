@@ -4,11 +4,17 @@ import "./Inventory.scss";
 import Bag from "../../../../assets/pictures/ComponentsPics/Bag.png";
 import egg from "../../../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
 import tooth from "../../../../assets/pictures/jurassic/tRexTooth.png";
+import sword from "../../../../assets/pictures/Modern/NapoleonSword.png";
+import pen from "../../../../assets/pictures/Modern/HugoPen.png";
+import necklace from "../../../../assets/pictures/Modern/Necklace.png";
+import claw from "../../../../assets/pictures/jurassic/velociraptorclaw.png";
+import scepter from "../../../../assets/pictures/Egypt/scepter.png";
+import papyrus from "../../../../assets/pictures/Egypt/papyrus.png";
+import tablet from "../../../../assets/pictures/Egypt/tablet.png";
 
 function Inventory({ bag }) {
   const [showInventory, setShowInventory] = useState(false);
   const [info, setInfo] = useState("");
-
   const handleInventoryToggle = () => {
     setShowInventory(!showInventory);
   };
@@ -20,7 +26,6 @@ function Inventory({ bag }) {
   const handleLeave = () => {
     setInfo("");
   };
-
   return (
     <>
       <button
@@ -70,6 +75,113 @@ function Inventory({ bag }) {
               onMouseLeave={handleLeave}
             >
               <img src={tooth} className="toothImgInBag" alt="La dent" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "claw") ? (
+            <button
+              key="clawButton"
+              type="button"
+              className="clawButton"
+              onFocus={() => handleEnter("La griffe du velociraptor")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("La griffe du velociraptor")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={claw} className="clawImgInBag" alt="La griffe" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "sword") ? (
+            <button
+              key="swordButton"
+              type="button"
+              className="swordButton"
+              onFocus={() => handleEnter("Epée de Napoléon")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Epée de Napoléon")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={sword} className="swordImgInBag" alt="L'épée" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "necklace") ? (
+            <button
+              key="necklaceButton"
+              type="button"
+              className="necklaceButton"
+              onFocus={() => handleEnter("Collier de Marie-Antoinette")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Collier de Marie-Antoinette")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={necklace} className="necklaceImgInBag" alt="Collier" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "pen") ? (
+            <button
+              key="penButton"
+              type="button"
+              className="penButton"
+              onFocus={() => handleEnter("Stylo de Victor Hugo")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Stylo de Victor Hugo")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={pen} className="penImgInBag" alt="Stylo" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "scepter") ? (
+            <button
+              key="scepterButton"
+              type="button"
+              className="scepterButton"
+              onFocus={() => handleEnter("Le sceptre de Toutankhamon")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Le sceptre de Toutankhamon")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={scepter} className="scepterImgInBag" alt="Le sceptre" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "papyrus") ? (
+            <button
+              key="papyrusButton"
+              type="button"
+              className="papyrusButton"
+              onFocus={() => handleEnter("Le papyrus d'Annubis")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Le papyrus d'Annubis")}
+              onMouseLeave={handleLeave}
+            >
+              <img src={papyrus} className="papyrusImgInBag" alt="Le papyrus" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "tablet") ? (
+            <button
+              key="tabletButton"
+              type="button"
+              className="tabletButton"
+              onFocus={() => handleEnter("La tablette de hieroglyphe d'Isis")}
+              onBlur={handleLeave}
+              onMouseEnter={() =>
+                handleEnter("La tablette de hieroglyphe d'Isis")
+              }
+              onMouseLeave={handleLeave}
+            >
+              <img src={tablet} className="papyrusImgInBag" alt="La tablette" />
             </button>
           ) : (
             ""

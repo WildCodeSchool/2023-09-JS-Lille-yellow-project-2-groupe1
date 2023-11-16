@@ -57,10 +57,10 @@
 
   & .cardEraContainer__levelDescription {
     text-shadow:
-      -1px -1px 0 $secondaryColor,
-      1px -1px 0 $secondaryColor,
-      -1px 1px 0 $secondaryColor,
-      1px 1px 0 $secondaryColor;
+      -1.5px -1.5px 0 $secondaryColor,
+      1.5px -1.5px 0 $secondaryColor,
+      -1.5px 1.5px 0 $secondaryColor,
+      1.5px 1.5px 0 $secondaryColor;
     color: $primaryColor;
     text-align: center;
     width: 90%;
