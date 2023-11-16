@@ -1,7 +1,7 @@
 function Story() {
   return (
-    <section>
-      <h2 className="scenarioTitle">Scenario</h2>
+    <section className="scenarioTitle">
+      <h2>Scenario</h2>
       <p>
         Viktor, un jeune inventeur, passionné d’histoire, possède le
         ChronoMécaniste, une machine à voyager dans le temps.

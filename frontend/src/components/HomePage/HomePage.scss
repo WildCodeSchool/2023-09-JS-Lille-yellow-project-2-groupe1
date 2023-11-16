@@ -7,10 +7,6 @@
     margin-top: 2%;
   }
 
-  .rulesTitle {
-    font-size: small;
-  }
-
   h2 {
     font-size: medium;
   }
@@ -33,10 +29,30 @@
       margin-left: 2vw;
     }
 
-    &__playButton {
-      position: absolute;
-      top: 75%;
-      right: 16%;
+    section {
+      margin-top: 0;
+    }
+    h2 {
+      margin-top: 2vh;
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 0.6rem;
+      text-align: start;
+      margin-inline: 3vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .homePageElements {
+    display: flex;
+    justify-content: space-around;
+
+    &__mainCharacter {
+      width: 50vw;
+      height: 85vh;
+      margin-left: 2vw;
     }
 
     section {
@@ -44,8 +60,9 @@
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1rem;
       text-align: start;
+      margin-inline: 3vw;
     }
   }
 }
