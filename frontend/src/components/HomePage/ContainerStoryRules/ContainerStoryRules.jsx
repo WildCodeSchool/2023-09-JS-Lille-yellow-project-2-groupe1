@@ -86,7 +86,7 @@ function ContainerStoryRules() {
           setTimeout(600);
         }}
       >
-        Voyager
+        Jouer
       </Link>
     </section>
   );
