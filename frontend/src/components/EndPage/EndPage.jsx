@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useGlobalContext } from "../Context/GlobalContextProvider";
 import "./EndPage.scss";
 import shelf from "../../assets/pictures/ComponentsPics/shelf.png";
@@ -74,6 +75,9 @@ function EndPage() {
         alt="Papyrus égyptien"
       />
       <img src={shelf} alt="étagère avec les artéfacts" className="shelf" />
+      <Link to="/" className="restartgame" aria-label="recommencer le jeu">
+        X
+      </Link>
     </main>
   );
 }

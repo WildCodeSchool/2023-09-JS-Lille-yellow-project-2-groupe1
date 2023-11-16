@@ -108,20 +108,19 @@
 
 .closeButtonChooseLevelPage {
   position: absolute;
-  top: 2rem;
-  border-radius: 200px;
   border: 3px solid $primaryColor;
+  top: 2.2vh;
+  right: 4vw;
+  border-radius: 200px;
   background-color: $secondaryColor;
-  height: 1rem;
-  width: 1rem;
-  font-size: 0.7rem;
-  align-items: center;
-  color: $primaryColor;
-  font-size: 0.8rem;
-  right: 2rem;
-  cursor: pointer;
-  text-decoration: none;
+  width: 3vw;
+  height: 5vh;
   text-align: center;
+  text-decoration: none;
+  color: $primaryColor;
+  font-size: 1.5vw;
+  cursor: pointer;
+  padding-top: 2px;
 }
 
 @media (min-width: 940px) {
@@ -135,5 +134,12 @@
 @media (orientation: landscape) {
   .cardEraContainer__playButton {
     margin-bottom: 1.5rem;
+  }
+  .card {
+    &:hover {
+      .cardEraContainer__levelDescription {
+        font-size: 0.7rem;
+      }
+    }
   }
 }

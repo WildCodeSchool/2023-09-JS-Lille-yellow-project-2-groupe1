@@ -1,33 +1,40 @@
 @import "../../../../variables.scss";
 
 .objectivesPopUp {
+  pointer-events: none;
   opacity: 0;
   position: absolute;
   left: 30%;
   top: 25%;
+  height: 52%;
   background-image: url(../../../../assets/pictures/ComponentsPics/noteBookBackground.jpg);
   background-color: $secondaryColor;
   border: 5px solid $optionalColor;
   color: $primaryColor;
   width: 52vw;
   transition: opacity 0.3s;
+  display: none;
 
   &__closeButton {
     background-color: $secondaryColor;
     border: 2px solid $primaryColor;
     color: $primaryColor;
-    height: 4vh;
-    width: 2vw;
+    font-size: 0.7rem;
+    height: 5vh;
+    width: 3vw;
+
     cursor: pointer;
   }
 
   &__show {
+    pointer-events: auto;
     border: 10px solid $thirdColor;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: $primaryColor;
     opacity: 1;
     z-index: 1;
+    display: block;
   }
 }
 
@@ -48,9 +55,10 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .objectivesTitle {
   margin-bottom: 0.6rem;
-  margin-left: 10rem;
+  margin-left: 5rem;
   color: $secondaryColor;
   font-size: 2vw;
   text-shadow:
@@ -63,8 +71,9 @@
 .objectivesList {
   color: $secondaryColor;
   text-align: start;
-  font-size: 1.8rem;
-  margin-left: 1rem;
+  font-size: 0.9rem;
+  margin-left: 0;
+
   margin-bottom: 1rem;
   text-shadow:
     -1px -1px 0 $primaryColor,
@@ -79,4 +88,36 @@
 
 ul {
   margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .objectivesPopUp {
+    &__closeButton {
+      height: 4.5vh;
+      width: 2.5vw;
+    }
+  }
+  .objectivesTitle {
+    margin-left: 5rem;
+  }
+  .objectivesList {
+    font-size: 0.95rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .objectivesPopUp {
+    &__closeButton {
+      height: 4vh;
+      width: 2vw;
+    }
+  }
+  .objectivesTitle {
+    margin-left: 10rem;
+  }
+  .objectivesList {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+  }
 }

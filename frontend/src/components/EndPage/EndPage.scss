@@ -168,3 +168,20 @@
 .hiddenPapyrus {
   opacity: 0%;
 }
+
+.restartgame {
+  position: absolute;
+  border: 3px solid $primaryColor;
+  top: 4vh;
+  right: 0.5vw;
+  border-radius: 200px;
+  background-color: $secondaryColor;
+  width: 3vw;
+  height: 5vh;
+  text-align: center;
+  text-decoration: none;
+  color: $primaryColor;
+  font-size: 1.5vw;
+  cursor: pointer;
+  padding-top: 5px;
+}

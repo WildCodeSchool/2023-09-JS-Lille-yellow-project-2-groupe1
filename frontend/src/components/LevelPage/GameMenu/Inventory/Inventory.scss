@@ -2,6 +2,7 @@
 
 .inventoryPopUp {
   opacity: 0;
+  pointer-events: none;
   position: absolute;
   left: 30%;
   top: 25%;
@@ -10,19 +11,21 @@
   border: 5px solid $optionalColor;
   color: $primaryColor;
   width: 52vw;
-  height: 50%;
+  height: 52%;
   transition: opacity 0.3s;
 
   &__closeButton {
     background-color: $secondaryColor;
     border: 2px solid $primaryColor;
     color: $primaryColor;
-    height: 4vh;
-    width: 2vw;
+    font-size: 0.7rem;
+    width: 3vw;
+    height: 5vh;
     cursor: pointer;
   }
 
   &__show {
+    pointer-events: auto;
     border: 10px solid $thirdColor;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -37,10 +40,9 @@
   justify-content: space-around;
   align-items: center;
 }
-
 .inventoryTitle {
   margin-bottom: 0.6rem;
-  margin-left: 15rem;
+  margin-left: 5rem;
   color: $secondaryColor;
   font-size: 2vw;
   text-shadow:
@@ -174,5 +176,18 @@
   width: 3vw;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+
+@media (min-width: 900px) {
+  .inventoryPopUp {
+    &__closeButton {
+      height: 4vh;
+      width: 2vw;
+    }
+  }
+  .inventoryTitle {
+    margin-bottom: 0.6rem;
+    margin-left: 15rem;
   }
 }
