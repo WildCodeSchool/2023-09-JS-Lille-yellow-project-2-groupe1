@@ -2,17 +2,13 @@
 
 .returnChooseLevelPage {
   position: absolute;
-  top: 2rem;
-  border-radius: 200px;
-  border: 3px solid $primaryColor;
-  background-color: $secondaryColor;
-  height: 1.5rem;
-  width: 1.5rem;
-  align-items: center;
-  color: $primaryColor;
-  font-size: 1rem;
+  top: 1rem;
+  height: 12vh;
+  width: 6vw;
   left: 17vw;
   cursor: pointer;
-  text-decoration: none;
-  text-align: center;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.6));
+    cursor: pointer;
+  }
 }

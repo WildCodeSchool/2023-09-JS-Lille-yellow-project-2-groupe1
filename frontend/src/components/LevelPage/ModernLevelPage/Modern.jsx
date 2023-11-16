@@ -17,6 +17,7 @@ import ReturnChooseLevelPageButton from "../ReturnChooseLevelPagebutton/ReturnCh
 import pen from "../../../assets/pictures/Modern/HugoPen.png";
 import necklace from "../../../assets/pictures/Modern/Necklace.png";
 import sword from "../../../assets/pictures/Modern/NapoleonSword.png";
+import Timer from "../../Timer/Timer";
 
 function Modern() {
   const characterClass = "NapoleonCharacter";
@@ -163,6 +164,7 @@ function Modern() {
       </main>
       <TurnYourPhone />
       <ReturnChooseLevelPageButton />
+      <Timer />
     </>
   );
 }

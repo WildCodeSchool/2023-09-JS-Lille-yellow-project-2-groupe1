@@ -16,6 +16,8 @@ import tablet from "../../assets/pictures/Egypt/tablet.png";
 import scepter from "../../assets/pictures/Egypt/scepter.png";
 import papyrus from "../../assets/pictures/Egypt/papyrus.png";
 import egyptCharacter from "../../assets/pictures/Egypt/EgyptCharacter.png";
+import ReturnChooseLevelPageButton from "./ReturnChooseLevelPagebutton/ReturnChooseLevelPagebutton";
+import Timer from "../Timer/Timer";
 
 function Egypt() {
   const characterClass = "egyptCharacter";
@@ -146,9 +148,11 @@ function Egypt() {
           score={score}
           setScore={setScore}
         />
+        <ReturnChooseLevelPageButton />
         <ReturnGameMenu />
       </main>
       <TurnYourPhone />
+      <Timer />
     </>
   );
 }
