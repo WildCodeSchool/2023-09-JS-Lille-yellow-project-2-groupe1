@@ -13,13 +13,13 @@ import Toutankhamon from "../../assets/pictures/Egypt/Toutankhamon.png";
 import Re from "../../assets/pictures/Egypt/re.png";
 import "./Egypt.scss";
 import tablet from "../../assets/pictures/Egypt/tablet.png";
-import scepter from "../../assets/pictures/Egypt/sceptre.png";
+import scepter from "../../assets/pictures/Egypt/scepter.png";
 import papyrus from "../../assets/pictures/Egypt/papyrus.png";
 import egyptCharacter from "../../assets/pictures/Egypt/EgyptCharacter.png";
 
 function Egypt() {
   const characterClass = "egyptCharacter";
-  const { objectives, bag, setBag } = useGlobalContext();
+  const { objectives, bag, setBag, score, setScore } = useGlobalContext();
   const egyptArray = useRouteLoaderData("egypt");
   function getEgyptData(
     egyptId,
@@ -101,6 +101,8 @@ function Egypt() {
           imgPopUpClass={toutankhamon.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={horus.data}
@@ -109,6 +111,8 @@ function Egypt() {
           imgPopUpClass={horus.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={isis.data}
@@ -118,6 +122,8 @@ function Egypt() {
           imgPopUpClass={isis.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={re.data}
@@ -126,6 +132,8 @@ function Egypt() {
           imgPopUpClass={re.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={anubis.data}
@@ -135,6 +143,8 @@ function Egypt() {
           imgPopUpClass={anubis.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <ReturnGameMenu />
       </main>

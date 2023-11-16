@@ -22,10 +22,10 @@ function TargetButton({
   const { time } = useGlobalContext();
 
   useEffect(() => {
-    if (score === 2 || time === 0) {
-      navigate("/endpage");
+    if (score === 8 || time === 0) {
+      navigate("/end");
     }
-  }, [score === 2, time === 0]);
+  }, [score === 8, time === 0]);
 
   return (
     <>

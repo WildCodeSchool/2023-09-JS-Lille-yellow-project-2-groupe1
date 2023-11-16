@@ -28,12 +28,13 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: "/endpage",
+        path: "/end",
         element: <EndPage />,
       },
     ],
   },
   { path: "/launcher", element: <Launcher /> },
+  { path: "/end", element: <EndPage /> },
   {
     path: "/ChooseLevelPage",
     element: <ChooseLevelPage />,

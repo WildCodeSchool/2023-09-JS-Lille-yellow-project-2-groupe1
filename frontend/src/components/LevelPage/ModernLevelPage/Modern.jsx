@@ -20,7 +20,7 @@ import sword from "../../../assets/pictures/Modern/NapoleonSword.png";
 
 function Modern() {
   const characterClass = "NapoleonCharacter";
-  const { objectives, bag, setBag } = useGlobalContext();
+  const { objectives, bag, setBag, score, setScore } = useGlobalContext();
   const modernArray = useRouteLoaderData("modern");
   function getModernData(
     modernId,
@@ -109,12 +109,16 @@ function Modern() {
           imgPopUpClass={napoleon.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={rousseau.data}
           img={Rousseau}
           imgClass={rousseau.imgClass}
           imgPopUpClass={rousseau.imgPopUpClass}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={marieAntoinette.data}
@@ -124,12 +128,16 @@ function Modern() {
           imgPopUpClass={marieAntoinette.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={louisXVI.data}
           img={Louis}
           imgClass={louisXVI.imgClass}
           imgPopUpClass={louisXVI.imgPopUpClass}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={victorHugo.data}
@@ -139,12 +147,16 @@ function Modern() {
           imgPopUpClass={victorHugo.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={mongolfierBrothers.data}
           img={MontgolfierBrothers}
           imgClass={mongolfierBrothers.imgClass}
           imgPopUpClass={mongolfierBrothers.imgPopUpClass}
+          score={score}
+          setScore={setScore}
         />
 
         <ReturnGameMenu />
