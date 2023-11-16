@@ -2,7 +2,7 @@
 
 .egyptTheme {
   background-image: url("../../assets/pictures/Egypt/EgyptTheme.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: bottom;
 }
 .tabletClass {
@@ -14,18 +14,17 @@
   width: 2.5vw;
   height: 2.5vh;
   position: absolute;
-  top: 25%;
-  left: 8%;
+  top: 8%;
+  left: 26.5%;
   z-index: 1;
   cursor: pointer;
   &:hover {
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 }
 .sceptreClass {
   width: 4vw;
   height: 8vh;
-  transform: rotate(30deg);
 }
 
 .sceptreClassButton {
@@ -33,9 +32,10 @@
   width: 2.5vw;
   height: 2.5vh;
   position: absolute;
-  top: 23%;
-  left: 2%;
+  top: 38%;
+  left: 4%;
   z-index: 1;
+  transform: rotate(-45deg);
   cursor: pointer;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
@@ -53,8 +53,9 @@
   height: 2.5vh;
   position: absolute;
   top: 46.5%;
-  left: 17%;
+  left: 15%;
   z-index: 1;
+  transform: rotate(7deg);
   cursor: pointer;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));

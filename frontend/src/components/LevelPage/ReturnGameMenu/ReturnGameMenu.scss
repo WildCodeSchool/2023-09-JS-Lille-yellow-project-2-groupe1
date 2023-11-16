@@ -2,17 +2,16 @@
 
 .backMainMenuButton {
   position: absolute;
-  right: 0;
-  top: 2vh;
+  border: 3px solid $primaryColor;
+  top: 5vh;
+  right: 1vw;
   border-radius: 200px;
-  border: 0.2vw solid $primaryColor;
   background-color: $secondaryColor;
-  height: 3.5vh;
-  width: 2vw;
+  width: 3vw;
+  height: 5vh;
   align-items: center;
   color: $primaryColor;
-  font-size: 0.8vw;
-  right: 2vw;
+  font-size: 1.5vw;
   cursor: pointer;
 }
 

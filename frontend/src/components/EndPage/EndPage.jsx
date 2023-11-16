@@ -1,6 +1,5 @@
 import { useGlobalContext } from "../Context/GlobalContextProvider";
-import "./EndPage.scss";
-import shelf from "../../assets/pictures/ComponentsPics/shelf.png";
+import shelf2 from "../../assets/pictures/ComponentsPics/shelf2.png";
 import sword from "../../assets/pictures/Modern/NapoleonSword.png";
 import pen from "../../assets/pictures/Modern/HugoPen.png";
 import necklace from "../../assets/pictures/Modern/Necklace.png";
@@ -10,6 +9,8 @@ import egg from "../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
 import scepter from "../../assets/pictures/Egypt/scepter.png";
 import tablet from "../../assets/pictures/Egypt/tablet.png";
 import papyrus from "../../assets/pictures/Egypt/papyrus.png";
+import ReturnGameMenu from "../LevelPage/ReturnGameMenu/ReturnGameMenu";
+import "./EndPage.scss";
 
 function EndPage() {
   const { score, bag } = useGlobalContext();
@@ -28,52 +29,51 @@ function EndPage() {
       </article>
       <img
         src={sword}
-        className={bag.includes("sword") ? "visibleSword" : "hiddenSword"}
+        className={bag ? "visibleSword" : "hiddenSword"}
         alt="épée de Napoléon"
       />
       <img
         src={pen}
-        className={bag.includes("pen") ? "visiblePen" : "hiddenPen"}
+        className={bag ? "visiblePen" : "hiddenPen"}
         alt="Stylo de Victor Hugo"
       />
       <img
         src={necklace}
-        className={
-          bag.includes("necklace") ? "visibleNecklace" : "hiddenNecklace"
-        }
+        className={bag ? "visibleNecklace" : "hiddenNecklace"}
         alt="Collier de Marie-Antoinette"
       />
       <img
         src={tooth}
-        className={bag.includes("tooth") ? "visibleTooth" : "hiddenTooth"}
+        className={bag ? "visibleTooth" : "hiddenTooth"}
         alt="Dent de Tyranosaure"
       />
       <img
         src={claw}
-        className={bag.includes("claw") ? "visibleClaw" : "hiddenClaw"}
+        className={bag ? "visibleClaw" : "hiddenClaw"}
         alt="Griffe de Vélociraptor"
       />
       <img
         src={egg}
-        className={bag.includes("egg") ? "visibleEgg" : "hiddenEgg"}
+        className={bag ? "visibleEgg" : "hiddenEgg"}
         alt="Oeuf de Quetzalcoatlus"
       />
       <img
         src={scepter}
-        className={bag.includes("scepter") ? "visibleScepter" : "hiddenScepter"}
+        className={bag ? "visibleScepter" : "hiddenScepter"}
         alt="Sceptre"
       />
       <img
         src={tablet}
-        className={bag.includes("tablet") ? "visibleTablet" : "hiddenTablet"}
+        className={bag ? "visibleTablet" : "hiddenTablet"}
         alt="Tablette égyptienne"
       />
       <img
         src={papyrus}
-        className={bag.includes("papyrus") ? "visiblePapyrus" : "hiddenPapyrus"}
+        className={bag ? "visiblePapyrus" : "hiddenPapyrus"}
         alt="Papyrus égyptien"
       />
-      <img src={shelf} alt="étagère avec les artéfacts" className="shelf" />
+      <img src={shelf2} alt="étagère avec les artéfacts" className="shelf" />
+      <ReturnGameMenu />
     </main>
   );
 }
