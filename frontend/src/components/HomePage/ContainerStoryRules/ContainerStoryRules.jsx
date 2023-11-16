@@ -7,53 +7,52 @@ import "./ContainerStoryRules.scss";
 function ContainerStoryRules() {
   const objectivesItemArray = [
     {
-      objective: "Récupérer l'oeuf du quetzalcoatlus",
+      objective: "Un oeuf du quetzalcoatlus",
       objectiveClass: "eggObjective",
       item: "egg",
     },
     {
-      objective: "Récupérer la dent du Tyranosaurus Rex",
+      objective: "Une dent du Tyranosaurus Rex",
       objectiveClass: "toothObjective",
       item: "tooth",
     },
     {
-      objective: "Récupérer une griffe de vélociraptor",
+      objective: "Une griffe de vélociraptor",
       objectiveClass: "clawObjective",
       item: "claw",
     },
     {
-      objective: "Récupérer le collier de Marie-Antoinette",
+      objective: "Le collier de Marie-Antoinette",
       objectiveClass: "necklaceObjective",
       item: "necklace",
     },
     {
-      objective: "Récupérer l'épée de Napoléon",
+      objective: "L'épée de Napoléon",
       objectiveClass: "swordObjective",
       item: "sword",
     },
     {
-      objective: "Récupérer le stylo de Victor Hugo",
+      objective: "Le stylo de Victor Hugo",
       objectiveClass: "penObjective",
       item: "pen",
     },
-
     {
-      objective: "Récupérer le sceptre de Toutankhamon",
+      objective: "Le sceptre de Toutankhamon",
       objectiveClass: "scepterObjective",
       item: "scepter",
     },
     {
-      objective: "Récupérer le papyrus d'Annubis",
+      objective: "Le papyrus d'Annubis",
       objectiveClass: "papyrusObjective",
       item: "papyrus",
     },
     {
-      objective: "Récupérer la tablette de Hiéroglyphe d'Isis",
+      objective: "La tablette de Hiéroglyphe d'Isis",
       objectiveClass: "tabletObjective",
       item: "tablet",
     },
   ];
-  const numberOfObjectives = 6;
+  const numberOfObjectives = 8;
   const { setObjectives, setBag } = useGlobalContext();
   function randomObjectives() {
     const objectivesArrayRandom = [];

@@ -54,7 +54,8 @@
   justify-content: center;
 }
 .objectivesTitle {
-  margin-right: 5vw;
+  margin-right: 5rem;
+  margin-bottom: 0.6rem;
   color: $secondaryColor;
   font-size: 2vw;
   text-shadow:
@@ -67,12 +68,16 @@
 .objectivesList {
   color: $secondaryColor;
   text-align: start;
-  font-size: 2vw;
+  font-size: 1.8rem;
+  margin-left: 1rem;
   text-shadow:
     -1px -1px 0 $primaryColor,
     1px -1px 0 $primaryColor,
     -1px 1px 0 $primaryColor,
     1px 1px 0 $primaryColor;
+  ul {
+    margin: 0;
+  }
 }
 
 .textObjective {

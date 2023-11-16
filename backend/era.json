@@ -5,8 +5,23 @@
     "description": "Le Crétacé, qui s'est étendu d'environ 145 à 66 millions d'années avant notre ère, était une période fascinante de l'histoire de la Terre. Pendant cette ère, les continents dérivaient, les premiers oiseaux ont évolué, et les dinosaures régnaient en maîtres sur la planète. Le Crétacé a été témoin de la diversification et de l'extinction de nombreuses espèces, ce qui en fait une période clé pour comprendre l'évolution de la vie sur Terre."
   },
   {
+    "id": 2,
+    "name": "Rome",
+    "description": "L'Empire romain (27 av. J.-C. à 476 ap. J.-C.) a été l'une des civilisations les plus influentes de l'histoire. Avec sa capitale à Rome, l'empire s'est étendu sur trois continents et a été le berceau du droit romain, de l'ingénierie, de la philosophie, et de la culture classique. Il a connu des périodes de prospérité et de déclin, marquées par des empereurs célèbres, des conquêtes militaires, et finalement la chute de l'Empire d'Occident."
+  },
+  {
     "id": 3,
     "name": "Egypte",
     "description": "L'Égypte antique, le long du Nil, a prospéré pendant plus de 3 000 ans. Elle était caractérisée par une société bien organisée, une agriculture florissante, des exploits architecturaux comme les pyramides, et une religion polythéiste. Les pharaons, dirigeants divins, exerçaient un pouvoir absolu. L’Égypte antique a laissé un impact durable à travers l'écriture hiéroglyphique, les arts, la médecine, et des avancées dans le domaine de l'astronomie."
+  },
+  {
+    "id": 4,
+    "name": "Moyen-Âge",
+    "description": "Le Moyen Âge (Ve au XVe siècle) fut une ère marquée par la féodalité, les châteaux, la chevalerie, et l'influence dominante de l'Église catholique. Cette période a connu des défis tels que la peste noire, mais aussi des développements culturels et économiques dans les villes médiévales. Les croisades et les codes de chevalerie ont défini cette époque, contribuant à façonner l'Europe médiévale et à préparer le terrain pour la Renaissance."
+  },
+  {
+    "id": 5,
+    "name": "Moderne",
+    "description": "L'époque moderne (XVe au XVIIIe siècle) a été marquée par des changements majeurs tels que la Renaissance, la Réforme, les grandes explorations, et l'avènement des monarchies absolues. Cette période a vu des avancées scientifiques, l'essor du commerce mondial, et des révolutions politiques, notamment la Révolution française. Les idées des Lumières ont également joué un rôle clé dans la redéfinition des normes sociales et politiques."
   }
 ]

@@ -16,6 +16,7 @@ import claw from "../../assets/pictures/jurassic/velociraptorclaw.png";
 import Triceratops from "../../assets/pictures/jurassic/triceraptops.png";
 import Brachiosaurus from "../../assets/pictures/jurassic/brachiosaurus.png";
 import Stegosaurus from "../../assets/pictures/jurassic/stegosaurus.png";
+import ReturnChooseLevelPageButton from "./ReturnChooseLevelPagebutton/ReturnChooseLevelPagebutton";
 
 function LevelPage() {
   const characterClass = "jurassicCharacter";
@@ -167,6 +168,7 @@ function LevelPage() {
           score={score}
           setScore={setScore}
         />
+        <ReturnChooseLevelPageButton />
         <ReturnGameMenu />
       </main>
       <TurnYourPhone />
