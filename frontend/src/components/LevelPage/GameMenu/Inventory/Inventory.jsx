@@ -8,7 +8,7 @@ import sword from "../../../../assets/pictures/Modern/NapoleonSword.png";
 import pen from "../../../../assets/pictures/Modern/HugoPen.png";
 import necklace from "../../../../assets/pictures/Modern/Necklace.png";
 import claw from "../../../../assets/pictures/jurassic/velociraptorclaw.png";
-import scepter from "../../../../assets/pictures/Egypt/sceptre.png";
+import scepter from "../../../../assets/pictures/Egypt/scepter.png";
 import papyrus from "../../../../assets/pictures/Egypt/papyrus.png";
 import tablet from "../../../../assets/pictures/Egypt/tablet.png";
 
@@ -184,7 +184,6 @@ function Inventory({ bag }) {
               <img src={tablet} className="papyrusImgInBag" alt="La tablette" />
             </button>
           ) : (
-
             ""
           )}
           {info}
