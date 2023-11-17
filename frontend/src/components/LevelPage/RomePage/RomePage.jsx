@@ -20,7 +20,7 @@ import romeCharacter from "../../../assets/pictures/Rome/RomeCharacter.png";
 
 function RomePage() {
   const characterClass = "romeCharacter";
-  const { objectives, bag, setBag } = useGlobalContext();
+  const { objectives, bag, setBag, score, setScore } = useGlobalContext();
   const romeArray = useRouteLoaderData("rome");
   function getRomeData(
     romeId,
@@ -100,6 +100,8 @@ function RomePage() {
           imgPopUpClass={juliusCaesar.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={cicero.data}
@@ -118,6 +120,8 @@ function RomePage() {
           imgPopUpClass={auguste.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={spartacus.data}
@@ -127,6 +131,8 @@ function RomePage() {
           imgPopUpClass={spartacus.imgPopUpClass}
           bag={bag}
           setBag={setBag}
+          score={score}
+          setScore={setScore}
         />
         <TargetButton
           data={pompey.data}
