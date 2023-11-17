@@ -7,9 +7,10 @@ import ReturnGameMenu from "../LevelPage/ReturnGameMenu/ReturnGameMenu";
 
 function ChooseLevelPage() {
   const era = useRouteLoaderData("ChooseLevelPage");
+
   const levelPaths = {
     1: "/LevelPage",
-    2: "/LevelPageRomain",
+    2: "/Rome",
     3: "/Egypt",
     4: "/LevelPageMoyenAge",
     5: "/Modern",

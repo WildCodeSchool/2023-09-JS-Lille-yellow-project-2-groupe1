@@ -5,6 +5,7 @@ const express = require("express");
 const cors = require("cors");
 
 const dino = require("../dinosaurs.json");
+const romePage = require("../romePage.json");
 
 const egypt = require("../egypt.json");
 
@@ -23,6 +24,10 @@ app.use(
 // app.use(express.static("public"));
 app.get("/api/dinosaurs", (req, res) => {
   res.status(200).json(dino);
+});
+
+app.get("/api/romePage", (req, res) => {
+  res.status(200).json(romePage);
 });
 
 app.get("/api/egypt", (req, res) => {

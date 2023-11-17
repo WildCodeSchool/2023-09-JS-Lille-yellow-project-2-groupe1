@@ -13,6 +13,7 @@ import Egypt from "./components/LevelPage/Egypt";
 import Modern from "./components/LevelPage/ModernLevelPage/Modern";
 import EndPage from "./components/EndPage/EndPage";
 import Launcher from "./components/Launcher/Launcher";
+import RomePage from "./components/LevelPage/RomePage/RomePage";
 
 const router = createBrowserRouter([
   {
@@ -101,6 +102,26 @@ const router = createBrowserRouter([
         }
         const dataModern = await responseModern.json();
         return dataModern;
+      } catch (error) {
+        console.error(error);
+        return null;
+      }
+    },
+  },
+  {
+    path: "/Rome",
+    element: <RomePage />,
+    id: "rome",
+    loader: async () => {
+      try {
+        const responseRome = await fetch("http://localhost:3310/api/romePage");
+
+        if (!responseRome.ok) {
+          throw new Error("Failed to fetch rome data");
+        }
+        const dataRome = await responseRome.json();
+
+        return dataRome;
       } catch (error) {
         console.error(error);
         return null;

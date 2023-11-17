@@ -1,0 +1,150 @@
+@import "../../../variables.scss";
+
+.juliusCaesar {
+  width: 8vw;
+  position: absolute;
+  bottom: 21%;
+  left: 24%;
+  transform: rotateX(10deg) rotateY(40deg);
+
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    cursor: pointer;
+  }
+}
+
+.juliusCaesarPopUp {
+  width: 10vw;
+  margin: 2vh;
+}
+
+.armorClass {
+  width: 7vw;
+}
+
+.armorClassButton {
+  width: 6vw;
+  all: unset;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.cicero {
+  width: 6vw;
+  position: absolute;
+  bottom: 23.6%;
+  right: 50%;
+  overflow: hidden;
+  transform: rotate(18.9rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.ciceroPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.auguste {
+  width: 5vw;
+  position: absolute;
+  bottom: 22%;
+  right: 30%;
+  overflow: hidden;
+  transform: rotateX(10deg) rotateY(40deg);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.augustePopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.daggerClass {
+  width: 6vw;
+}
+
+.daggerClassButton {
+  width: 3vw;
+  position: absolute;
+  all: unset;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.spartacus {
+  width: 7vw;
+  position: absolute;
+  bottom: 15%;
+  right: 35%;
+  overflow: hidden;
+  transform: rotate(18.9rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.spartacusPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.chainsClass {
+  width: 6vw;
+}
+
+.chainsClassButton {
+  width: 3vw;
+  position: absolute;
+  all: unset;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.pompey {
+  width: 4vw;
+  position: absolute;
+  top: 3.5%;
+  right: 19%;
+  overflow: hidden;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.pompeyPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
+
+.vercingetorix {
+  width: 12vw;
+  position: absolute;
+  bottom: 5%;
+  left: 32%;
+  overflow: hidden;
+  transform: rotate(0.2rad);
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.vercingetorixPopUp {
+  width: 7vw;
+  margin: 1rem;
+}
