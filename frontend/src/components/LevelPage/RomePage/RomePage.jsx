@@ -17,6 +17,7 @@ import chains from "../../../assets/pictures/Rome/chains.png";
 import Pompey from "../../../assets/pictures/Rome/Pompey.png";
 import "./RomePage.scss";
 import romeCharacter from "../../../assets/pictures/Rome/RomeCharacter.png";
+import ReturnChooseLevelPageButton from "../ReturnChooseLevelPagebutton/ReturnChooseLevelPagebutton";
 
 function RomePage() {
   const characterClass = "romeCharacter";
@@ -155,6 +156,7 @@ function RomePage() {
         <ReturnGameMenu />
       </main>
       <TurnYourPhone />
+      <ReturnChooseLevelPageButton />
     </>
   );
 }
