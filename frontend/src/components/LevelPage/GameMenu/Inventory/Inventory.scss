@@ -268,19 +268,7 @@
 @media (min-width: 900px) {
   .inventoryPopUp {
     &__closeButton {
-      height: 4vh;
-      width: 2vw;
-    }
-  }
-  .inventoryTitle {
-    margin-bottom: 0.6rem;
-    margin-left: 15rem;
-  }
-}
-
-@media (min-width: 900px) {
-  .inventoryPopUp {
-    &__closeButton {
+      font-size: 1vw;
       height: 4vh;
       width: 2vw;
     }
