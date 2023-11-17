@@ -66,7 +66,7 @@ function RomePage() {
       "daggerClassButton"
     );
   } else {
-    brutus = getRomeData(3, "brutus", "BrutusPopUp");
+    brutus = getRomeData(3, "brutus", "brutusPopUp");
   }
   let spartacus;
   if (objectives.some((e) => e.item === "chains")) {
