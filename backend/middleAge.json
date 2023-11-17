@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Charlemagne",
+    "description": "Charlemagne, également connu sous le nom de Charles Ier, était roi des Francs et empereur d'Occident au Moyen Âge. Il a établi un vaste empire couvrant une grande partie de l'Europe occidentale."
+  },
+  {
+    "id": 2,
+    "name": "François Ier",
+    "description": "François Ier était roi de France de 1515 à 1547. Il était un mécène des arts et un grand protecteur de la Renaissance française, favorisant le développement de la culture et des arts."
+  },
+  {
+    "id": 3,
+    "name": "Arthur Pendragon",
+    "description": "Arthur Pendragon, légendaire roi de Camelot, est une figure emblématique de la littérature médiévale. Sa quête du Saint Graal et ses exploits chevaleresques sont au cœur des légendes arthuriennes."
+  },
+  {
+    "id": 4,
+    "name": "Clovis",
+    "description": "Clovis Ier était le premier roi des Francs saliens et le fondateur de la dynastie mérovingienne. Il est surtout connu pour sa conversion au christianisme, un événement majeur dans l'histoire de la France."
+  },
+  {
+    "id": 5,
+    "name": "Leonard de Vinci",
+    "description": "Leonard de Vinci était un polymathe de la Renaissance, excelling dans divers domaines tels que la peinture, la sculpture, l'anatomie, l'invention et l'ingénierie. Ses œuvres d'art et ses carnets sont célèbres dans le monde entier."
+  }
+]

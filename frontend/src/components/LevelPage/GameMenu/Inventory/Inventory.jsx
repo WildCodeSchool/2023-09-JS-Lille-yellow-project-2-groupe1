@@ -14,6 +14,9 @@ import tablet from "../../../../assets/pictures/Egypt/tablet.png";
 import chains from "../../../../assets/pictures/Rome/chains.png";
 import armor from "../../../../assets/pictures/Rome/Armor.png";
 import dagger from "../../../../assets/pictures/Rome/Dagger.png";
+import Excalibur from "../../../../assets/pictures/MiddleAge/Excalibur.png";
+import CrownClovis from "../../../../assets/pictures/MiddleAge/CrownClovis.png";
+import PaintPalette from "../../../../assets/pictures/MiddleAge/PaintPalette.png";
 
 function Inventory({ bag }) {
   const [showInventory, setShowInventory] = useState(false);
@@ -243,6 +246,63 @@ function Inventory({ bag }) {
               onMouseLeave={handleLeave}
             >
               <img src={dagger} className="daggerImgInBag" alt="La dague" />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "crown") ? (
+            <button
+              key="crownButton"
+              type="button"
+              className="crownButton"
+              onFocus={() => handleEnter("Couronne de Clovis")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Couronne de Clovis")}
+              onMouseLeave={handleLeave}
+            >
+              <img
+                src={CrownClovis}
+                className="crownImgInBag"
+                alt="La couronne"
+              />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "excalibur") ? (
+            <button
+              key="excaliburButton"
+              type="button"
+              className="excaliburButton"
+              onFocus={() => handleEnter("Excalibur")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Excalibur")}
+              onMouseLeave={handleLeave}
+            >
+              <img
+                src={Excalibur}
+                className="excaliburImgInBag"
+                alt="Excalibur"
+              />
+            </button>
+          ) : (
+            ""
+          )}
+          {bag.find((e) => e === "paintPalette") ? (
+            <button
+              key="paintPaletteButton"
+              type="button"
+              className="paintPaletteButton"
+              onFocus={() => handleEnter("Palette de peinture du maestro")}
+              onBlur={handleLeave}
+              onMouseEnter={() => handleEnter("Palette de peinture du maestro")}
+              onMouseLeave={handleLeave}
+            >
+              <img
+                src={PaintPalette}
+                className="paintPaletteImgInBag"
+                alt="Palette de peinture du maestro"
+              />
             </button>
           ) : (
             ""

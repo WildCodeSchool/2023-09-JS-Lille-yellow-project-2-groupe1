@@ -1,0 +1,124 @@
+@import "../../../variables.scss";
+
+.arthurPendragon {
+  width: 3%;
+  position: absolute;
+  bottom: 40%;
+  left: 45%;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.arthurPendragonPopUp {
+  width: 10vw;
+  margin: 1rem;
+}
+
+.charlemagne {
+  width: 7vw;
+  position: absolute;
+  bottom: 5%;
+  left: 32%;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.charlemagnePopUp {
+  width: 8vw;
+  margin: 1rem;
+}
+
+.clovis {
+  width: 5vw;
+  position: absolute;
+  bottom: 33%;
+  left: 25%;
+  overflow: hidden;
+  transform: rotate(18.9rad);
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.clovisPopUp {
+  width: 10vw;
+  margin: 1rem;
+}
+
+.leonardoDaVinci {
+  width: 6vw;
+  position: absolute;
+  bottom: 28%;
+  right: 25%;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.leonardoDaVinciPopUp {
+  width: 9vw;
+  margin: 1rem;
+}
+
+.françois1er {
+  width: 4vw;
+  position: absolute;
+  bottom: 33%;
+  left: 29%;
+  overflow: hidden;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.françois1erPopUp {
+  width: 10vw;
+  margin: 1rem;
+}
+
+.paintPaletteClass {
+  width: 3vw;
+}
+
+.paintPaletteClassButton {
+  all: unset;
+  position: absolute;
+  left: 15%;
+  top: 32%;
+}
+
+.arthurPendragonClass {
+  width: 7vw;
+}
+
+.arthurPendragonClassButton {
+  all: unset;
+  position: absolute;
+  left: 9%;
+  top: 30%;
+}
+
+.crownClovisClass {
+  width: 2.5vw;
+}
+
+.crownClovisClassButton {
+  all: unset;
+  position: absolute;
+  left: 7.5%;
+}

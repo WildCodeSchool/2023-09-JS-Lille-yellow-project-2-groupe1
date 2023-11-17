@@ -12,7 +12,7 @@ function ChooseLevelPage() {
     1: "/LevelPage",
     2: "/Rome",
     3: "/Egypt",
-    4: "/LevelPageMoyenAge",
+    4: "/MiddleAge",
     5: "/Modern",
   };
 
