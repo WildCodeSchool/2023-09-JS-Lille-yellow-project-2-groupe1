@@ -40,14 +40,17 @@ function Inventory({ bag }) {
           showInventory ? "inventoryPopUp__show" : ""
         }`}
       >
-        <button
-          type="button"
-          aria-label="Fermer la pop-up"
-          className="inventoryPopUp__closeButton"
-          onClick={handleInventoryToggle}
-        >
-          X
-        </button>
+        <header className="headerInventory">
+          <h2 className="inventoryTitle">Sac</h2>
+          <button
+            type="button"
+            aria-label="Fermer la pop-up"
+            className="inventoryPopUp__closeButton"
+            onClick={handleInventoryToggle}
+          >
+            X
+          </button>
+        </header>
         <main className="itemsContainer">
           {bag.find((e) => e === "egg") ? (
             <button

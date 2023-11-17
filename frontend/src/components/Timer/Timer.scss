@@ -17,3 +17,9 @@
     -1px 1px 0 $primaryColor,
     1px 1px 0 $primaryColor;
 }
+
+@media (orientation: landscape) {
+  .timer {
+    margin: 0.5rem 0 0 0.5rem;
+  }
+}

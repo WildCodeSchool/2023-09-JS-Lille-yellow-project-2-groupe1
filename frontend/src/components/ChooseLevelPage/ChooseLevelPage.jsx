@@ -3,6 +3,7 @@ import "./ChooseLevelPage.scss";
 import button from "../../assets/pictures/ChooseLevelPagePics/playButtonSP.png";
 import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
 import Timer from "../Timer/Timer";
+import ReturnGameMenu from "../LevelPage/ReturnGameMenu/ReturnGameMenu";
 
 function ChooseLevelPage() {
   const era = useRouteLoaderData("ChooseLevelPage");
@@ -34,7 +35,7 @@ function ChooseLevelPage() {
           </article>
         ))}
         <Link
-          to="/"
+          to="/Launcher"
           className="closeButtonChooseLevelPage"
           aria-label="retourner au menu principal"
         >
@@ -43,6 +44,7 @@ function ChooseLevelPage() {
       </main>
       <TurnYourPhone />
       <Timer />
+      <ReturnGameMenu />
     </>
   );
 }

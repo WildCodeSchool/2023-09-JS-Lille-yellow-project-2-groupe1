@@ -26,6 +26,7 @@ function Objectives() {
         }`}
       >
         <header className="headerObjectives">
+          <h2 className="objectivesTitle">Artefacts à collecter</h2>
           <button
             type="button"
             className="objectivesPopUp__closeButton"
@@ -33,7 +34,6 @@ function Objectives() {
           >
             X
           </button>
-          <h2 className="objectivesTitle">Objectifs</h2>
         </header>
         <ul className="objectivesList">
           {objectives.map((e) => (

@@ -53,7 +53,7 @@ function ContainerStoryRules() {
     },
   ];
   const numberOfObjectives = 8;
-  const { setObjectives, setBag } = useGlobalContext();
+  const { setObjectives, setBag, setScore, setTime } = useGlobalContext();
   function randomObjectives() {
     const objectivesArrayRandom = [];
 
@@ -82,7 +82,8 @@ function ContainerStoryRules() {
         onClick={() => {
           setObjectives(randomObjectives());
           setBag([]);
-          setTimeout(600);
+          setTime(600);
+          setScore(0);
         }}
       >
         Jouer
