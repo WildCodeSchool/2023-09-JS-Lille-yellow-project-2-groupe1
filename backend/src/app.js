@@ -14,6 +14,8 @@ const app = express();
 
 const modern = require("../modern.json");
 
+const middleAge = require("../middleAge.json");
+
 app.use(
   cors({
     origin: [process.env.FRONTEND_URL],
@@ -35,6 +37,10 @@ app.get("/api/era", (req, res) => {
 
 app.get("/api/modern", (req, res) => {
   res.status(200).json(modern);
+});
+
+app.get("/api/middleAge", (req, res) => {
+  res.status(200).json(middleAge);
 });
 
 // Configure it

@@ -62,6 +62,7 @@
 .bag {
   width: 10vw;
   cursor: pointer;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
@@ -71,38 +72,52 @@
   all: unset;
 }
 
+.inventoryPopUp__closeButton {
+  background-color: $secondaryColor;
+  border: 2px solid $primaryColor;
+  color: $primaryColor;
+}
 .itemsContainer {
   display: flex;
   align-items: center;
   margin-top: 5vh;
   margin-left: 3vw;
 }
+
 .eggButton {
   background: none;
   border: none;
 }
+
 .eggImgInBag {
   width: 3vw;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 }
+
 .toothButton {
   background: none;
   border: none;
 }
+
 .toothImgInBag {
   width: 3vw;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 }
+
 .clawButton {
   background: none;
   border: none;
 }
+
 .clawImgInBag {
   width: 3vw;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
@@ -112,8 +127,10 @@
   background: none;
   border: none;
 }
+
 .swordImgInBag {
   width: 6vw;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
@@ -123,8 +140,10 @@
   background: none;
   border: none;
 }
+
 .penImgInBag {
   width: 6vw;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
@@ -134,8 +153,10 @@
   background: none;
   border: none;
 }
+
 .necklaceImgInBag {
   width: 3vw;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
@@ -152,28 +173,62 @@
   background: none;
   border: none;
 }
+
 .scepterImgInBag {
   width: 3vw;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 }
+
 .tabletButton {
   background: none;
   border: none;
 }
+
 .tabletImgInBag {
   width: 3vw;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 }
+
 .papyrusButton {
   background: none;
   border: none;
 }
+
 .papyrusImgInBag {
   width: 3vw;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+
+.crownButton {
+  background: none;
+  border: none;
+}
+
+.crownImgInBag {
+  width: 3vw;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+
+.excaliburButton {
+  background: none;
+  border: none;
+}
+
+.excaliburImgInBag {
+  width: 3vw;
+
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
@@ -189,5 +244,31 @@
   .inventoryTitle {
     margin-bottom: 0.6rem;
     margin-left: 15rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .inventoryPopUp {
+    &__closeButton {
+      height: 4vh;
+      width: 2vw;
+    }
+  }
+  .inventoryTitle {
+    margin-bottom: 0.6rem;
+    margin-left: 15rem;
+  }
+}
+
+.paintPaletteButton {
+  background: none;
+  border: none;
+}
+
+.paintPaletteImgInBag {
+  width: 3vw;
+
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 }

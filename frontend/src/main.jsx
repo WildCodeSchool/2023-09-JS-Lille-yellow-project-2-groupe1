@@ -10,6 +10,7 @@ import AboutUs from "./components/AboutUs/AboutUsPage";
 import ChooseLevelPage from "./components/ChooseLevelPage/ChooseLevelPage";
 import LevelPage from "./components/LevelPage/LevelPage";
 import Egypt from "./components/LevelPage/Egypt";
+import MiddleAge from "./components/LevelPage/MiddleAgePage/MiddleAge";
 import Modern from "./components/LevelPage/ModernLevelPage/Modern";
 import EndPage from "./components/EndPage/EndPage";
 import Launcher from "./components/Launcher/Launcher";
@@ -83,6 +84,28 @@ const router = createBrowserRouter([
         }
         const dataEgypt = await responseEgypt.json();
         return dataEgypt;
+      } catch (error) {
+        console.error(error);
+        return null;
+      }
+    },
+  },
+  {
+    path: "/MiddleAge",
+    element: <MiddleAge />,
+    id: "middleAge",
+    loader: async () => {
+      try {
+        const responsMiddleAge = await fetch(
+          "http://localhost:3310/api/middleAge"
+        );
+
+        if (!responsMiddleAge.ok) {
+          throw new Error("Failed to fetch middelAge data");
+        }
+        const dataMiddleAge = await responsMiddleAge.json();
+
+        return dataMiddleAge;
       } catch (error) {
         console.error(error);
         return null;

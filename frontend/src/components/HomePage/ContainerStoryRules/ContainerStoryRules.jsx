@@ -51,6 +51,21 @@ function ContainerStoryRules() {
       objectiveClass: "tabletObjective",
       item: "tablet",
     },
+    {
+      objective: "L'épée Excalibur",
+      objectiveClass: "excaliburSword",
+      item: "excalibur",
+    },
+    {
+      objective: "La couronne de Clovis",
+      objectiveClass: "crownOfClovis",
+      item: "crown",
+    },
+    {
+      objective: "La palette de peinture de Léonard de Vinci",
+      objectiveClass: "leonardoDaVincPaintPalette",
+      item: "paintPalette",
+    },
   ];
   const numberOfObjectives = 8;
   const { setObjectives, setBag, setScore, setTime } = useGlobalContext();
