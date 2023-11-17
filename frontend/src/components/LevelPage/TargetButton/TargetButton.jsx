@@ -20,6 +20,7 @@ function TargetButton({
   const [popupMessage, setPopupMessage] = useState("");
   const navigate = useNavigate();
   const { time } = useGlobalContext();
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     if (score === 8 || time === 0) {
@@ -38,7 +39,7 @@ function TargetButton({
             <article className="message">
               <header className="popUpHeader">
                 <img src={img} alt="" className={`${imgPopUpClass}`} />
-                {item.itemName ? (
+                {item.itemName && isVisible ? (
                   <button
                     type="button"
                     className={item.itemClassButton}
@@ -47,6 +48,7 @@ function TargetButton({
                       setPopupMessage("");
                       setBag([...bag, `${item.itemName}`]);
                       setScore(score + 1);
+                      setIsVisible(false);
                     }}
                   >
                     <img src={item.itemSrc} alt="" className={item.itemClass} />
@@ -56,7 +58,7 @@ function TargetButton({
                 )}
                 <h2 className="name">{data.name}</h2>
               </header>
-              <main>
+              <main className="mainPopUp">
                 <img src={Brain} alt="cerveau" className="brain" />
                 <p className="info">{data.description}</p>
               </main>

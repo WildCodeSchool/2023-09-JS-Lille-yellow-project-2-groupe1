@@ -14,7 +14,7 @@
 
 .napoleonPopUp {
   width: 10vw;
-  margin: 1rem;
+  margin: 1vh 5vw 0 5vw;
 }
 
 .rousseau {
@@ -32,13 +32,13 @@
 
 .rousseauPopUp {
   width: 10vw;
-  margin: 1rem;
+  margin: 1vw 3vw 0 5vw;
 }
 
 .louisXVI {
   width: 6vw;
   position: absolute;
-  bottom: 16%;
+  bottom: 15%;
   left: 20%;
   overflow: hidden;
   transform: rotate(18.9rad);
@@ -49,8 +49,8 @@
 }
 
 .louisXVIPopUp {
-  width: 10vw;
-  margin: 1rem;
+  width: 12vw;
+  margin: 2vh 5vw 0 5vw;
 }
 
 .victorHugo {
@@ -66,8 +66,8 @@
 }
 
 .victorHugoPopUp {
-  width: 10vw;
-  margin: 1rem;
+  width: 15vw;
+  margin: 1vh 1vw 0 5vw;
 }
 
 .marieAntoinette {
@@ -84,14 +84,14 @@
 }
 
 .marieAntoinettePopUp {
-  width: 10vw;
-  margin: 1rem;
+  width: 12vw;
+  margin: 1vh 5vw 0 5vw;
 }
 
 .montgolfier {
   width: 7vw;
   position: absolute;
-  top: 21.5%;
+  top: 15%;
   left: 28%;
   overflow: hidden;
   &:hover {
@@ -101,8 +101,8 @@
 }
 
 .montgolfierPopUp {
-  width: 10vw;
-  margin: 1rem;
+  width: 11vw;
+  margin: 1vh 4vw 0 5vw;
 }
 
 .penClass {
@@ -114,8 +114,8 @@
   width: 2.5vw;
   height: 2.5vh;
   position: absolute;
-  top: 21%;
-  left: 5%;
+  top: 30%;
+  left: 18%;
   z-index: 1;
   cursor: pointer;
   &:hover {
@@ -129,11 +129,11 @@
 }
 .swordClassButton {
   all: unset;
-  width: 2.5vw;
-  height: 2.5vh;
+  width: 4vw;
+  height: 3vh;
   position: absolute;
-  top: 30%;
-  left: 14.5%;
+  top: 36%;
+  left: 19%;
   z-index: 1;
   transform: rotate(120deg);
   cursor: pointer;
@@ -143,19 +143,26 @@
 }
 
 .necklaceClass {
-  width: 2vw;
+  width: 2.5vw;
   height: 4vh;
 }
 .necklaceClassButton {
   all: unset;
-  width: 2.5vw;
-  height: 2.5vh;
   position: absolute;
-  top: 19%;
-  left: 12%;
+  top: 21%;
+  left: 21%;
   z-index: 1;
   cursor: pointer;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .marieAntoinette {
+    top: 43%;
+  }
+  .louisXVI {
+    bottom: 18%;
   }
 }
