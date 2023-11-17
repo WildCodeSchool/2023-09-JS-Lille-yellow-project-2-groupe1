@@ -15,7 +15,7 @@
 
 .arthurPendragonPopUp {
   width: 10vw;
-  margin: 1rem;
+  margin: 1vh 2vw 0 8vw;
 }
 
 .charlemagne {
@@ -33,7 +33,7 @@
 
 .charlemagnePopUp {
   width: 8vw;
-  margin: 1rem;
+  margin: 1vh 5vw 0 8vw;
 }
 
 .clovis {
@@ -52,7 +52,7 @@
 
 .clovisPopUp {
   width: 10vw;
-  margin: 1rem;
+  margin: 1vh 5vw 0 10vw;
 }
 
 .leonardoDaVinci {
@@ -70,7 +70,7 @@
 
 .leonardoDaVinciPopUp {
   width: 9vw;
-  margin: 1rem;
+  margin: 1vh 4vw 0 7vw;
 }
 
 .françois1er {
@@ -88,7 +88,7 @@
 
 .françois1erPopUp {
   width: 10vw;
-  margin: 1rem;
+  margin: 1vh 5vw 0 8vw;
 }
 
 .paintPaletteClass {
@@ -98,8 +98,8 @@
 .paintPaletteClassButton {
   all: unset;
   position: absolute;
-  left: 15%;
-  top: 32%;
+  left: 25%;
+  top: 25%;
   cursor: pointer;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
@@ -113,7 +113,7 @@
 .arthurPendragonClassButton {
   all: unset;
   position: absolute;
-  left: 9%;
+  left: 4%;
   top: 30%;
   cursor: pointer;
   &:hover {
@@ -128,7 +128,8 @@
 .crownClovisClassButton {
   all: unset;
   position: absolute;
-  left: 7.5%;
+  left: 25.7%;
+  top: -2%;
   cursor: pointer;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));

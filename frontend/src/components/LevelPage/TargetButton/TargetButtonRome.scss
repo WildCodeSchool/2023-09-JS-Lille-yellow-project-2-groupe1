@@ -16,16 +16,19 @@
 
 .juliusCaesarPopUp {
   width: 10vw;
-  margin: 2vh;
+  margin: 1vh 5vw 0 8vw;
 }
 
 .armorClass {
-  width: 7vw;
+  width: 13vw;
 }
 
 .armorClassButton {
-  width: 6vw;
   all: unset;
+  width: 6vw;
+  position: absolute;
+  top: 8%;
+  left: 30%;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
@@ -46,11 +49,11 @@
 }
 
 .ciceroPopUp {
-  width: 7vw;
-  margin: 1rem;
+  width: 12vw;
+  margin: 1vh 3vw 0 10vw;
 }
 
-.auguste {
+.brutus {
   width: 5vw;
   position: absolute;
   bottom: 22%;
@@ -63,19 +66,22 @@
   }
 }
 
-.augustePopUp {
-  width: 7vw;
-  margin: 1rem;
+.brutusPopUp {
+  width: 9vw;
+  margin: 2vh 5vw 0 10vw;
 }
 
 .daggerClass {
-  width: 6vw;
+  width: 3.5vw;
 }
 
 .daggerClassButton {
+  all: unset;
   width: 3vw;
   position: absolute;
-  all: unset;
+  left: 17%;
+  top: 8%;
+  transform: rotate(90deg);
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
@@ -96,18 +102,20 @@
 }
 
 .spartacusPopUp {
-  width: 7vw;
-  margin: 1rem;
+  width: 10vw;
+  margin: 1vh 5vw 0 10vw;
 }
 
 .chainsClass {
-  width: 6vw;
+  width: 5vw;
 }
 
 .chainsClassButton {
+  all: unset;
   width: 3vw;
   position: absolute;
-  all: unset;
+  top: 30%;
+  left: 12%;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
@@ -127,8 +135,8 @@
 }
 
 .pompeyPopUp {
-  width: 7vw;
-  margin: 1rem;
+  width: 8vw;
+  margin: 1vh 5vw 0 10vw;
 }
 
 .vercingetorix {
@@ -145,6 +153,6 @@
 }
 
 .vercingetorixPopUp {
-  width: 7vw;
-  margin: 1rem;
+  width: 12vw;
+  margin: 1vw 5vw 0 5vw;
 }
