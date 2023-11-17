@@ -14,6 +14,9 @@ import papyrus from "../../assets/pictures/Egypt/papyrus.png";
 import chains from "../../assets/pictures/Rome/chains.png";
 import armor from "../../assets/pictures/Rome/Armor.png";
 import dagger from "../../assets/pictures/Rome/Dagger.png";
+import pallet from "../../assets/pictures/MiddleAge/PaintPalette.png";
+import excalibur from "../../assets/pictures/MiddleAge/Excalibur.png";
+import crown from "../../assets/pictures/MiddleAge/CrownClovis.png";
 
 function EndPage() {
   const { score, bag } = useGlobalContext();
@@ -79,18 +82,37 @@ function EndPage() {
       />
       <img
         src={armor}
-        className={bag ? "visibleArmor" : "hiddenArmor"}
+        className={bag.includes("armor") ? "visibleArmor" : "hiddenArmor"}
         alt="Sceptre"
       />
       <img
         src={chains}
-        className={bag ? "visibleChains" : "hiddenChains"}
+        className={bag.includes("chains") ? "visibleChains" : "hiddenChains"}
         alt="Tablette égyptienne"
       />
       <img
         src={dagger}
-        className={bag ? "visibleDagger" : "hiddenDagger"}
+        className={bag.includes("dagger") ? "visibleDagger" : "hiddenDagger"}
         alt="Papyrus égyptien"
+      />
+      <img
+        src={pallet}
+        className={
+          bag.includes("paintPalette") ? "visiblePallet" : "hiddenPallet"
+        }
+        alt="La palette de peinture de Léonard De Vinci"
+      />
+      <img
+        src={crown}
+        className={bag.includes("crown") ? "visibleCrown" : "hiddenCrown"}
+        alt="La couronne de Clovis"
+      />
+      <img
+        src={excalibur}
+        className={
+          bag.includes("excalibur") ? "visibleExcalibur" : "hiddenExcalibur"
+        }
+        alt="Excalibur"
       />
       <img src={shelf} alt="étagère avec les artéfacts" className="shelf" />
       <Link to="/" className="restartgame" aria-label="recommencer le jeu">

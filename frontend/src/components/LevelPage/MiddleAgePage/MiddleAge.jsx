@@ -15,6 +15,7 @@ import CrownClovis from "../../../assets/pictures/MiddleAge/CrownClovis.png";
 import PaintPalette from "../../../assets/pictures/MiddleAge/PaintPalette.png";
 import MiddleAgeCharacter from "../../../assets/pictures/MiddleAge/MiddleAgeCharacter.png";
 import ReturnChooseLevelPageButton from "../ReturnChooseLevelPagebutton/ReturnChooseLevelPagebutton";
+import Timer from "../../Timer/Timer";
 
 function MiddleAge() {
   const characterClass = "middleAgeCharacter";
@@ -148,6 +149,7 @@ function MiddleAge() {
 
         <ReturnGameMenu />
         <ReturnChooseLevelPageButton />
+        <Timer />
       </main>
       <TurnYourPhone />
     </>

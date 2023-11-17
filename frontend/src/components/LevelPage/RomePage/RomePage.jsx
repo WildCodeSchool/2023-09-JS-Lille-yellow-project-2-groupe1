@@ -10,7 +10,7 @@ import JuliusCaesar from "../../../assets/pictures/Rome/JuliusCaesar.png";
 import armor from "../../../assets/pictures/Rome/Armor.png";
 import Vercingetorix from "../../../assets/pictures/Rome/Vercingetorix.png";
 import Cicero from "../../../assets/pictures/Rome/Cicero.png";
-import Auguste from "../../../assets/pictures/Rome/Auguste.png";
+import Brutus from "../../../assets/pictures/Rome/Brutus.png";
 import dagger from "../../../assets/pictures/Rome/Dagger.png";
 import Spartacus from "../../../assets/pictures/Rome/Spartacus.png";
 import chains from "../../../assets/pictures/Rome/chains.png";
@@ -18,6 +18,7 @@ import Pompey from "../../../assets/pictures/Rome/Pompey.png";
 import "./RomePage.scss";
 import romeCharacter from "../../../assets/pictures/Rome/RomeCharacter.png";
 import ReturnChooseLevelPageButton from "../ReturnChooseLevelPagebutton/ReturnChooseLevelPagebutton";
+import Timer from "../../Timer/Timer";
 
 function RomePage() {
   const characterClass = "romeCharacter";
@@ -54,19 +55,19 @@ function RomePage() {
     juliusCaesar = getRomeData(1, "juliusCaesar", "juliusCaesarPopUp");
   }
   const cicero = getRomeData(2, "cicero", "ciceroPopUp");
-  let auguste;
+  let brutus;
   if (objectives.some((e) => e.item === "dagger")) {
-    auguste = getRomeData(
+    brutus = getRomeData(
       3,
-      "auguste",
-      "augustePopUp",
+      "brutus",
+      "brutusPopUp",
       "dagger",
       dagger,
       "daggerClass",
       "daggerClassButton"
     );
   } else {
-    auguste = getRomeData(3, "auguste", "augustePopUp");
+    brutus = getRomeData(3, "brutus", "brutusPopUp");
   }
   let spartacus;
   if (objectives.some((e) => e.item === "chains")) {
@@ -114,11 +115,11 @@ function RomePage() {
           setBag={setBag}
         />
         <TargetButton
-          data={auguste.data}
-          img={Auguste}
-          imgClass={auguste.imgClass}
-          item={auguste.item}
-          imgPopUpClass={auguste.imgPopUpClass}
+          data={brutus.data}
+          img={Brutus}
+          imgClass={brutus.imgClass}
+          item={brutus.item}
+          imgPopUpClass={brutus.imgPopUpClass}
           bag={bag}
           setBag={setBag}
           score={score}
@@ -156,6 +157,7 @@ function RomePage() {
         <ReturnGameMenu />
       </main>
       <TurnYourPhone />
+      <Timer />
       <ReturnChooseLevelPageButton />
     </>
   );
