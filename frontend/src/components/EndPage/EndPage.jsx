@@ -97,7 +97,9 @@ function EndPage() {
       />
       <img
         src={pallet}
-        className={bag.includes("pallet") ? "visiblePallet" : "hiddenPallet"}
+        className={
+          bag.includes("paintPalette") ? "visiblePallet" : "hiddenPallet"
+        }
         alt="La palette de peinture de Léonard De Vinci"
       />
       <img
