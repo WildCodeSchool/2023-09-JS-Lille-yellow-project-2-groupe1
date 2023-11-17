@@ -100,6 +100,10 @@
   position: absolute;
   left: 15%;
   top: 32%;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  }
 }
 
 .arthurPendragonClass {
@@ -111,6 +115,10 @@
   position: absolute;
   left: 9%;
   top: 30%;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  }
 }
 
 .crownClovisClass {
@@ -121,4 +129,8 @@
   all: unset;
   position: absolute;
   left: 7.5%;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+  }
 }
