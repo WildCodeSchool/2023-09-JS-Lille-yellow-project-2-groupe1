@@ -21,7 +21,7 @@ import romeCharacter from "../../../assets/pictures/Rome/RomeCharacter.png";
 function RomePage() {
   const characterClass = "romeCharacter";
   const { objectives, bag, setBag } = useGlobalContext();
-  const romeArray = useRouteLoaderData("romePage");
+  const romeArray = useRouteLoaderData("rome");
   function getRomeData(
     romeId,
     imgClass,

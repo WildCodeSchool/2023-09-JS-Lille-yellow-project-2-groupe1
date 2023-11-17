@@ -3,9 +3,9 @@
 .juliusCaesar {
   width: 8vw;
   position: absolute;
-  bottom: 20%;
-  left: 25%;
-  transform: rotateX(10deg) rotateY(45deg);
+  bottom: 21%;
+  left: 24%;
+  transform: rotateX(10deg) rotateY(40deg);
 
   overflow: hidden;
   &:hover {
@@ -16,11 +16,11 @@
 
 .juliusCaesarPopUp {
   width: 10vw;
-  margin: 2vw;
+  margin: 2vh;
 }
 
 .armorClass {
-  width: 6vw;
+  width: 7vw;
 }
 
 .armorClassButton {
@@ -117,8 +117,8 @@
 .pompey {
   width: 4vw;
   position: absolute;
-  top: 6%;
-  left: 77%;
+  top: 3.5%;
+  right: 19%;
   overflow: hidden;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
@@ -135,7 +135,7 @@
   width: 12vw;
   position: absolute;
   bottom: 5%;
-  right: 55%;
+  left: 32%;
   overflow: hidden;
   transform: rotate(0.2rad);
   &:hover {

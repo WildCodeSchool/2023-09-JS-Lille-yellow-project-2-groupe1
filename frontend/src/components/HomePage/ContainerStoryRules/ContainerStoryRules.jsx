@@ -51,6 +51,21 @@ function ContainerStoryRules() {
       objectiveClass: "tabletObjective",
       item: "tablet",
     },
+    {
+      objective: "L'armure d'un soldat romain",
+      objectiveClass: "armorObjective",
+      item: "armor",
+    },
+    {
+      objective: "La dague du meutre de Jules César",
+      objectiveClass: "daggerObjective",
+      item: "dagger",
+    },
+    {
+      objective: "Les chaines d'esclavage de Spartacus",
+      objectiveClass: "chainsObjective",
+      item: "chains",
+    },
   ];
   const numberOfObjectives = 8;
   const { setObjectives, setBag, setScore, setTime } = useGlobalContext();
