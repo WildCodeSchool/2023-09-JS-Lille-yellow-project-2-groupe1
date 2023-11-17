@@ -159,7 +159,6 @@ function Modern() {
           score={score}
           setScore={setScore}
         />
-
         <ReturnGameMenu />
       </main>
       <TurnYourPhone />

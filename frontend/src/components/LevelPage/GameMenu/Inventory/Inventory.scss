@@ -234,6 +234,37 @@
   }
 }
 
+.armorButton {
+  background: none;
+  border: none;
+}
+.armorImgInBag {
+  width: 3vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+.chainsButton {
+  background: none;
+  border: none;
+}
+.chainsImgInBag {
+  width: 4vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+.daggerButton {
+  background: none;
+  border: none;
+}
+.daggerImgInBag {
+  width: 3vw;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+}
+
 @media (min-width: 900px) {
   .inventoryPopUp {
     &__closeButton {

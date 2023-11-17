@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Jules César",
+    "description": "Jules César (100 av. J.-C. - 44 av. J.-C.) était un général et homme d'État romain, éminent leader militaire et politicien de la République romaine. Il est surtout connu pour ses conquêtes militaires majeures, dont la célèbre campagne de la Gaule, et pour avoir joué un rôle central dans la transition de la République romaine vers l'Empire. En tant que dictateur à vie, il a mis en place d'importantes réformes politiques et sociales, mais son ascension rapide a également suscité des inquiétudes parmi les élites romaines. Sa vie a pris fin de manière tragique en 44 av. J.-C. lorsqu'il a été assassiné au Sénat"
+  },
+  {
+    "id": 2,
+    "name": "Cicéron",
+    "description": "Cicéron (106 av. J.-C. - 43 av. J.-C.) était un avocat, philosophe et homme d'État romain renommé pendant la fin de la République romaine. Célèbre orateur, il a marqué l'histoire par ses discours brillants, dont les célèbres Philippiques. Cicéron a occupé des postes politiques éminents, contribuant à la défense des institutions républicaines. Sa vision de la philosophie a eu une influence durable sur la pensée occidentale. Cependant, son engagement en faveur de la République lui a coûté cher, et il a été exécuté sur l'ordre du Second triumvirat en 43 av. J.-C."
+  },
+  {
+    "id": 3,
+    "name": "Auguste",
+    "description": "Auguste, également connu sous le nom d'Octave (63 av. J.-C. - 14 ap. J.-C.), fut le premier empereur romain et le fondateur de l'Empire romain. Il a joué un rôle clé dans la transition de la République à l'Empire après la défaite de Marc Antoine et de Cléopâtre à la bataille d'Actium en 31 av. J.-C. Sous son règne, qui a débuté en 27 av. J.-C., Auguste a instauré une période de paix relative appelée la Pax Romana, caractérisée par la stabilité politique et la prospérité économique. Son règne a également été marqué par des réformes sociales et une reconstruction de Rome, consolidant ainsi son statut d'une des figures les plus influentes de l'histoire romaine."
+  },
+  {
+    "id": 4,
+    "name": "Spartacus",
+    "description": "Spartacus (vers 111 av. J.-C. - 71 av. J.-C.) était un gladiateur thrace devenu chef rebelle lors de la Troisième Guerre servile, une révolte d'esclaves contre la République romaine. Doté d'une intelligence tactique, il a dirigé une armée hétéroclite de rebelles, remportant des victoires sur les légions romaines. Son soulèvement, bien que finalement écrasé en 71 av. J.-C., a eu un impact significatif en mettant en lumière les injustices du système esclavagiste romain. La figure de Spartacus est devenue emblématique de la lutte pour la liberté contre l'oppression."
+  },
+  {
+    "id": 5,
+    "name": "Pompée",
+    "description": "Pompée, également connu sous le nom de Gnaeus Pompeius Magnus (106 av. J.-C. - 48 av. J.-C.), était un général et homme d'État romain de l'époque de la République romaine. Il s'est illustré dans plusieurs campagnes militaires, notamment en luttant contre les partisans de Marius et en écrasant la rébellion des esclaves de Spartacus. Pompée a également joué un rôle clé dans le premier triumvirat, une alliance politique temporaire avec Jules César et Crassus. Cependant, les tensions entre Pompée et César ont conduit à la guerre civile, et Pompée a été défait à la bataille de Pharsale en 48 av. J.-C., marquant la fin de sa carrière et de sa vie."
+  },
+  {
+    "id": 6,
+    "name": "Vercingétorix",
+    "description": "Vercingétorix (vers 82 av. J.-C. - 46 av. J.-C.) était un chef militaire gaulois célèbre pour sa résistance héroïque contre l'expansion romaine pendant la Guerre des Gaules. Il a unifié plusieurs tribus gauloises contre Jules César, remportant la victoire à Gergovie mais finissant par être vaincu à la bataille de Gergovie en 52 av. J.-C. Capturé par les Romains, Vercingétorix a été exhibé à Rome avant d'être exécuté en 46 av. J.-C. Sa bravoure et son leadership ont laissé une empreinte durable dans l'imaginaire collectif, en faisant un symbole de la résistance gauloise contre l'envahisseur romain."
+  }
+]

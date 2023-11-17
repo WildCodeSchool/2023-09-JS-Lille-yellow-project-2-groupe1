@@ -52,6 +52,21 @@ function ContainerStoryRules() {
       item: "tablet",
     },
     {
+      objective: "L'armure d'un soldat romain",
+      objectiveClass: "armorObjective",
+      item: "armor",
+    },
+    {
+      objective: "La dague du meutre de Jules César",
+      objectiveClass: "daggerObjective",
+      item: "dagger",
+    },
+    {
+      objective: "Les chaines d'esclavage de Spartacus",
+      objectiveClass: "chainsObjective",
+      item: "chains",
+    },
+    {
       objective: "L'épée Excalibur",
       objectiveClass: "excaliburSword",
       item: "excalibur",

@@ -11,6 +11,9 @@ import egg from "../../assets/pictures/jurassic/quetzalcoatlusEgg.png";
 import scepter from "../../assets/pictures/Egypt/scepter.png";
 import tablet from "../../assets/pictures/Egypt/tablet.png";
 import papyrus from "../../assets/pictures/Egypt/papyrus.png";
+import chains from "../../assets/pictures/Rome/chains.png";
+import armor from "../../assets/pictures/Rome/Armor.png";
+import dagger from "../../assets/pictures/Rome/Dagger.png";
 
 function EndPage() {
   const { score, bag } = useGlobalContext();
@@ -72,6 +75,21 @@ function EndPage() {
       <img
         src={papyrus}
         className={bag.includes("papyrus") ? "visiblePapyrus" : "hiddenPapyrus"}
+        alt="Papyrus égyptien"
+      />
+      <img
+        src={armor}
+        className={bag ? "visibleArmor" : "hiddenArmor"}
+        alt="Sceptre"
+      />
+      <img
+        src={chains}
+        className={bag ? "visibleChains" : "hiddenChains"}
+        alt="Tablette égyptienne"
+      />
+      <img
+        src={dagger}
+        className={bag ? "visibleDagger" : "hiddenDagger"}
         alt="Papyrus égyptien"
       />
       <img src={shelf} alt="étagère avec les artéfacts" className="shelf" />
