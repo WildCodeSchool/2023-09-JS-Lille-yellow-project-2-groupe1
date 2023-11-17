@@ -2,17 +2,10 @@ import { useRouteLoaderData, Link } from "react-router-dom";
 import "./ChooseLevelPage.scss";
 import button from "../../assets/pictures/ChooseLevelPagePics/playButtonSP.png";
 import TurnYourPhone from "../TurnYourPhone/TurnYourPhone";
+import Timer from "../Timer/Timer";
 
 function ChooseLevelPage() {
   const era = useRouteLoaderData("ChooseLevelPage");
-
-  const universe = [
-    { name: "CRÉTACÉ", id: 1 },
-    { name: "ROME", id: 2 },
-    { name: "EGYPTE", id: 3 },
-    { name: "MOYEN-AGE", id: 4 },
-    { name: "MODERNE", id: 5 },
-  ];
 
   const levelPaths = {
     1: "/LevelPage",
@@ -25,13 +18,13 @@ function ChooseLevelPage() {
   return (
     <>
       <main className="cardEraContainer">
-        {universe.map((world) => (
-          <article key={world.name} className={`card card${world.id}`}>
-            <h2 className="titleEra">{world.name}</h2>
+        {era.map((e) => (
+          <article key={e.name} className={`card card${e.id}`}>
+            <h2 className="titleEra">{e.name}</h2>
             <p className="cardEraContainer__levelDescription">
-              {era.description}
+              {e.description}
             </p>
-            <Link to={levelPaths[world.id]} className="playDevice">
+            <Link to={levelPaths[e.id]} className="playDevice">
               <img
                 src={button}
                 alt="Bouton jouer"
@@ -49,6 +42,7 @@ function ChooseLevelPage() {
         </Link>
       </main>
       <TurnYourPhone />
+      <Timer />
     </>
   );
 }

@@ -1,8 +1,12 @@
+@import "../../../variables.scss";
+
 .juliusCaesar {
+  width: 8vw;
   position: absolute;
-  bottom: 3%;
-  left: 3%;
-  width: 0vw;
+  bottom: 20%;
+  left: 25%;
+  transform: rotateX(10deg) rotateY(45deg);
+
   overflow: hidden;
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
@@ -11,16 +15,28 @@
 }
 
 .juliusCaesarPopUp {
-  width: 7vw;
-  margin-top: 1rem;
-  margin-left: 2rem;
+  width: 10vw;
+  margin: 2vw;
+}
+
+.armorClass {
+  width: 6vw;
+}
+
+.armorClassButton {
+  width: 6vw;
+  all: unset;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
 }
 
 .cicero {
   width: 6vw;
   position: absolute;
-  bottom: 15%;
-  right: 2%;
+  bottom: 23.6%;
+  right: 50%;
   overflow: hidden;
   transform: rotate(18.9rad);
   &:hover {
@@ -35,12 +51,12 @@
 }
 
 .auguste {
-  width: 6vw;
+  width: 5vw;
   position: absolute;
-  bottom: 15%;
-  right: 2%;
+  bottom: 22%;
+  right: 30%;
   overflow: hidden;
-  transform: rotate(18.9rad);
+  transform: rotateX(10deg) rotateY(40deg);
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
@@ -52,11 +68,25 @@
   margin: 1rem;
 }
 
-.spartacus {
+.daggerClass {
   width: 6vw;
+}
+
+.daggerClassButton {
+  width: 3vw;
+  position: absolute;
+  all: unset;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.spartacus {
+  width: 7vw;
   position: absolute;
   bottom: 15%;
-  right: 2%;
+  right: 35%;
   overflow: hidden;
   transform: rotate(18.9rad);
   &:hover {
@@ -70,13 +100,26 @@
   margin: 1rem;
 }
 
-.pompey {
+.chainsClass {
   width: 6vw;
+}
+
+.chainsClassButton {
+  width: 3vw;
   position: absolute;
-  bottom: 16%;
-  left: 20%;
+  all: unset;
+  &:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
+    cursor: pointer;
+  }
+}
+
+.pompey {
+  width: 4vw;
+  position: absolute;
+  top: 6%;
+  left: 77%;
   overflow: hidden;
-  transform: rotate(18.9rad);
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;
@@ -89,12 +132,12 @@
 }
 
 .vercingetorix {
-  width: 5vw;
+  width: 12vw;
   position: absolute;
-  top: 51.5%;
-  right: 18%;
+  bottom: 5%;
+  right: 55%;
   overflow: hidden;
-  transform: rotate(25rad);
+  transform: rotate(0.2rad);
   &:hover {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
     cursor: pointer;

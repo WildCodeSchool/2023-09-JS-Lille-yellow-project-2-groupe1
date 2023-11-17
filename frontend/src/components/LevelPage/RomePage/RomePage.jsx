@@ -1,10 +1,11 @@
 import { useRouteLoaderData } from "react-router-dom";
+import { useGlobalContext } from "../../Context/GlobalContextProvider";
 import GameMenu from "../GameMenu/GameMenu";
 import ReturnGameMenu from "../ReturnGameMenu/ReturnGameMenu";
 import TurnYourPhone from "../../TurnYourPhone/TurnYourPhone";
-import TargetButtonRome from "../TargetButton/TargetButton";
-// import "./TargetButton/TargetButton.scss";
-// import "./TargetButton/TargetButtonRome.scss";
+import "../TargetButton/TargetButton.scss";
+import "../TargetButton/TargetButtonRome.scss";
+import TargetButton from "../TargetButton/TargetButton";
 import JuliusCaesar from "../../../assets/pictures/Rome/JuliusCaesar.png";
 import armor from "../../../assets/pictures/Rome/Armor.png";
 import Vercingetorix from "../../../assets/pictures/Rome/Vercingetorix.png";
@@ -12,15 +13,18 @@ import Cicero from "../../../assets/pictures/Rome/Cicero.png";
 import Auguste from "../../../assets/pictures/Rome/Auguste.png";
 import dagger from "../../../assets/pictures/Rome/Dagger.png";
 import Spartacus from "../../../assets/pictures/Rome/Spartacus.png";
-import ironFetters from "../../../assets/pictures/Rome/IronFetters.png";
+import chains from "../../../assets/pictures/Rome/chains.png";
 import Pompey from "../../../assets/pictures/Rome/Pompey.png";
 import "./RomePage.scss";
+import romeCharacter from "../../../assets/pictures/Rome/RomeCharacter.png";
 
 function RomePage() {
+  const characterClass = "romeCharacter";
+  const { objectives, bag, setBag } = useGlobalContext();
   const romeArray = useRouteLoaderData("romePage");
   function getRomeData(
     romeId,
-    imgClasse,
+    imgClass,
     imgPopUpClass,
     itemName = null,
     itemSrc = null,
@@ -29,81 +33,118 @@ function RomePage() {
   ) {
     return {
       data: romeArray.find((rome) => rome.id === romeId),
-      imgClasse,
+      imgClass,
       item: { itemName, itemSrc, itemClass, itemClassButton },
       imgPopUpClass,
     };
   }
-  const juliusCaesar = getRomeData(
-    1,
-    "julesCésar",
-    "Armure de soldat romain",
-    armor,
-    "armorClass",
-    "armorClassButton"
-  );
-  const cicero = getRomeData(2, "cicéron", "ciceronPopUp");
-  const auguste = getRomeData(
-    3,
-    "auguste",
-    "Dague qui a servi a assassiner Jules César",
-    dagger,
-    "daggerClass",
-    "dagerClassButton"
-  );
-  const spartacus = getRomeData(
-    4,
-    "spartacus",
-    "Gladiateur et chef d'une révolte d'esclaves, il a mené la Troisième Guerre servile contre la République romaine.",
-    ironFetters,
-    "ironFettersClass",
-    "ironFettersClassButton"
-  );
-  const pompey = getRomeData(5, "pompée", "pompéePopUp");
-  const vercingetorix = getRomeData(6, "vercingétorix", "vercingétorixPopUp");
+  let juliusCaesar;
+  if (objectives.some((e) => e.item === "armor")) {
+    juliusCaesar = getRomeData(
+      1,
+      "juliusCaesar",
+      "juliusCaesarPopUp",
+      "armor",
+      armor,
+      "armorClass",
+      "armorClassButton"
+    );
+  } else {
+    juliusCaesar = getRomeData(1, "juliusCaesar", "juliusCaesarPopUp");
+  }
+  const cicero = getRomeData(2, "cicero", "ciceroPopUp");
+  let auguste;
+  if (objectives.some((e) => e.item === "dagger")) {
+    auguste = getRomeData(
+      3,
+      "auguste",
+      "augustePopUp",
+      "dagger",
+      dagger,
+      "daggerClass",
+      "daggerClassButton"
+    );
+  } else {
+    auguste = getRomeData(3, "auguste", "augustePopUp");
+  }
+  let spartacus;
+  if (objectives.some((e) => e.item === "chains")) {
+    spartacus = getRomeData(
+      4,
+      "spartacus",
+      "spartacusPopUp",
+      "chains",
+      chains,
+      "chainsClass",
+      "chainsClassButton"
+    );
+  } else {
+    spartacus = getRomeData(4, "spartacus", "spartacusPopUp");
+  }
+  const pompey = getRomeData(5, "pompey", "pompeyPopUp");
+  const vercingetorix = getRomeData(6, "vercingetorix", "vercingetorixPopUp");
   return (
     <>
       <main className="romeTheme">
-        <GameMenu />
+        <GameMenu
+          bag={bag}
+          characterImg={romeCharacter}
+          characterClass={characterClass}
+        />
 
-        <TargetButtonRome
+        <TargetButton
           data={juliusCaesar.data}
           img={JuliusCaesar}
-          imgClasse={juliusCaesar.imgClasse}
+          imgClass={juliusCaesar.imgClass}
           item={juliusCaesar.item}
           imgPopUpClass={juliusCaesar.imgPopUpClass}
+          bag={bag}
+          setBag={setBag}
         />
-        <TargetButtonRome
+        <TargetButton
           data={cicero.data}
           img={Cicero}
-          imgClasse={cicero.imgClasse}
-          item={cicero.item}
+          imgClass={cicero.imgClass}
+          item=""
           imgPopUpClass={cicero.imgPopUpClass}
+          bag={bag}
+          setBag={setBag}
         />
-        <TargetButtonRome
+        <TargetButton
           data={auguste.data}
           img={Auguste}
-          imgClasse={auguste.imgClasse}
+          imgClass={auguste.imgClass}
           item={auguste.item}
           imgPopUpClass={auguste.imgPopUpClass}
+          bag={bag}
+          setBag={setBag}
         />
-        <TargetButtonRome
+        <TargetButton
           data={spartacus.data}
           img={Spartacus}
-          imgClasse={spartacus.imgClasse}
+          imgClass={spartacus.imgClass}
+          item={spartacus.item}
           imgPopUpClass={spartacus.imgPopUpClass}
+          bag={bag}
+          setBag={setBag}
         />
-        <TargetButtonRome
+        <TargetButton
           data={pompey.data}
           img={Pompey}
-          imgClasse={pompey.imgClasse}
+          imgClass={pompey.imgClass}
+          item=""
           imgPopUpClass={pompey.imgPopUpClass}
+          bag={bag}
+          setBag={setBag}
         />
-        <TargetButtonRome
+        <TargetButton
           data={vercingetorix.data}
           img={Vercingetorix}
-          imgClasse={vercingetorix.imgClasse}
+          imgClass={vercingetorix.imgClass}
+          item=""
           imgPopUpClass={vercingetorix.imgPopUpClass}
+          bag={bag}
+          setBag={setBag}
         />
         <ReturnGameMenu />
       </main>
