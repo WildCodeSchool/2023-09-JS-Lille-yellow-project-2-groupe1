@@ -1,16 +1,18 @@
 @import "../../../variables.scss";
 
 .storyRules {
+  display: flex;
+  width: 100%;
   padding: 1vw;
+  margin-top: 10vh;
+  font-size: 2vw;
   background-color: $primaryColor;
   color: $secondaryColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 35vw;
-  font-size: 1.1rem;
 
   &__playButton {
+    position: absolute;
+    bottom: 18%;
+    right: 17%;
     width: 14vw;
     font-size: 2vw;
     border-color: $secondaryColor;
@@ -20,10 +22,9 @@
     border-radius: 20px;
     text-decoration: none;
     color: $primaryColor;
-    padding-top: 1%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    padding-block: 1vh;
     cursor: pointer;
+
     &:hover {
       background-color: $thirdColor;
     }
@@ -32,10 +33,25 @@
 
 .scenarioTitle {
   text-align: center;
-  font-size: 1.5rem;
 }
 
 .rulesTitle {
   text-align: center;
-  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .storyRules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-top: 0;
+
+    &__playButton {
+      position: inherit;
+      height: 6%;
+      width: 15vw;
+      margin-top: 2vh;
+    }
+  }
 }

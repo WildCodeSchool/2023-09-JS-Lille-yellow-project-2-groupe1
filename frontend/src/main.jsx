@@ -42,12 +42,10 @@ const router = createBrowserRouter([
     loader: async () => {
       try {
         const responseEra = await fetch("http://localhost:3310/api/era");
-
         if (!responseEra.ok) {
           throw new Error("Failed to fetch era data");
         }
         const dataEra = await responseEra.json();
-
         return dataEra;
       } catch (error) {
         console.error(error);
@@ -62,12 +60,10 @@ const router = createBrowserRouter([
     loader: async () => {
       try {
         const responseDino = await fetch("http://localhost:3310/api/dinosaurs");
-
         if (!responseDino.ok) {
           throw new Error("Failed to fetch dinosaur data");
         }
         const dataDino = await responseDino.json();
-
         return dataDino;
       } catch (error) {
         console.error(error);
@@ -82,12 +78,10 @@ const router = createBrowserRouter([
     loader: async () => {
       try {
         const responseEgypt = await fetch("http://localhost:3310/api/egypt");
-
         if (!responseEgypt.ok) {
           throw new Error("Failed to fetch Egypt data");
         }
         const dataEgypt = await responseEgypt.json();
-
         return dataEgypt;
       } catch (error) {
         console.error(error);
@@ -102,12 +96,10 @@ const router = createBrowserRouter([
     loader: async () => {
       try {
         const responseModern = await fetch("http://localhost:3310/api/modern");
-
         if (!responseModern.ok) {
           throw new Error("Failed to fetch modern data");
         }
         const dataModern = await responseModern.json();
-
         return dataModern;
       } catch (error) {
         console.error(error);
@@ -116,9 +108,7 @@ const router = createBrowserRouter([
     },
   },
 ]);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 root.render(
   <React.StrictMode>
     <GlobalContextProvider>
