@@ -5,6 +5,7 @@ import TimeMachine from "../../assets/pictures/ComponentsPics/TimeMachine.png";
 import ViktorCharacter from "../../assets/pictures/ComponentsPics/ViktorCharacter.png";
 import GameMenu from "../LevelPage/GameMenu/GameMenu";
 import TurnYourphone from "../TurnYourPhone/TurnYourPhone";
+import ReturnGameMenu from "../LevelPage/ReturnGameMenu/ReturnGameMenu";
 
 function Launcher() {
   const characterClass = "viktorCharacter";
@@ -30,6 +31,7 @@ function Launcher() {
         />
       </Link>
       <TurnYourphone />
+      <ReturnGameMenu />
     </main>
   );
 }
